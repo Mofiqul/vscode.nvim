@@ -1,7 +1,7 @@
--- Copyright (c) 2020-2021 Shatur95
+-- Copyright (c) 2020-2021 Mofiqul Islam
 -- MIT license, see LICENSE for more details.
 local codedark = {}
--- LuaFormatter off
+
 local colors = {
   black        = "#262626",
   white        = '#ffffff',
@@ -11,7 +11,6 @@ local colors = {
   lightblue    = '#5CB6F8',
   yellow       = '#ffaf00',
 }
--- LuaFormatter on
 
 codedark.normal = {
   b = {fg = colors.blue, bg = colors.black},
