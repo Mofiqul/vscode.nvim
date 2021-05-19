@@ -221,8 +221,7 @@ highlight('Ignore', c.cdFront, nil, 'none', nil)
 
 highlight('Error', c.cdRed, c.cdBack, 'undercurl', c.cdRed)
 
-highlight('Todo', c.cdNone, c.cdLeftMid, 'none', nil)
-
+highlight('Todo', c.cdBack, c.cdPink, 'bold', nil)
 highlight('SpellBad', c.cdRed, c.cdBack, 'undercurl', c.cdRed)
 highlight('SpellCap', c.cdRed, c.cdBack, 'undercurl', c.cdRed)
 highlight('SpellRare', c.cdRed, c.cdBack, 'undercurl', c.cdRed)
