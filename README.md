@@ -25,12 +25,12 @@ Install via package manager
 
  ```lua
  -- Using Packer:
- use 'tomasiser/vim-code-dark'
+ use 'Mofiqul/codedark.nvim'
  ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'tomasiser/vim-code-dark'
+Plug 'Mofiqul/codedark.nvim'
 ```
 ## 🚀 Usage
 
