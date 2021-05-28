@@ -57,6 +57,9 @@ require('lualine').setup {
 }'
 ```
 
+## 🍭 Extra 
+-  [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
+
 ## 💉 Terminal support
 
 ### If the colors seem to be wrong
