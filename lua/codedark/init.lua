@@ -4,14 +4,6 @@
 vim.api.nvim_command("set background=dark")
 vim.g.colors_name = "codedark"
 
-vim.api.nvim_command([[
-	if &t_Co >= 256
-		let g:codedark_term256=1
-	elseif !exists("g:codedark_term256")
-		let g:codedark_term256=0
-	endif
-]])
-
 local highlight = function(group, fg, bg, attr, sp)
 	local ctermfg = function ()
 		if vim.g.codedark_term256 == 1 then
@@ -140,7 +132,7 @@ highlight('DiffAdd', nil, c.cdDiffGreenLight, 'none', nil)
 highlight('DiffChange', nil, c.cdDiffRedDark, 'none', nil)
 highlight('DiffDelete', nil, c.cdDiffRedLight, 'none', nil)
 highlight('DiffText', nil, c.cdDiffRedLight, 'none', nil)
-highlight('EndOfBuffer', c.cdLineNumber, c.cdBack, 'none', nil)
+highlight('EndOfBuffer', c.cdBack, c.cdBack, 'none', nil)
 highlight('ErrorMsg', c.cdRed, c.cdBack, 'none', nil)
 highlight('VertSplit', c.cdSplitDark, c.cdBack, 'none', nil)
 highlight('Folded', c.cdLeftLight, c.cdLeftDark, 'underline', nil)
