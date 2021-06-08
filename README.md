@@ -57,6 +57,9 @@ require('lualine').setup {
 }'
 ```
 
+There is also a simple lualine theme as shown in screen shot. To use set lualine theme name `codedark-nvim-simple`
+
+
 ## 🍭 Extra 
 -  [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
 
