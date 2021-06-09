@@ -529,19 +529,19 @@ highlight('GitSignsDeleteLn', c.cdBack, c.cdRed, 'none', nil)
 vim.api.nvim_command("highlight! link CompeDocumentation Pmenu")
 
 -- Telescope
-highlight("TelescopePromptBorder", c.cdGreen, nil, 'none', nil)
+highlight("TelescopePromptBorder", c.cdBlue, nil, 'none', nil)
 highlight("TelescopeResultsBorder", c.cdBlue, nil, 'none', nil)
 highlight("TelescopePreviewBorder", c.cdPink, nil, 'none', nil)
 
 -- NvimTree
-highlight("NvimTreeRootFolder", c.cdLightBlue, nil, 'bold', nil)
+highlight("NvimTreeRootFolder", c.cdFront, nil, 'bold', nil)
 highlight("NvimTreeGitDirty", c.cdYellow, nil, 'none', nil)
 highlight("NvimTreeGitNew", c.cdGreen, nil, 'none', nil)
 highlight("NvimTreeImageFile", c.cdViolet, nil, 'none', nil)
 highlight("NvimTreeFolderIcon", c.cdBlue, nil, 'none', nil)
 highlight("NvimTreeIndentMarker", c.cdLineNumber, nil, 'none', nil)
 highlight("NvimTreeEmptyFolderName", c.cdGray, nil, 'none', nil)
-highlight("NvimTreeFolderName", c.cdLightBlue, nil, 'none', nil)
+highlight("NvimTreeFolderName", c.cdFront, nil, 'none', nil)
 highlight("NvimTreeSpecialFile", c.cdPink, nil, 'underline', nil)
 highlight("NvimTreeNormal ", c.cdLightBlue, c.cdLeftDark, 'none', nil)
 highlight("NvimTreeCursorLine", nil, c.cdLeftMid, 'none', nil)
