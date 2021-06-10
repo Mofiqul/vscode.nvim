@@ -14,7 +14,7 @@ end
 local c = {}
 
 -- General appearance colors
-if vim.g.background == "dark" then
+if vim.o.background == "dark" then
 	c.vscNone = 'NONE'
 	c.vscFront = '#D4D4D4'
 	c.vscBack = '#1E1E1E'
@@ -541,7 +541,7 @@ highlight("NvimTreeRootFolder", c.vscFront, nil, 'bold', nil)
 highlight("NvimTreeGitDirty", c.vscYellow, nil, 'none', nil)
 highlight("NvimTreeGitNew", c.vscGreen, nil, 'none', nil)
 highlight("NvimTreeImageFile", c.vscViolet, nil, 'none', nil)
-if vim.g.background == "dark" then
+if vim.o.background == "dark" then
 	highlight("NvimTreeFolderIcon", c.vscBlue, nil, 'none', nil)
 else
 	highlight("NvimTreeFolderIcon", c.vscDarkBlue, nil, 'none', nil)
