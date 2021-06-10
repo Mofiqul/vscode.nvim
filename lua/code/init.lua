@@ -53,9 +53,9 @@ if vim.g.background == "dark" then
 	-- Syntax colors
 	c.vscGray = '#808080'
 	c.vscViolet = '#646695'
-	c.vscBlue = '#569vsc6'
+	c.vscBlue = '#569CD6'
 	c.vscDarkBlue = '#223E55'
-	c.vscLightBlue = '#9vscCFE'
+	c.vscLightBlue = '#9CDCFE'
 	c.vscGreen = '#6A9955'
 	c.vscBlueGreen = '#4EC9B0'
 	c.vscLightGreen = '#B5CEA8'
@@ -67,15 +67,15 @@ if vim.g.background == "dark" then
 	c.vscPink = '#C586C0'
 else
 	c.vscNone = 'NONE'
-	c.vscFront = '#000000'
+	c.vscFront = '#343434'
 	c.vscBack = '#FFFFFF'
 
 	c.vscTabCurrent = '#FFFFFF'
 	c.vscTabOther = '#CECECE'
 	c.vscTabOutside = '#E8E8E8'
 
-	c.vscLeftDark = '#E5EBF1'
-	c.vscLeftMid = '#F3F3F3'
+	c.vscLeftDark = '#F3F3F3'
+	c.vscLeftMid = '#E5E5E5'
 	c.vscLeftLight = '#F3F3F3'
 
 	c.vscPopupFront = '#000000'
@@ -541,7 +541,11 @@ highlight("NvimTreeRootFolder", c.vscFront, nil, 'bold', nil)
 highlight("NvimTreeGitDirty", c.vscYellow, nil, 'none', nil)
 highlight("NvimTreeGitNew", c.vscGreen, nil, 'none', nil)
 highlight("NvimTreeImageFile", c.vscViolet, nil, 'none', nil)
-highlight("NvimTreeFolderIcon", c.vscBlue, nil, 'none', nil)
+if vim.g.background == "dark" then
+	highlight("NvimTreeFolderIcon", c.vscBlue, nil, 'none', nil)
+else
+	highlight("NvimTreeFolderIcon", c.vscDarkBlue, nil, 'none', nil)
+end
 highlight("NvimTreeIndentMarker", c.vscLineNumber, nil, 'none', nil)
 highlight("NvimTreeEmptyFolderName", c.vscGray, nil, 'none', nil)
 highlight("NvimTreeFolderName", c.vscFront, nil, 'none', nil)
