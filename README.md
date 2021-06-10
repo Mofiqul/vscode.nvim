@@ -1,12 +1,12 @@
-<h1 align="center">codedark.nvim</h1>
+<h1 align="center">vscode.nvim</h1>
 
-A Lua port of [vim-code-dark](https://github.com/tomasiser/vim-code-dark) colorscheme for [neovim](https://neovim.io/) 
+vscode.nvim (former codedark.nvim) a Lua port of [vim-code-dark](https://github.com/tomasiser/vim-code-dark) colorscheme for [neovim](https://neovim.io/) with vscode light and dark theme
 
-![TypeScript and NvimTree](./screenshot.png)
+## Dark 
+![TypeScript and NvimTree](./dark.png)
 
-## 🌈 Color Palette
-
-![Color Palette](https://cloud.githubusercontent.com/assets/10374559/23341312/1961f416-fc45-11e6-83ba-d7180c5fdd6d.png)
+## Light
+![TypeScript and NvimTree](./light.png)
 
 ## #️ Supported Plugins
 - [LSP](https://github.com/neovim/nvim-lspconfig)
@@ -25,75 +25,49 @@ Install via package manager
 
  ```lua
  -- Using Packer:
- use 'Mofiqul/codedark.nvim'
+ use 'Mofiqul/vscode.nvim'
  ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'Mofiqul/codedark.nvim'
+Plug 'Mofiqul/vscode.nvim'
 ```
 ## 🚀 Usage
 
 ```lua
 -- Lua:
-vim.cmd[[colorscheme codedark]]
+-- For dark theme
+vim.cmd[[set background=dark]]
+-- For light theme
+vim.cmd[[set background=light]]
+vim.cmd[[colorscheme vscode]]
 
 ```
 ```vim
 " Vim-Script:
-colorscheme codedark
+" For dark theme
+set background=dark
+" For light theme
+set background=light
+colorscheme vscode
 ```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
-> Make sure to set theme as 'codedark-nvim' as codedark already exists in lualine built in themes
+
 
 ```lua
 require('lualine').setup {
   options = {
     -- ... 
-    theme = 'codedark-nvim'
+    theme = 'vscode'
     -- ... 
   }
 }'
 ```
 
-There is also a simple lualine theme as shown in screen shot. To use set lualine theme name `codedark-nvim-simple`
-
-
 ## 🍭 Extra 
 -  [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
 
-## 💉 Terminal support
-
-### If the colors seem to be wrong
-If your terminal supports 256 colors (see [this script](http://www.robmeerman.co.uk/unix/256colours)) you can set:
-
-```lua 
--- Lua:
-vim.g.codedark_term256 = 1
-```
-
-```lua 
--- Vim-Script:
-let g:codedark_term256=1
-```
-
-## ❓ FAQ
-
-### What is and how to enable the conservative mode?
-If you don't like many colors and prefer the **conservative style of the standard Visual Studio**, you can try the conservative mode with reduced number of colors. To enable it, put the following line to your `init.vim` or `init.lua` *before* setting the scheme, like so:
-
-```lua
--- Lua:
-vim.g.codedark_conservative = 1
-vim.cmd[[colorscheme codedark]]
-```
-
-```vim
-" Vim-Script:
-let g:codedark_conservative = 1
-colorscheme codedark
-```
 
 ### Something is broken but I know how to fix it!
 Pull requests are welcome! Feel free to send one with an explanation!
