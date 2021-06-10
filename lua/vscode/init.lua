@@ -1,7 +1,7 @@
 -- Vim code dark color scheme
 -- Lua port of https://github.com/tomasiser/vim-code-dark
 
-vim.g.colors_name = "code"
+vim.g.colors_name = "vscode"
 
 local highlight = function(group, fg, bg, attr, sp)
 	fg = fg and " guifg=" .. fg or " guifg=NONE"
