@@ -561,7 +561,7 @@ highlight("BufferLineIndicatorSelected", c.vscLeftDark , nil, 'none', nil)
 highlight("BufferLineFill", nil , c.vscLeftDark, 'none', nil)
 
 -- IndentBlankLine
-highlight("IndentBlanklineContextChar", c.vscYellow, nil, "nocombine", nil)
+highlight("IndentBlanklineContextChar", c.vscRed, nil, "nocombine", nil)
 if vim.o.background == "dark" then
 	highlight("IndentBlanklineChar", c.vscLineNumber, nil, "nocombine", nil)
 	highlight("IndentBlanklineSpaceChar", c.vscLineNumber, nil, "nocombine", nil)
