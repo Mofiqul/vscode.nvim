@@ -560,6 +560,16 @@ highlight("NvimTreeOpenedFolderName", nil, c.vscLeftDark, 'none', nil)
 highlight("BufferLineIndicatorSelected", c.vscLeftDark , nil, 'none', nil)
 highlight("BufferLineFill", nil , c.vscLeftDark, 'none', nil)
 
+-- IndentBlankLine
+highlight("IndentBlanklineContextChar", c.vscYellow, nil, "nocombine", nil)
+if vim.o.background == "dark" then
+	highlight("IndentBlanklineChar", c.vscLineNumber, nil, "nocombine", nil)
+	highlight("IndentBlanklineSpaceChar", c.vscLineNumber, nil, "nocombine", nil)
+else
+	highlight("IndentBlanklineChar", c.vscTabOther, nil, "nocombine", nil)
+	highlight("IndentBlanklineSpaceChar", c.vscTabOther, nil, "nocombine", nil)
+end
+
 -- LSP
 highlight('LspDiagnosticsDefaultError', c.vscRed, nil, 'none', nil)
 highlight('LspDiagnosticsDefaultWarning', c.vscYellow, nil, 'none', nil)
