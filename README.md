@@ -18,6 +18,8 @@ vscode.nvim (former codedark.nvim) a Lua port of [vim-code-dark](https://github.
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Git Gutter](https://github.com/airblade/vim-gitgutter)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+
 
 ## ⬇️ Installation
 
@@ -65,7 +67,7 @@ require('lualine').setup {
 }'
 ```
 
-###  [nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua)  setup for exact match as screen shots
+[nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua)  setup for exact match as screen shots
 
 ```lua
 -- Buffer line setup
@@ -132,15 +134,6 @@ require'bufferline'.setup{
 
 ```
 
-### My [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) variables (incase you wanted)
-```lua
-vim.g.nvim_tree_width = 24
-vim.g.nvim_tree_follow = 1
-vim.g.nvim_tree_special_files = {'Makefile', 'MAKEFILE' }
-vim.g.nvim_tree_root_folder_modifier = ':t'
-vim.g.nvim_tree_indent_markers = 0
-
-```
 
 ## 🍭 Extra folder
 - [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
