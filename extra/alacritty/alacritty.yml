@@ -1,0 +1,90 @@
+# vscode dark and light theme alacritty 
+# Bt https://githib.com/mofiqul
+font:
+  size: 11
+  normal:
+    family: FiraCode Nerd Font
+    style: Regular
+  bold:
+    family: FiraCode Nerd Font
+  italic:
+    family: FiraCode Nerd Font  
+
+background_opacity: 1
+
+window:
+  padding:
+    x: 0
+    y: 0
+
+  dynamic_padding: false
+  
+  decorations: full
+
+  dimensions:
+    columns: 90
+    lines: 30
+
+schemes:
+  codelight: &light
+    primary:
+      background: '#ffffff'
+      foreground: '#1e1e1e'
+
+    cursor:
+      text: '#d4d4d4'
+      cursor: '#d4d4d4'
+
+    normal:
+      black:   '#1e1e1e'
+      red:     '#c72e0f'
+      green:   '#009000'
+      yellow:  '#795e25'
+      blue:    '#007acc'
+      magenta: '#af00db'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+    bright:
+      black:   '#1e1e1e'
+      red:     '#c72e0f'
+      green:   '#009000'
+      yellow:  '#795e25'
+      blue:    '#007acc'
+      magenta: '#af00db'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+  codedark: &dark
+
+    primary:
+      background: '#1e1e1e'
+      foreground: '#d4d4d4'
+
+    cursor:
+      text: '#d4d4d4'
+      cursor: '#d4d4d4'
+
+    normal:
+      black:   '#1e1e1e'
+      red:     '#f44747'
+      green:   '#608b4e'
+      yellow:  '#dcdcaa'
+      blue:    '#569cd6'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+    bright:
+      black:   '#545454'
+      red:     '#f44747'
+      green:   '#608b4e'
+      yellow:  '#dcdcaa'
+      blue:    '#569cd6'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+colors: *dark
+
+
