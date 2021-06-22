@@ -39,18 +39,18 @@ Plug 'Mofiqul/vscode.nvim'
 ```lua
 -- Lua:
 -- For dark theme
-vim.cmd[[set background=dark]]
+vim.g.vscode_style = "dark"
 -- For light theme
-vim.cmd[[set background=light]]
+vim.g.vscode_style = "light"
 vim.cmd[[colorscheme vscode]]
 
 ```
 ```vim
 " Vim-Script:
 " For dark theme
-set background=dark
+let g:vscode_style = "dark"
 " For light theme
-set background=light
+let g:vscode_style = "light"
 colorscheme vscode
 ```
 
@@ -134,6 +134,11 @@ require'bufferline'.setup{
 
 ```
 
+## Switching theme 
+```
+:lua require('vscode').change_style("light") 
+:lua require('vscode').change_style("dark") 
+```
 
 ## 🍭 Extra folder
 - [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
