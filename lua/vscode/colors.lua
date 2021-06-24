@@ -55,7 +55,7 @@ local generate = function ()
 			vscYellow = '#DCDCAA',
 			vscPink = '#C586C0',
 		}
-	elseif vim.g.vscode_style == "light" then
+	else
 		colors = {
 			vscNone = 'NONE',
 			vscFront = '#343434',

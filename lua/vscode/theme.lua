@@ -432,7 +432,7 @@ theme.load_syntax = function()
 		syntax.NvimTreeFolderIcon = { c.vscBlue, nil, 'none', nil}
 		syntax.IndentBlanklineChar = { c.vscLineNumber, nil, "nocombine", nil}
 		syntax.IndentBlanklineSpaceChar = { c.vscLineNumber, nil, "nocombine", nil}
-	elseif vim.g.vscode_style == "light" then
+	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil}
 		syntax.IndentBlanklineChar = { c.vscTabOther, nil, "nocombine", nil}
 		syntax.IndentBlanklineSpaceChar = { c.vscTabOther, nil, "nocombine", nil}
