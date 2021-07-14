@@ -84,7 +84,7 @@ theme.load_syntax = function()
 		SpellCap = { c.vscRed, c.vscBack, 'undercurl', c.vscRed},
 		SpellRare = { c.vscRed, c.vscBack, 'undercurl', c.vscRed},
 		SpellLocal = { c.vscRed, c.vscBack, 'undercurl', c.vscRed},
-		
+
 		-- Treesitter
 		TSError = { c.vscRed, nil, 'none', nil},
 		TSPunctDelimiter = { c.vscFront, nil, 'none', nil},
@@ -135,7 +135,7 @@ theme.load_syntax = function()
 		TSURI = { c.vscYellowOrange, nil, 'none', nil},
 		TSTag = { c.vscBlue, nil, 'none', nil},
 		TSTagDelimiter = { c.vscGray, nil, 'none', nil},
-		
+
 		-- Markdown
 		markdownBold = { c.vscBlue, nil, 'bold', nil},
 		markdownCode = { c.vscOrange, nil, 'none', nil},
@@ -147,20 +147,20 @@ theme.load_syntax = function()
 		markdownUrl = { c.vscLightBlue, nil, 'underline', nil},
 		markdownLinkText = { c.vscOrange, nil, 'none', nil},
 		markdownEscape = { c.vscYellowOrange, nil, 'none', nil},
-		
+
 		-- JSON
 		jsonKeyword = { c.vscLightBlue, nil, 'none', nil},
 		jsonEscape = { c.vscYellowOrange, nil, 'none', nil},
 		jsonNull = { c.vscBlue, nil, 'none', nil},
 		jsonBoolean = { c.vscBlue, nil, 'none', nil},
-	
+
 		-- HTML
 		htmlTag = { c.vscGray, nil, 'none', nil},
 		htmlEndTag = { c.vscGray, nil, 'none', nil},
 		htmlTagName = { c.vscBlue, nil, 'none', nil},
 		htmlSpecialTagName = { c.vscBlue, nil, 'none', nil},
 		htmlArg = { c.vscLightBlue, nil, 'none', nil},
-		
+
 		-- PHP
 		phpStaticClasses = { c.vscBlueGreen, nil, 'none', nil},
 		phpMethod = { c.vscYellow, nil, 'none', nil},
@@ -170,7 +170,7 @@ theme.load_syntax = function()
 		phpUseClass = { c.vscBlueGreen, nil, 'none', nil},
 		phpRegion = { c.vscBlueGreen, nil, 'none', nil},
 		phpMethodsVar = { c.vscLightBlue, nil, 'none', nil},
-		
+
 		-- CSS
 		cssBraces = { c.vscFront, nil, 'none', nil},
 		cssInclude = { c.vscPink, nil, 'none', nil},
@@ -193,7 +193,7 @@ theme.load_syntax = function()
 		cssUnitDecorators = { c.vscOrange, nil, 'none', nil},
 		cssStyle = { c.vscLightBlue, nil, 'none', nil},
 		cssImportant = { c.vscBlue, nil, 'none', nil},
-		
+
 		-- JavaScript
 		jsVariableDef = { c.vscLightBlue, nil, 'none', nil},
 		jsFuncArgs = { c.vscLightBlue, nil, 'none', nil},
@@ -217,7 +217,7 @@ theme.load_syntax = function()
 		jsParenIfElse = { c.vscLightBlue, nil, 'none', nil},
 		jsSpreadOperator = { c.vscLightBlue, nil, 'none', nil},
 		jsSpreadExpression = { c.vscLightBlue, nil, 'none', nil},
-		
+
 		-- Typescript
 		typescriptLabel = { c.vscLightBlue, nil, 'none', nil},
 		typescriptExceptions = { c.vscLightBlue, nil, 'none', nil},
@@ -282,18 +282,18 @@ theme.load_syntax = function()
 		typescriptFuncKeyword = { c.vscBlue, nil, 'none', nil},
 		typescriptGlobalMethod = { c.vscYellow, nil, 'none', nil},
 		typescriptPromiseMethod = { c.vscYellow, nil, 'none', nil},
-		
+
 		-- XML
 		xmlTag = { c.vscBlueGreen, nil, 'none', nil},
 		xmlTagName = { c.vscBlueGreen, nil, 'none', nil},
 		xmlEndTag = { c.vscBlueGreen, nil, 'none', nil},
-		
+
 		-- Ruby
 		rubyClassNameTag = { c.vscBlueGreen, nil, 'none', nil},
 		rubyClassName = { c.vscBlueGreen, nil, 'none', nil},
 		rubyModuleName = { c.vscBlueGreen, nil, 'none', nil},
 		rubyConstant = { c.vscBlueGreen, nil, 'none', nil},
-		
+
 		-- Golang
 		goPackage = { c.vscBlue, nil, 'none', nil},
 		goImport = { c.vscBlue, nil, 'none', nil},
@@ -340,7 +340,7 @@ theme.load_syntax = function()
 		texBeginEndModifier = { c.vscLightBlue, nil, 'none', nil},
 		texDocType = { c.vscPink, nil, 'none', nil},
 		texDocTypeArgs = { c.vscLightBlue, nil, 'none', nil},
-		
+
 		-- Git
 		gitcommitHeader = { c.vscGray, nil, 'none', nil},
 		gitcommitOnBranch = { c.vscGray, nil, 'none', nil},
@@ -353,32 +353,32 @@ theme.load_syntax = function()
 		gitcommitOverflow = { c.vscRed, nil, 'none', nil},
 		gitcommitSummary = { c.vscPink, nil, 'none', nil},
 		gitcommitBlank = { c.vscPink, nil, 'none', nil},
-		
+
 		-- Lua
 		luaFuncCall = { c.vscYellow, nil, 'none', nil},
 		luaFuncArgName = { c.vscLightBlue, nil, 'none', nil},
 		luaFuncKeyword = { c.vscPink, nil, 'none', nil},
 		luaLocal = { c.vscPink, nil, 'none', nil},
 		luaBuiltIn = { c.vscBlue, nil, 'none', nil},
-		
+
 		-- SH
 		shDeref = { c.vscLightBlue, nil, 'none', nil},
 		shVariable = { c.vscLightBlue, nil, 'none', nil},
-		
+
 		-- SQL
 		sqlKeyword = { c.vscPink, nil, 'none', nil},
 		sqlFunction = { c.vscYellowOrange, nil, 'none', nil},
 		sqlOperator = { c.vscPink, nil, 'none', nil},
-		
+
 		-- YAML
 		yamlKey = { c.vscBlue, nil, 'none', nil},
 		yamlConstant = { c.vscBlue, nil, 'none', nil},
-		
+
 		-- Gitgutter
 		GitGutterAdd = { c.vscGreen, nil, 'none', nil},
 		GitGutterChange = { c.vscYellow, nil, 'none', nil},
 		GitGutterDelete = { c.vscRed, nil, 'none', nil},
-		
+
 		-- Git Signs
 		GitSignsAdd = { c.vscGreen, nil, 'none', nil},
 		GitSignsChange = { c.vscYellow, nil, 'none', nil},
@@ -386,13 +386,7 @@ theme.load_syntax = function()
 		GitSignsAddLn = { c.vscBack, c.vscGreen, 'none', nil},
 		GitSignsChangeLn = { c.vscBack, c.vscYellow, 'none', nil},
 		GitSignsDeleteLn = { c.vscBack, c.vscRed, 'none', nil},
-		
-		
-		-- Telescope
-		TelescopePromptBorder = { c.vscBlue, nil, 'none', nil},
-		TelescopeResultsBorder = { c.vscBlue, nil, 'none', nil},
-		TelescopePreviewBorder = { c.vscPink, nil, 'none', nil},
-		
+
 		-- NvimTree
 		NvimTreeRootFolder = { c.vscFront, nil, 'bold', nil},
 		NvimTreeGitDirty = { c.vscYellow, nil, 'none', nil},
@@ -407,11 +401,11 @@ theme.load_syntax = function()
 		NvimTreeVertSplit = { c.vscBack, c.vscBack, 'none', nil},
 		NvimTreeEndOfBuffer = { c.vscLeftDark, nil, 'none', nil},
 		NvimTreeOpenedFolderName = { nil, c.vscLeftDark, 'none', nil},
-		
+
 		-- Bufferline
 		BufferLineIndicatorSelected = { c.vscLeftDark , nil, 'none', nil},
 		BufferLineFill = { nil , c.vscLeftDark, 'none', nil},
-		
+
 		-- IndentBlankLine
 		IndentBlanklineContextChar = { c.vscRed, nil, "nocombine", nil},
 
@@ -428,16 +422,55 @@ theme.load_syntax = function()
 		LspReferenceRead = { c.vscYellowOrange, nil, 'none', nil},
 		LspReferenceWrite = { c.vscYellowOrange, nil, 'none', nil},
 	}
+
 	if vim.g.vscode_style == "dark" then
 		syntax.NvimTreeFolderIcon = { c.vscBlue, nil, 'none', nil}
 		syntax.IndentBlanklineChar = { c.vscLineNumber, nil, "nocombine", nil}
 		syntax.IndentBlanklineSpaceChar = { c.vscLineNumber, nil, "nocombine", nil}
+
+		syntax.LspFloatWinNormal = { c.vscFront, nil, 'none', nil}
+		syntax.LspFloatWinBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspSagaHoverBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspSagaSignatureHelpBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspSagaCodeActionBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspSagaDefPreviewBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspLinesDiagBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspSagaRenameBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.LspSagaBorderTitle = { c.vscCursorDark, nil, 'none', nil}
+
+		syntax.TelescopePromptBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.TelescopeResultsBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.TelescopePreviewBorder = { c.vscLineNumber, nil, 'none', nil}
+		syntax.TelescopeNormal = {c.vscFront, nil, 'none', nil}
+		syntax.TelescopeSelection = {c.vscFront, c.vscUiBlue, 'none', nil}
+		syntax.TelescopeMultiSelection = {c.vscFront, c.vscUiBlue, 'none', nil}
+		syntax.TelescopeMatching = {c.vscBlue, nil, 'none', nil}
+		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil}
 		syntax.IndentBlanklineChar = { c.vscTabOther, nil, "nocombine", nil}
 		syntax.IndentBlanklineSpaceChar = { c.vscTabOther, nil, "nocombine", nil}
+
+		syntax.LspFloatWinNormal = { c.vscFront, nil, 'none', nil}
+		syntax.LspFloatWinBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspSagaHoverBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspSagaSignatureHelpBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspSagaCodeActionBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspSagaDefPreviewBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspLinesDiagBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspSagaRenameBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.LspSagaBorderTitle = { c.vscCursorDark, nil, 'none', nil}
+
+		syntax.TelescopePromptBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.TelescopeResultsBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.TelescopePreviewBorder = { c.vscTabOther, nil, 'none', nil}
+		syntax.TelescopeNormal = {c.vscFront, nil, 'none', nil}
+		syntax.TelescopeSelection = {c.vscBack, c.vscLightBlue, 'none', nil}
+		syntax.TelescopeMultiSelection = {c.vscBack, c.vscLightBlue, 'none', nil}
+		syntax.TelescopeMatching = {c.vscDarkBlue, nil, 'none', nil}
+		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
 	end
-	
+
 	return syntax
 end
 
@@ -451,3 +484,4 @@ theme.link_highlight = function ()
 end
 
 return theme
+
