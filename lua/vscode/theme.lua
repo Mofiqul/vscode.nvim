@@ -392,7 +392,6 @@ theme.load_syntax = function()
 		NvimTreeGitDirty = { c.vscYellow, nil, 'none', nil},
 		NvimTreeGitNew = { c.vscGreen, nil, 'none', nil},
 		NvimTreeImageFile = { c.vscViolet, nil, 'none', nil},
-		NvimTreeIndentMarker = { c.vscLineNumber, nil, 'none', nil},
 		NvimTreeEmptyFolderName = { c.vscGray, nil, 'none', nil},
 		NvimTreeFolderName = { c.vscFront, nil, 'none', nil},
 		NvimTreeSpecialFile = { c.vscPink, nil, 'underline', nil},
@@ -425,6 +424,7 @@ theme.load_syntax = function()
 
 	if vim.g.vscode_style == "dark" then
 		syntax.NvimTreeFolderIcon = { c.vscBlue, nil, 'none', nil}
+		syntax.NvimTreeIndentMarker = { c.vscLineNumber, nil, 'none', nil}
 		syntax.IndentBlanklineChar = { c.vscLineNumber, nil, "nocombine", nil}
 		syntax.IndentBlanklineSpaceChar = { c.vscLineNumber, nil, "nocombine", nil}
 
@@ -448,6 +448,7 @@ theme.load_syntax = function()
 		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil}
+		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil}
 		syntax.IndentBlanklineChar = { c.vscTabOther, nil, "nocombine", nil}
 		syntax.IndentBlanklineSpaceChar = { c.vscTabOther, nil, "nocombine", nil}
 
@@ -484,4 +485,5 @@ theme.link_highlight = function ()
 end
 
 return theme
+
 
