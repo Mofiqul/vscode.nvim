@@ -14,7 +14,7 @@ local generate = function ()
 
 			vscLeftDark = '#252526',
 			vscLeftMid = '#373737',
-			vscLeftLight = '#3F3F46',
+			vscLeftLight = '#636369',
 
 			vscPopupFront = '#BBBBBB',
 			vscPopupBack = '#2D2D30',
