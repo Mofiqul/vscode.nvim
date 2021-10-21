@@ -85,11 +85,11 @@ local generate = function ()
 			vscSelection = '#ADD6FF',
 			vscLineNumber = '#098658',
 
-			vscDiffRedDark = '#800000',
-			vscDiffRedLight = '#CD3131',
-			vscDiffRedLightLight = '#FF0000',
-			vscDiffGreenDark = '#168256',
-			vscDiffGreenLight = '#008000',
+			vscDiffRedDark = '#FFCCCC',
+			vscDiffRedLight = '#FFA3A3',
+			vscDiffRedLightLight = '#FFCCCC',
+			vscDiffGreenDark = '#DBE6C2',
+			vscDiffGreenLight = '#EBF1DD',
 			vscSearchCurrent = '#A8AC94',
 			vscSearch = '#F8C9AB',
 
