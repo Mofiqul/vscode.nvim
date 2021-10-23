@@ -498,6 +498,7 @@ theme.link_highlight = function ()
 	vim.api.nvim_command("hi! link diffRemoved DiffDelete")
 	-- Nvim compe
 	vim.api.nvim_command("highlight! link CompeDocumentation Pmenu")
+	vim.api.nvim_command("highlight! link CompeDocumentationBorder Pmenu")
 end
 
 return theme
