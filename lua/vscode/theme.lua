@@ -409,14 +409,14 @@ theme.load_syntax = function()
 		IndentBlanklineContextChar = { c.vscRed, nil, "nocombine", nil},
 
 		-- LSP
-		LspDiagnosticsDefaultError = { c.vscRed, nil, 'none', nil},
-		LspDiagnosticsDefaultWarning = { c.vscYellow, nil, 'none', nil},
-		LspDiagnosticsDefaultInformation = { c.vscBlue, nil, 'none', nil},
-		LspDiagnosticsDefaultHint = { c.vscBlue, nil, 'none', nil},
-		LspDiagnosticsUnderlineError = { c.vscRed, nil, 'undercurl', nil},
-		LspDiagnosticsUnderlineWarning = { c.vscYellow, nil, 'undercurl', nil},
-		LspDiagnosticsUnderlineInformation = { c.vscBlue, nil, 'undercurl', nil},
-		LspDiagnosticsUnderlineHint = { c.vscBlue, nil, 'undercurl', nil},
+		DiagnosticError = { c.vscRed, nil, 'none', nil },
+		DiagnosticWarn = { c.vscYellow, nil, 'none', nil },
+		DiagnosticInfo = { c.vscBlue, nil, 'none', nil },
+		DiagnosticHint = { c.vscBlue, nil, 'none', nil },
+		DiagnosticUnderlineError = { c.vscRed, nil, 'undercurl', nil },
+		DiagnosticUnderlineWarn = { c.vscYellow, nil, 'undercurl', nil },
+		DiagnosticUnderlineInfo = { c.vscBlue, nil, 'undercurl', nil },
+		DiagnosticUnderlineHint = { c.vscBlue, nil, 'undercurl', nil },
 		LspReferenceText = { c.vscYellowOrange, nil, 'none', nil},
 		LspReferenceRead = { c.vscYellowOrange, nil, 'none', nil},
 		LspReferenceWrite = { c.vscYellowOrange, nil, 'none', nil},
@@ -487,6 +487,16 @@ theme.load_syntax = function()
 		syntax.TelescopeMatching = {c.vscDarkBlue, nil, 'none', nil}
 		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
 	end
+
+	-- Support for legacy config keys (Neovim<=0.5.1)
+	syntax.LspDiagnosticsDefaultError = syntax.DiagnosticError
+	syntax.LspDiagnosticsDefaultHint = syntax.DiagnosticHint
+	syntax.LspDiagnosticsDefaultInformation = syntax.DiagnosticInfo
+	syntax.LspDiagnosticsDefaultWarning = syntax.DiagnosticWarn
+	syntax.LspDiagnosticsUnderlineError = syntax.DiagnosticUnderlineError
+	syntax.LspDiagnosticsUnderlineHint = syntax.DiagnosticUnderlineHint
+	syntax.LspDiagnosticsUnderlineInformation = syntax.DiagnosticUnderlineInfo
+	syntax.LspDiagnosticsUnderlineWarning = syntax.DiagnosticUnderlineWarn
 
 	return syntax
 end
