@@ -456,7 +456,7 @@ theme.load_syntax = function()
 		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
 
 		-- symbols-outline 
-		syntax.FocusedSymbol = {"#ffffff", "#0a7aca", "none", nil}
+		syntax.FocusedSymbol = {c.vscBack, "#0a7aca", "none", nil}
 		syntax.SymbolsOutlineConnector = {c.vscLineNumber, nil, "none", nil}
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil}
@@ -492,7 +492,7 @@ theme.load_syntax = function()
 		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
 
 		-- symbols-outline
-		syntax.FocusedSymbol = {c.vscFront, "#AF00DB", "none", nil}
+		syntax.FocusedSymbol = {c.vscBack, "#AF00DB", "none", nil}
 		syntax.SymbolsOutlineConnector = {c.vscTabOther, nil, "none", nil}
 	end
 
