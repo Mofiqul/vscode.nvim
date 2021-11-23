@@ -454,6 +454,10 @@ theme.load_syntax = function()
 		syntax.TelescopeMultiSelection = {c.vscFront, c.vscUiBlue, 'none', nil}
 		syntax.TelescopeMatching = {c.vscBlue, nil, 'none', nil}
 		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
+
+		-- symbols-outline 
+		syntax.FocusedSymbol = {"#ffffff", "#0a7aca", "none", nil}
+		syntax.SymbolsOutlineConnector = {c.vscLineNumber, nil, "none", nil}
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil}
 		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil}
@@ -486,6 +490,10 @@ theme.load_syntax = function()
 		syntax.TelescopeMultiSelection = {c.vscBack, c.vscLightBlue, 'none', nil}
 		syntax.TelescopeMatching = {c.vscDarkBlue, nil, 'none', nil}
 		syntax.TelescopePromptPrefix = {c.vscFront, nil, 'none', nil}
+
+		-- symbols-outline
+		syntax.FocusedSymbol = {c.vscFront, "#AF00DB", "none", nil}
+		syntax.SymbolsOutlineConnector = {c.vscTabOther, nil, "none", nil}
 	end
 
 	-- Support for legacy config keys (Neovim<=0.5.1)
