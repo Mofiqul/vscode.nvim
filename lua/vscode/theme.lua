@@ -457,7 +457,7 @@ theme.load_syntax = function()
 
 		-- symbols-outline 
 		-- white fg and lualine blue bg
-		syntax.FocusedSymbol = {"#ffffff", "#0a7aca", "none", nil}
+		syntax.FocusedSymbol = {"#ffffff", c.vscUiBlue, "none", nil}
 		syntax.SymbolsOutlineConnector = {c.vscLineNumber, nil, "none", nil}
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil}
