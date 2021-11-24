@@ -1,8 +1,6 @@
-
-local generate = function ()
-
+local generate = function()
 	local colors = {}
-	if vim.g.vscode_style == "dark" then
+	if vim.g.vscode_style == 'dark' then
 		colors = {
 			vscNone = 'NONE',
 			vscFront = '#D4D4D4',
@@ -44,6 +42,7 @@ local generate = function ()
 			vscViolet = '#646695',
 			vscBlue = '#569CD6',
 			vscDarkBlue = '#223E55',
+			vscMediumBlue = '#18a2fe',
 			vscLightBlue = '#9CDCFE',
 			vscGreen = '#6A9955',
 			vscBlueGreen = '#4EC9B0',
@@ -54,7 +53,7 @@ local generate = function ()
 			vscYellowOrange = '#D7BA7D',
 			vscYellow = '#DCDCAA',
 			vscPink = '#C586C0',
-			vscUiBlue = '#0451A5',
+			vscUiBlue = '#084671',
 		}
 	else
 		colors = {
@@ -114,4 +113,4 @@ local generate = function ()
 	return colors
 end
 
-return {generate = generate}
+return { generate = generate }
