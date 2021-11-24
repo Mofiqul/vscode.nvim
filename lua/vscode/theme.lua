@@ -452,7 +452,7 @@ theme.load_syntax = function()
 		syntax.TelescopeNormal = { c.vscFront, nil, 'none', nil }
 		syntax.TelescopeSelection = { c.vscFront, c.vscUiBlue, 'none', nil }
 		syntax.TelescopeMultiSelection = { c.vscFront, c.vscUiBlue, 'none', nil }
-		syntax.TelescopeMatching = { c.vscBlue, nil, 'none', nil }
+		syntax.TelescopeMatching = { c.vscMediumBlue, nil, 'bold', nil }
 		syntax.TelescopePromptPrefix = { c.vscFront, nil, 'none', nil }
 
 		-- symbols-outline
@@ -489,7 +489,7 @@ theme.load_syntax = function()
 		syntax.TelescopeNormal = { c.vscFront, nil, 'none', nil }
 		syntax.TelescopeSelection = { c.vscBack, c.vscLightBlue, 'none', nil }
 		syntax.TelescopeMultiSelection = { c.vscBack, c.vscLightBlue, 'none', nil }
-		syntax.TelescopeMatching = { c.vscDarkBlue, nil, 'none', nil }
+		syntax.TelescopeMatching = { c.vscDarkBlue, nil, 'bold', nil }
 		syntax.TelescopePromptPrefix = { c.vscFront, nil, 'none', nil }
 
 		-- symbols-outline

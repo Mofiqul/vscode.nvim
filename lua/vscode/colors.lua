@@ -42,6 +42,7 @@ local generate = function()
 			vscViolet = '#646695',
 			vscBlue = '#569CD6',
 			vscDarkBlue = '#223E55',
+			vscMediumBlue = '#18a2fe',
 			vscLightBlue = '#9CDCFE',
 			vscGreen = '#6A9955',
 			vscBlueGreen = '#4EC9B0',
@@ -52,7 +53,7 @@ local generate = function()
 			vscYellowOrange = '#D7BA7D',
 			vscYellow = '#DCDCAA',
 			vscPink = '#C586C0',
-			vscUiBlue = '#0451A5',
+			vscUiBlue = '#084671',
 		}
 	else
 		colors = {
