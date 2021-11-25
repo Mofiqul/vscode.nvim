@@ -417,9 +417,9 @@ theme.load_syntax = function()
 		DiagnosticUnderlineWarn = { nil, nil, 'undercurl', c.vscYellow },
 		DiagnosticUnderlineInfo = { nil, nil, 'undercurl', c.vscBlue },
 		DiagnosticUnderlineHint = { nil, nil, 'undercurl', c.vscBlue },
-		LspReferenceText = { c.vscYellowOrange, nil, 'none', nil },
-		LspReferenceRead = { c.vscYellowOrange, nil, 'none', nil },
-		LspReferenceWrite = { c.vscYellowOrange, nil, 'none', nil },
+		LspReferenceText = { nil, c.vscPopupHighlightGray, 'none', nil },
+		LspReferenceRead = { nil, c.vscPopupHighlightGray, 'none', nil },
+		LspReferenceWrite = { nil, c.vscPopupHighlightGray, 'none', nil },
 	}
 
 	if vim.g.vscode_style == 'dark' then
