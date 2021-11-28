@@ -459,6 +459,11 @@ theme.load_syntax = function()
 		-- white fg and lualine blue bg
 		syntax.FocusedSymbol = { '#ffffff', c.vscUiBlue, 'none', nil }
 		syntax.SymbolsOutlineConnector = { c.vscLineNumber, nil, 'none', nil }
+
+		-- Nvim compe
+		syntax.CmpItemAbbrDeprecated = {c.vscCursorDark, c.vscPopupBack, 'none', nil}
+		syntax.CmpItemAbbrMatch = {c.vscLightBlue, c.vscPopupBack, 'none', nil}
+
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil }
 		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil }
@@ -496,6 +501,11 @@ theme.load_syntax = function()
 		-- white fg and lualine blue bg
 		syntax.FocusedSymbol = { c.vscBack, '#AF00DB', 'none', nil }
 		syntax.SymbolsOutlineConnector = { c.vscTabOther, nil, 'none', nil }
+
+		-- Nvim compe
+		syntax.CmpItemAbbrDeprecated = {c.vscCursorDark, c.vscPopupBack, 'none', nil}
+		syntax.CmpItemAbbrMatch = {c.vscLightBlue, c.vscPopupBack, 'none', nil}
+
 	end
 
 	-- Support for legacy config keys (Neovim<=0.5.1)
@@ -513,12 +523,39 @@ end
 
 theme.link_highlight = function()
 	-- Legacy groups for official git.vim and diff.vim syntax
-	vim.api.nvim_command('hi! link diffAdded DiffAdd')
-	vim.api.nvim_command('hi! link diffChanged DiffChange')
-	vim.api.nvim_command('hi! link diffRemoved DiffDelete')
+	vim.api.nvim_command('highlight link diffAdded DiffAdd')
+	vim.api.nvim_command('highlight link diffChanged DiffChange')
+	vim.api.nvim_command('highlight link diffRemoved DiffDelete')
 	-- Nvim compe
-	vim.api.nvim_command('highlight! link CompeDocumentation Pmenu')
-	vim.api.nvim_command('highlight! link CompeDocumentationBorder Pmenu')
+	vim.api.nvim_command('highlight link CompeDocumentation Pmenu')
+	vim.api.nvim_command('highlight link CompeDocumentationBorder Pmenu')
+	vim.api.nvim_command('highlight link CmpItemKind Pmenu')
+	vim.api.nvim_command('highlight link CmpItemAbbr Pmenu')
+	vim.api.nvim_command('highlight link CmpItemKindMethod TSMethod')
+	vim.api.nvim_command('highlight link CmpItemKindText TSText')
+	vim.api.nvim_command('highlight link CmpItemKindFunction TSFunction')
+	vim.api.nvim_command('highlight link CmpItemKindConstructor TSType')
+	vim.api.nvim_command('highlight link CmpItemKindVariable TSVariable')
+	vim.api.nvim_command('highlight link CmpItemKindClass TSType')
+	vim.api.nvim_command('highlight link CmpItemKindInterface TSType')
+	vim.api.nvim_command('highlight link CmpItemKindModule TSNamespace')
+	vim.api.nvim_command('highlight link CmpItemKindProperty TSProperty')
+	vim.api.nvim_command('highlight link CmpItemKindOperator TSOperator')
+	vim.api.nvim_command('highlight link CmpItemKindReference TSParameterReference')
+	vim.api.nvim_command('highlight link CmpItemKindUnit TSField')
+	vim.api.nvim_command('highlight link CmpItemKindValue TSField')
+	vim.api.nvim_command('highlight link CmpItemKindField TSField')
+	vim.api.nvim_command('highlight link CmpItemKindEnum TSField')
+	vim.api.nvim_command('highlight link CmpItemKindKeyword TSKeyword')
+	vim.api.nvim_command('highlight link CmpItemKindSnippet TSText')
+	vim.api.nvim_command('highlight link CmpItemKindColor cssColor')
+	vim.api.nvim_command('highlight link CmpItemKindFile TSURI')
+	vim.api.nvim_command('highlight link CmpItemKindFolder TSURI')
+	vim.api.nvim_command('highlight link CmpItemKindEvent TSConstant')
+	vim.api.nvim_command('highlight link CmpItemKindEnumMember TSField')
+	vim.api.nvim_command('highlight link CmpItemKindConstant TSConstant')
+	vim.api.nvim_command('highlight link CmpItemKindStruct TSStructure')
+	vim.api.nvim_command('highlight link CmpItemKindTypeParameter TSParameter')
 end
 
 return theme
