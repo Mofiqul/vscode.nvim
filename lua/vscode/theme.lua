@@ -405,6 +405,25 @@ theme.load_syntax = function()
 		BufferLineIndicatorSelected = { c.vscLeftDark, nil, 'none', nil },
 		BufferLineFill = { nil, c.vscLeftDark, 'none', nil },
 
+		-- BarBar
+		BufferCurrent = { c.vscFront, c.vscTabCurrent, 'none', nil },
+		BufferCurrentIndex = { c.vscFront, c.vscTabCurrent, 'none', nil },
+		BufferCurrentMod = { c.vscYellowOrange, c.vscTabCurrent, 'none', nil },
+		BufferCurrentSign = { c.vscFront, c.vscTabCurrent, 'none', nil },
+		BufferCurrentTarget = { c.vscRed, c.vscTabCurrent, 'none', nil },
+		BufferVisible = { c.vscGray, c.vscTabCurrent, 'none', nil },
+		BufferVisibleIndex = { c.vscGray, c.vscTabCurrent, 'none', nil },
+		BufferVisibleMod = { c.vscYellowOrange, c.vscTabCurrent, 'none', nil },
+		BufferVisibleSign = { c.vscGray, c.vscTabCurrent, 'none', nil },
+		BufferVisibleTarget = { c.vscRed, c.vscTabCurrent, 'none', nil },
+		BufferInactive = { c.vscGray, c.vscTabOther, 'none', nil },
+		BufferInactiveIndex = { c.vscGray, c.vscTabOther, 'none', nil },
+		BufferInactiveMod = { c.vscYellowOrange, c.vscTabOther, 'none', nil },
+		BufferInactiveSign = { c.vscGray, c.vscTabOther, 'none', nil },
+		BufferInactiveTarget = { c.vscRed, c.vscTabOther, 'none', nil },
+		BufferTabpages = { c.vscFront, c.vscTabOther, 'none', nil },
+		BufferTabpagesFill = { c.vscFront, c.vscTabOther, 'none', nil },
+
 		-- IndentBlankLine
 		IndentBlanklineContextChar = { c.vscRed, nil, 'nocombine', nil },
 
