@@ -461,9 +461,8 @@ theme.load_syntax = function()
 		syntax.SymbolsOutlineConnector = { c.vscLineNumber, nil, 'none', nil }
 
 		-- Nvim compe
-		syntax.CmpItemAbbrDeprecated = {c.vscCursorDark, c.vscPopupBack, 'none', nil}
-		syntax.CmpItemAbbrMatch = {c.vscLightBlue, c.vscPopupBack, 'none', nil}
-
+		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'none', nil }
+		syntax.CmpItemAbbrMatch = { c.vscLightBlue, c.vscPopupBack, 'none', nil }
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil }
 		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil }
@@ -503,9 +502,8 @@ theme.load_syntax = function()
 		syntax.SymbolsOutlineConnector = { c.vscTabOther, nil, 'none', nil }
 
 		-- Nvim compe
-		syntax.CmpItemAbbrDeprecated = {c.vscCursorDark, c.vscPopupBack, 'none', nil}
-		syntax.CmpItemAbbrMatch = {c.vscLightBlue, c.vscPopupBack, 'none', nil}
-
+		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'none', nil }
+		syntax.CmpItemAbbrMatch = { c.vscLightBlue, c.vscPopupBack, 'none', nil }
 	end
 
 	-- Support for legacy config keys (Neovim<=0.5.1)
