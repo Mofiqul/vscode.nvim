@@ -43,7 +43,7 @@ theme.load_syntax = function()
 		Title = { c.vscNone, c.vscNone, 'bold', nil },
 		Visual = { c.vscNone, c.vscSelection, 'none', nil },
 		VisualNOS = { c.vscNone, c.vscSelection, 'none', nil },
-		WarningMsg = { c.vscOrange, c.vscBack, 'none', nil },
+		WarningMsg = { c.vscRed, c.vscBack, 'bold', nil },
 		WildMenu = { c.vscNone, c.vscSelection, 'none', nil },
 		Comment = { c.vscGreen, nil, 'none', nil },
 		Constant = { c.vscBlue, nil, 'none', nil },
@@ -79,7 +79,7 @@ theme.load_syntax = function()
 		Conceal = { c.vscFront, c.vscBack, 'none', nil },
 		Ignore = { c.vscFront, nil, 'none', nil },
 		Error = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
-		Todo = { c.vscBack, c.vscPink, 'bold', nil },
+		Todo = { c.vscYellowOrange, c.vscBack, 'bold', nil },
 		SpellBad = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
 		SpellCap = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
 		SpellRare = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
@@ -135,6 +135,9 @@ theme.load_syntax = function()
 		TSURI = { c.vscYellowOrange, nil, 'none', nil },
 		TSTag = { c.vscBlue, nil, 'none', nil },
 		TSTagDelimiter = { c.vscGray, nil, 'none', nil },
+		TSNote = { c.vscBlueGreen, nil, 'bold', nil },
+		TSWarning = { c.vscYellowOrange, nil, 'bold', nil },
+		TSDanger = { c.vscRed, nil, 'bold', nil },
 
 		-- Markdown
 		markdownBold = { c.vscBlue, nil, 'bold', nil },
