@@ -135,6 +135,9 @@ theme.load_syntax = function()
 		TSURI = { c.vscYellowOrange, nil, 'none', nil },
 		TSTag = { c.vscBlue, nil, 'none', nil },
 		TSTagDelimiter = { c.vscGray, nil, 'none', nil },
+		TSNote = { c.vscBlueGreen, nil, 'bold', nil },
+		TSWarning = { c.vscYellowOrange, nil, 'bold', nil },
+		TSDanger = { c.vscRed, nil, 'bold', nil },
 
 		-- Markdown
 		markdownBold = { c.vscBlue, nil, 'bold', nil },
