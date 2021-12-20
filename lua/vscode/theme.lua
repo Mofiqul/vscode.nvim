@@ -139,6 +139,10 @@ theme.load_syntax = function()
 		TSWarning = { c.vscYellowOrange, nil, 'bold', nil },
 		TSDanger = { c.vscRed, nil, 'bold', nil },
 
+    -- Markdown Treesitter
+    markdownTSURI = { c.vscFront, nil, 'underline', nil },
+    markdownTSTitle = { c.vscBlue, nil, 'none', nil },
+
 		-- Markdown
 		markdownBold = { c.vscBlue, nil, 'bold', nil },
 		markdownCode = { c.vscOrange, nil, 'none', nil },
