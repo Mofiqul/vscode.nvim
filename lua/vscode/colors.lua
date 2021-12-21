@@ -94,7 +94,7 @@ local generate = function()
 
 			-- Syntax colors
 			vscGray = '#000000',
-			vscViolet = '#001080',
+			vscViolet = '#000080',
 			vscBlue = '#0000FF',
 			vscDarkBlue = '#007ACC',
 			vscLightBlue = '#0451A5',
@@ -104,7 +104,7 @@ local generate = function()
 			vscRed = '#FF0000',
 			vscOrange = '#C72E0F',
 			vscLightRed = '#A31515',
-			vscYellowOrange = '#811F3F',
+			vscYellowOrange = '#800000',
 			vscYellow = '#795E26',
 			vscPink = '#AF00DB',
 		}
