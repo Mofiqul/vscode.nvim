@@ -87,7 +87,6 @@ theme.load_syntax = function()
 
 		-- Treesitter
 		TSError = { c.vscRed, nil, 'none', nil },
-		TSPunctDelimiter = { c.vscFront, nil, 'none', nil },
 		TSPunctBracket = { c.vscFront, nil, 'none', nil },
 		TSPunctSpecial = { c.vscFront, nil, 'none', nil },
 		TSConstant = { c.vscYellow, nil, 'none', nil },
@@ -95,7 +94,6 @@ theme.load_syntax = function()
 		TSConstMacro = { c.vscBlueGreen, nil, 'none', nil },
 		TSStringRegex = { c.vscOrange, nil, 'none', nil },
 		TSString = { c.vscOrange, nil, 'none', nil },
-		TSStringEscape = { c.vscYellowOrange, nil, 'none', nil },
 		TSCharacter = { c.vscOrange, nil, 'none', nil },
 		TSNumber = { c.vscLightGreen, nil, 'none', nil },
 		TSBoolean = { c.vscBlue, nil, 'none', nil },
@@ -127,33 +125,34 @@ theme.load_syntax = function()
 		TSVariable = { c.vscLightBlue, nil, 'none', nil },
 		TSVariableBuiltin = { c.vscLightBlue, nil, 'none', nil },
 		TSText = { c.vscYellowOrange, nil, 'none', nil },
-		TSStrong = { c.vscYellowOrange, nil, 'none', nil },
-		TSEmphasis = { c.vscYellowOrange, nil, 'none', nil },
 		TSUnderline = { c.vscYellowOrange, nil, 'none', nil },
-		TSTitle = { c.vscYellowOrange, nil, 'none', nil },
-		TSLiteral = { c.vscYellowOrange, nil, 'none', nil },
-		TSURI = { c.vscYellowOrange, nil, 'none', nil },
 		TSTag = { c.vscBlue, nil, 'none', nil },
 		TSTagDelimiter = { c.vscGray, nil, 'none', nil },
+		
+		TSTitle = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
+		TSLiteral = { c.vscFront, 'none', nil },
+		TSEmphasis = { c.vscFront, nil, 'italic', nil },
+		TSStrong = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscViolet, nil, 'bold', nil },
+		TSURI = { c.vscFront, nil, 'none', nil },
+		TSTextReference = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
+		TSPunctDelimiter = { c.vscFront, nil, 'none', nil },
+		TSStringEscape = {vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'bold', nil },
+	
 		TSNote = { c.vscBlueGreen, nil, 'bold', nil },
 		TSWarning = { c.vscYellowOrange, nil, 'bold', nil },
 		TSDanger = { c.vscRed, nil, 'bold', nil },
 
-    -- Markdown Treesitter
-    markdownTSURI = { c.vscFront, nil, 'underline', nil },
-    markdownTSTitle = { c.vscBlue, nil, 'none', nil },
-
 		-- Markdown
-		markdownBold = { c.vscBlue, nil, 'bold', nil },
+		markdownBold = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
 		markdownCode = { c.vscOrange, nil, 'none', nil },
-		markdownRule = { c.vscBlue, nil, 'bold', nil },
-		markdownCodeDelimiter = { c.vscOrange, nil, 'none', nil },
-		markdownHeadingDelimiter = { c.vscBlue, nil, 'none', nil },
-		markdownFootnote = { c.vscOrange, nil, 'none', nil },
-		markdownFootnoteDefinition = { c.vscOrange, nil, 'none', nil },
-		markdownUrl = { c.vscLightBlue, nil, 'underline', nil },
-		markdownLinkText = { c.vscOrange, nil, 'none', nil },
-		markdownEscape = { c.vscYellowOrange, nil, 'none', nil },
+		markdownRule = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
+		markdownCodeDelimiter = { c.vscFront, nil, 'none', nil },
+		markdownHeadingDelimiter = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'none', nil },
+		markdownFootnote = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
+		markdownFootnoteDefinition = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
+		markdownUrl = { c.vscFront, nil, 'underline', nil },
+		markdownLinkText = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
+		markdownEscape = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
 
 		-- JSON
 		jsonKeyword = { c.vscLightBlue, nil, 'none', nil },
