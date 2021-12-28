@@ -110,6 +110,10 @@ local generate = function()
 		}
 	end
 
+	if vim.g.vscode_transparent then
+		colors.vscBack = 'NONE'
+	end
+
 	return colors
 end
 
