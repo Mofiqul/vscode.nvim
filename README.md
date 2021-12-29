@@ -44,6 +44,8 @@ Plug 'Mofiqul/vscode.nvim'
 vim.g.vscode_style = "dark"
 -- For light theme
 vim.g.vscode_style = "light"
+-- Enable transparent background.
+vim.g.vscode_transparent = 1
 vim.cmd[[colorscheme vscode]]
 
 ```
@@ -53,6 +55,8 @@ vim.cmd[[colorscheme vscode]]
 let g:vscode_style = "dark"
 " For light theme
 let g:vscode_style = "light"
+" Enable transparent background.
+let g:vscode_transparency = 1
 colorscheme vscode
 ```
 
