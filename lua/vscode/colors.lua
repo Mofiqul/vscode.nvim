@@ -15,8 +15,8 @@ local generate = function()
 			vscLeftLight = '#636369',
 
 			vscPopupFront = '#BBBBBB',
-			vscPopupBack = '#2D2D30',
-			vscPopupHighlightBlue = '#073655',
+			vscPopupBack = '#272727',
+			vscPopupHighlightBlue = '#004b72',
 			vscPopupHighlightGray = '#343B41',
 
 			vscSplitLight = '#898989',
@@ -53,7 +53,6 @@ local generate = function()
 			vscYellowOrange = '#D7BA7D',
 			vscYellow = '#DCDCAA',
 			vscPink = '#C586C0',
-			vscUiBlue = '#084671',
 		}
 	else
 		colors = {
@@ -71,7 +70,7 @@ local generate = function()
 
 			vscPopupFront = '#000000',
 			vscPopupBack = '#F3F3F3',
-			vscPopupHighlightBlue = '#D6EBFF',
+			vscPopupHighlightBlue = '#0064c1',
 			vscPopupHighlightGray = '#767676',
 
 			vscSplitLight = '#EEEEEE',
@@ -113,6 +112,10 @@ local generate = function()
 	if vim.g.vscode_transparent then
 		colors.vscBack = 'NONE'
 	end
+
+	-- Other ui specific colors
+	colors.vscUiBlue = '#084671'
+	colors.vscUiOrange = '#f28b25'
 
 	return colors
 end

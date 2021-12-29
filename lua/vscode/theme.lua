@@ -29,7 +29,12 @@ theme.load_syntax = function()
 		MoreMsg = { c.vscFront, c.vscLeftDark, 'none', nil },
 		NonText = { c.vscLineNumber, c.vscBack, 'none', nil },
 		Pmenu = { c.vscPopupFront, c.vscPopupBack, 'none', nil },
-		PmenuSel = { c.vscPopupFront, c.vscPopupHighlightBlue, 'none', nil },
+		PmenuSel = {
+			vim.g.vscode_style == 'dark' and c.vscPopupFront or c.vscBack,
+			c.vscPopupHighlightBlue,
+			'none',
+			nil,
+		},
 		PmenuSbar = { nil, c.vscPopupHighlightGray, 'none', nil },
 		PmenuThumb = { nil, c.vscPopupFront, 'none', nil },
 		Question = { c.vscBlue, c.vscBack, 'none', nil },
@@ -455,6 +460,24 @@ theme.load_syntax = function()
 		LspReferenceText = { nil, c.vscPopupHighlightGray, 'none', nil },
 		LspReferenceRead = { nil, c.vscPopupHighlightGray, 'none', nil },
 		LspReferenceWrite = { nil, c.vscPopupHighlightGray, 'none', nil },
+
+		-- Nvim compe
+		CmpItemKindVariable = { c.vscLightBlue, nil, 'none', nil },
+		CmpItemKindInterface = { c.vscLightBlue, nil, 'none', nil },
+		CmpItemKindText = { c.vscLightBlue, nil, 'none', nil },
+		CmpItemKindFunction = { c.vscPink, nil, 'none', nil },
+		CmpItemKindMethod = { c.vscPink, nil, 'none', nil },
+		CmpItemKindKeyword = { c.vscFront, nil, 'none', nil },
+		CmpItemKindProperty = { c.vscFront, nil, 'none', nil },
+		CmpItemKindUnit = { c.vscFront, nil, 'none', nil },
+		CmpItemKindConstructor = { c.vscUiOrange, nil, 'none', nil },
+		CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'strikethrough', nil },
+		CmpItemAbbrMatch = {
+			vim.g.vscode_style == 'dark' and c.vscBlue or c.vscDarkBlue,
+			c.vscPopupBack,
+			'bold',
+			nil,
+		},
 	}
 
 	if vim.g.vscode_style == 'dark' then
@@ -485,8 +508,8 @@ theme.load_syntax = function()
 		syntax.TelescopeResultsBorder = { c.vscLineNumber, nil, 'none', nil }
 		syntax.TelescopePreviewBorder = { c.vscLineNumber, nil, 'none', nil }
 		syntax.TelescopeNormal = { c.vscFront, nil, 'none', nil }
-		syntax.TelescopeSelection = { c.vscFront, c.vscUiBlue, 'none', nil }
-		syntax.TelescopeMultiSelection = { c.vscFront, c.vscUiBlue, 'none', nil }
+		syntax.TelescopeSelection = { c.vscFront, c.vscPopupHighlightBlue, 'none', nil }
+		syntax.TelescopeMultiSelection = { c.vscFront, c.vscPopupHighlightBlue, 'none', nil }
 		syntax.TelescopeMatching = { c.vscMediumBlue, nil, 'bold', nil }
 		syntax.TelescopePromptPrefix = { c.vscFront, nil, 'none', nil }
 
@@ -494,15 +517,6 @@ theme.load_syntax = function()
 		-- white fg and lualine blue bg
 		syntax.FocusedSymbol = { '#ffffff', c.vscUiBlue, 'none', nil }
 		syntax.SymbolsOutlineConnector = { c.vscLineNumber, nil, 'none', nil }
-
-		-- Nvim compe
-		syntax.CmpItemKindFunction = { c.vscPink, nil, 'none', nil }
-		syntax.CmpItemKindMethod = { c.vscPink, nil, 'none', nil }
-		syntax.CmpItemKindKeyword = { c.vscFront, nil, 'none', nil }
-		syntax.CmpItemKindProperty = { c.vscFront, nil, 'none', nil }
-		syntax.CmpItemKindUnit = { c.vscFront, nil, 'none', nil }
-		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'strikethrough', nil }
-		syntax.CmpItemAbbrMatch = { c.vscBlue, c.vscPopupBack, 'none', nil }
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil }
 		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil }
@@ -531,8 +545,8 @@ theme.load_syntax = function()
 		syntax.TelescopeResultsBorder = { c.vscTabOther, nil, 'none', nil }
 		syntax.TelescopePreviewBorder = { c.vscTabOther, nil, 'none', nil }
 		syntax.TelescopeNormal = { c.vscFront, nil, 'none', nil }
-		syntax.TelescopeSelection = { c.vscBack, c.vscLightBlue, 'none', nil }
-		syntax.TelescopeMultiSelection = { c.vscBack, c.vscLightBlue, 'none', nil }
+		syntax.TelescopeSelection = { c.vscBack, c.vscPopupHighlightBlue, 'none', nil }
+		syntax.TelescopeMultiSelection = { c.vscBack, c.vscPopupHighlightBlue, 'none', nil }
 		syntax.TelescopeMatching = { c.vscDarkBlue, nil, 'bold', nil }
 		syntax.TelescopePromptPrefix = { c.vscFront, nil, 'none', nil }
 
@@ -540,10 +554,6 @@ theme.load_syntax = function()
 		-- white fg and lualine blue bg
 		syntax.FocusedSymbol = { c.vscBack, '#AF00DB', 'none', nil }
 		syntax.SymbolsOutlineConnector = { c.vscTabOther, nil, 'none', nil }
-
-		-- Nvim compe
-		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'strikethrough', nil }
-		syntax.CmpItemAbbrMatch = { c.vscBlue, c.vscPopupBack, 'none', nil }
 	end
 
 	-- Support for legacy config keys (Neovim<=0.5.1)
@@ -569,12 +579,8 @@ theme.link_highlight = function()
 	vim.api.nvim_command('highlight link CompeDocumentationBorder Pmenu')
 	vim.api.nvim_command('highlight link CmpItemKind Pmenu')
 	vim.api.nvim_command('highlight link CmpItemAbbr Pmenu')
-	vim.api.nvim_command('highlight link CmpItemKindText TSText')
-	vim.api.nvim_command('highlight link CmpItemKindConstructor TSType')
-	vim.api.nvim_command('highlight link CmpItemKindVariable TSVariable')
-	vim.api.nvim_command('highlight link CmpItemKindClass TSType')
-	vim.api.nvim_command('highlight link CmpItemKindInterface TSType')
-	vim.api.nvim_command('highlight link CmpItemKindModule TSNamespace')
+	vim.api.nvim_command('highlight link CmpItemKindClass CmpItemKindConstructor')
+	vim.api.nvim_command('highlight link CmpItemKindModule CmpItemKindKeyword')
 	vim.api.nvim_command('highlight link CmpItemKindOperator TSOperator')
 	vim.api.nvim_command('highlight link CmpItemKindReference TSParameterReference')
 	vim.api.nvim_command('highlight link CmpItemKindValue TSField')
