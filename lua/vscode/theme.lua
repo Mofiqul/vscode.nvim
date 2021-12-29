@@ -128,7 +128,7 @@ theme.load_syntax = function()
 		TSUnderline = { c.vscYellowOrange, nil, 'none', nil },
 		TSTag = { c.vscBlue, nil, 'none', nil },
 		TSTagDelimiter = { c.vscGray, nil, 'none', nil },
-		
+
 		TSTitle = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
 		TSLiteral = { c.vscFront, 'none', nil },
 		TSEmphasis = { c.vscFront, nil, 'italic', nil },
@@ -136,8 +136,8 @@ theme.load_syntax = function()
 		TSURI = { c.vscFront, nil, 'none', nil },
 		TSTextReference = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
 		TSPunctDelimiter = { c.vscFront, nil, 'none', nil },
-		TSStringEscape = {vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'bold', nil },
-	
+		TSStringEscape = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'bold', nil },
+
 		TSNote = { c.vscBlueGreen, nil, 'bold', nil },
 		TSWarning = { c.vscYellowOrange, nil, 'bold', nil },
 		TSDanger = { c.vscRed, nil, 'bold', nil },
@@ -147,9 +147,19 @@ theme.load_syntax = function()
 		markdownCode = { c.vscOrange, nil, 'none', nil },
 		markdownRule = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
 		markdownCodeDelimiter = { c.vscFront, nil, 'none', nil },
-		markdownHeadingDelimiter = { vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange, nil, 'none', nil },
+		markdownHeadingDelimiter = {
+			vim.g.vscode_style == 'dark' and c.vscBlue or c.vscYellowOrange,
+			nil,
+			'none',
+			nil,
+		},
 		markdownFootnote = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
-		markdownFootnoteDefinition = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
+		markdownFootnoteDefinition = {
+			vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange,
+			nil,
+			'none',
+			nil,
+		},
 		markdownUrl = { c.vscFront, nil, 'underline', nil },
 		markdownLinkText = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
 		markdownEscape = { vim.g.vscode_style == 'dark' and c.vscOrange or c.vscYellowOrange, nil, 'none', nil },
@@ -486,8 +496,13 @@ theme.load_syntax = function()
 		syntax.SymbolsOutlineConnector = { c.vscLineNumber, nil, 'none', nil }
 
 		-- Nvim compe
-		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'none', nil }
-		syntax.CmpItemAbbrMatch = { c.vscLightBlue, c.vscPopupBack, 'none', nil }
+		syntax.CmpItemKindFunction = { c.vscPink, nil, 'none', nil }
+		syntax.CmpItemKindMethod = { c.vscPink, nil, 'none', nil }
+		syntax.CmpItemKindKeyword = { c.vscFront, nil, 'none', nil }
+		syntax.CmpItemKindProperty = { c.vscFront, nil, 'none', nil }
+		syntax.CmpItemKindUnit = { c.vscFront, nil, 'none', nil }
+		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'strikethrough', nil }
+		syntax.CmpItemAbbrMatch = { c.vscBlue, c.vscPopupBack, 'none', nil }
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil }
 		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil }
@@ -527,8 +542,8 @@ theme.load_syntax = function()
 		syntax.SymbolsOutlineConnector = { c.vscTabOther, nil, 'none', nil }
 
 		-- Nvim compe
-		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'none', nil }
-		syntax.CmpItemAbbrMatch = { c.vscLightBlue, c.vscPopupBack, 'none', nil }
+		syntax.CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'strikethrough', nil }
+		syntax.CmpItemAbbrMatch = { c.vscBlue, c.vscPopupBack, 'none', nil }
 	end
 
 	-- Support for legacy config keys (Neovim<=0.5.1)
@@ -554,22 +569,17 @@ theme.link_highlight = function()
 	vim.api.nvim_command('highlight link CompeDocumentationBorder Pmenu')
 	vim.api.nvim_command('highlight link CmpItemKind Pmenu')
 	vim.api.nvim_command('highlight link CmpItemAbbr Pmenu')
-	vim.api.nvim_command('highlight link CmpItemKindMethod TSMethod')
 	vim.api.nvim_command('highlight link CmpItemKindText TSText')
-	vim.api.nvim_command('highlight link CmpItemKindFunction TSFunction')
 	vim.api.nvim_command('highlight link CmpItemKindConstructor TSType')
 	vim.api.nvim_command('highlight link CmpItemKindVariable TSVariable')
 	vim.api.nvim_command('highlight link CmpItemKindClass TSType')
 	vim.api.nvim_command('highlight link CmpItemKindInterface TSType')
 	vim.api.nvim_command('highlight link CmpItemKindModule TSNamespace')
-	vim.api.nvim_command('highlight link CmpItemKindProperty TSProperty')
 	vim.api.nvim_command('highlight link CmpItemKindOperator TSOperator')
 	vim.api.nvim_command('highlight link CmpItemKindReference TSParameterReference')
-	vim.api.nvim_command('highlight link CmpItemKindUnit TSField')
 	vim.api.nvim_command('highlight link CmpItemKindValue TSField')
 	vim.api.nvim_command('highlight link CmpItemKindField TSField')
 	vim.api.nvim_command('highlight link CmpItemKindEnum TSField')
-	vim.api.nvim_command('highlight link CmpItemKindKeyword TSKeyword')
 	vim.api.nvim_command('highlight link CmpItemKindSnippet TSText')
 	vim.api.nvim_command('highlight link CmpItemKindColor cssColor')
 	vim.api.nvim_command('highlight link CmpItemKindFile TSURI')
