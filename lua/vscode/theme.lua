@@ -89,6 +89,7 @@ theme.load_syntax = function()
 		SpellCap = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
 		SpellRare = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
 		SpellLocal = { c.vscRed, c.vscBack, 'undercurl', c.vscRed },
+		Whitespace = {vim.g.vscode_style == 'dark' and  c.vscLineNumber or c.vscTabOther, nil, 'none', nil },
 
 		-- Treesitter
 		TSError = { c.vscRed, nil, 'none', nil },
@@ -447,6 +448,10 @@ theme.load_syntax = function()
 
 		-- IndentBlankLine
 		IndentBlanklineContextChar = { c.vscRed, nil, 'nocombine', nil },
+		IndentBlanklineContextStart  = { c.vscRed, nil, 'nocombine', nil },
+		IndentBlanklineChar = {vim.g.vscode_style == 'dark' and  c.vscLineNumber or c.vscTabOther, nil, 'nocombine', nil },
+		IndentBlanklineSpaceChar = { vim.g.vscode_style == 'dark' and  c.vscLineNumber or c.vscTabOther, nil, 'nocombine', nil },
+		IndentBlanklineSpaceCharBlankline  = { vim.g.vscode_style == 'dark' and  c.vscLineNumber or c.vscTabOther, nil, 'nocombine', nil },
 
 		-- LSP
 		DiagnosticError = { c.vscRed, nil, 'none', nil },
@@ -483,8 +488,6 @@ theme.load_syntax = function()
 	if vim.g.vscode_style == 'dark' then
 		syntax.NvimTreeFolderIcon = { c.vscBlue, nil, 'none', nil }
 		syntax.NvimTreeIndentMarker = { c.vscLineNumber, nil, 'none', nil }
-		syntax.IndentBlanklineChar = { c.vscLineNumber, nil, 'nocombine', nil }
-		syntax.IndentBlanklineSpaceChar = { c.vscLineNumber, nil, 'nocombine', nil }
 
 		syntax.LspFloatWinNormal = { c.vscFront, nil, 'none', nil }
 		syntax.LspFloatWinBorder = { c.vscLineNumber, nil, 'none', nil }
@@ -520,8 +523,6 @@ theme.load_syntax = function()
 	else
 		syntax.NvimTreeFolderIcon = { c.vscDarkBlue, nil, 'none', nil }
 		syntax.NvimTreeIndentMarker = { c.vscTabOther, nil, 'none', nil }
-		syntax.IndentBlanklineChar = { c.vscTabOther, nil, 'nocombine', nil }
-		syntax.IndentBlanklineSpaceChar = { c.vscTabOther, nil, 'nocombine', nil }
 
 		syntax.LspFloatWinNormal = { c.vscFront, nil, 'none', nil }
 		syntax.LspFloatWinBorder = { c.vscTabOther, nil, 'none', nil }
