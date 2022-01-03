@@ -28,7 +28,7 @@ theme.load_syntax = function()
         MatchParen = { c.vscNone, c.vscCursorDark, 'none', nil },
         ModeMsg = { c.vscFront, c.vscLeftDark, 'none', nil },
         MoreMsg = { c.vscFront, c.vscLeftDark, 'none', nil },
-        NonText = { c.vscLineNumber, c.vscBack, 'none', nil },
+        NonText = { isDark and c.vscLineNumber or c.vscTabOther, c.vscBack, 'none', nil },
         Pmenu = { c.vscPopupFront, c.vscPopupBack, 'none', nil },
         PmenuSel = {
             isDark and c.vscPopupFront or c.vscBack,
