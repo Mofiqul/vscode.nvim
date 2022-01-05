@@ -4,6 +4,7 @@ local theme = {}
 theme.load_syntax = function()
     local c = colors.generate()
     local isDark = vim.g.vscode_style == 'dark'
+    local isItalic = vim.g.vscode_italic_comment == 1;
     local syntax = {
         -- GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL
         Normal = { c.vscFront, c.vscBack, 'none', nil },
@@ -51,7 +52,7 @@ theme.load_syntax = function()
         VisualNOS = { c.vscNone, c.vscSelection, 'none', nil },
         WarningMsg = { c.vscRed, c.vscBack, 'bold', nil },
         WildMenu = { c.vscNone, c.vscSelection, 'none', nil },
-        Comment = { c.vscGreen, nil, 'none', nil },
+        Comment = { c.vscGreen, nil, isItalic and 'italic' or 'none', nil },
         Constant = { c.vscBlue, nil, 'none', nil },
         String = { c.vscOrange, nil, 'none', nil },
         Character = { c.vscOrange, nil, 'none', nil },

@@ -46,6 +46,8 @@ vim.g.vscode_style = "dark"
 vim.g.vscode_style = "light"
 -- Enable transparent background.
 vim.g.vscode_transparent = 1
+-- Enable italic comment
+vim.g.vscode_italic_comment = 1
 vim.cmd[[colorscheme vscode]]
 
 ```
@@ -57,6 +59,8 @@ let g:vscode_style = "dark"
 let g:vscode_style = "light"
 " Enable transparent background.
 let g:vscode_transparency = 1
+" Enable italic comment
+let g:vscode_italic_comment = 1
 colorscheme vscode
 ```
 
