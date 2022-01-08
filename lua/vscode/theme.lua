@@ -4,7 +4,7 @@ local theme = {}
 theme.load_syntax = function()
     local c = colors.generate()
     local isDark = vim.g.vscode_style == 'dark'
-    local isItalic = vim.g.vscode_italic_comment == 1;
+    local isItalic = vim.g.vscode_italic_comment == 1
     local syntax = {
         -- GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL
         Normal = { c.vscFront, c.vscBack, 'none', nil },
@@ -97,6 +97,7 @@ theme.load_syntax = function()
         TSError = { c.vscRed, nil, 'none', nil },
         TSPunctBracket = { c.vscFront, nil, 'none', nil },
         TSPunctSpecial = { c.vscFront, nil, 'none', nil },
+        markdownTSPunctSpecial = { isDark and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
         TSConstant = { c.vscYellow, nil, 'none', nil },
         TSConstBuiltin = { c.vscBlue, nil, 'none', nil },
         TSConstMacro = { c.vscBlueGreen, nil, 'none', nil },
