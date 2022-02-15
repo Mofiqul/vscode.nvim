@@ -5,6 +5,7 @@ theme.load_syntax = function()
     local c = colors.generate()
     local isDark = vim.g.vscode_style == 'dark'
     local isItalic = vim.g.vscode_italic_comment == 1
+    local no_nvimtree_bg = vim.g.vscode_disable_nvimtree_bg == true
     local syntax = {
         -- GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL
         Normal = { c.vscFront, c.vscBack, 'none', nil },
@@ -411,7 +412,7 @@ theme.load_syntax = function()
         GitSignsAddLn = { c.vscBack, c.vscGreen, 'none', nil },
         GitSignsChangeLn = { c.vscBack, c.vscYellow, 'none', nil },
         GitSignsDeleteLn = { c.vscBack, c.vscRed, 'none', nil },
-
+        
         -- NvimTree
         NvimTreeRootFolder = { c.vscFront, nil, 'bold', nil },
         NvimTreeGitDirty = { c.vscYellow, nil, 'none', nil },
@@ -420,11 +421,11 @@ theme.load_syntax = function()
         NvimTreeEmptyFolderName = { c.vscGray, nil, 'none', nil },
         NvimTreeFolderName = { c.vscFront, nil, 'none', nil },
         NvimTreeSpecialFile = { c.vscPink, nil, 'underline', nil },
-        NvimTreeNormal = { c.vscFront, c.vscLeftDark, 'none', nil },
-        NvimTreeCursorLine = { nil, c.vscLeftMid, 'none', nil },
-        NvimTreeVertSplit = { c.vscBack, c.vscBack, 'none', nil },
-        NvimTreeEndOfBuffer = { c.vscLeftDark, nil, 'none', nil },
-        NvimTreeOpenedFolderName = { nil, c.vscLeftDark, 'none', nil },
+        NvimTreeNormal = { c.vscFront, no_nvimtree_bg and c.vscBack or c.vscLeftDark, 'none', nil },
+        NvimTreeCursorLine = { nil, no_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftMid, 'none', nil },
+        NvimTreeVertSplit = { no_nvimtree_bg and c.vscSplitDark or c.vscBack, c.vscBack, 'none', nil },
+        NvimTreeEndOfBuffer = { no_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark, nil, 'none', nil },
+        NvimTreeOpenedFolderName = { nil, no_nvimtree_bg and c.vscCursorDarkDark or c.vscLeftDark, 'none', nil },
 
         -- Bufferline
         BufferLineIndicatorSelected = { c.vscLeftDark, nil, 'none', nil },

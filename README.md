@@ -48,6 +48,8 @@ vim.g.vscode_style = "light"
 vim.g.vscode_transparent = 1
 -- Enable italic comment
 vim.g.vscode_italic_comment = 1
+-- Disable nvim-tree background color 
+vim.g.vscode_disable_nvimtree_bg = true 
 vim.cmd[[colorscheme vscode]]
 
 ```
@@ -61,6 +63,8 @@ let g:vscode_style = "light"
 let g:vscode_transparency = 1
 " Enable italic comment
 let g:vscode_italic_comment = 1
+" Disable nvim-tree background color 
+let g:vscode_disable_nvimtree_bg = v:true 
 colorscheme vscode
 ```
 
