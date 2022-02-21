@@ -34,7 +34,7 @@ vscode.visual = {
 
 vscode.inactive = {
     b = { fg = colors.bg, bg = colors.fg },
-    a = { fg = colors.fg, bg = colors.gray, gui = 'bold' },
+    a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
 }
 
 vscode.replace = {
