@@ -1,0 +1,22 @@
+! vscode light .Xresources
+
+*.foreground: #000000
+*.background: #ffffff
+*.cursorColor: #000000
+
+*.color0: #ffffff
+*.color1: #c72e0f
+*.color2: #008000
+*.color3: #795e25
+*.color4: #007acc
+*.color5: #af00db
+*.color6: #56b6c2
+*.color7: #000000
+*.color8: #808080
+*.color9: #c72e0f
+*.color10: #008000
+*.color11: #795e25
+*.color12: #007acc
+*.color13: #af00db
+*.color14: #56b6c2
+*.color15: #000000

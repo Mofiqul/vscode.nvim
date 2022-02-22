@@ -1,0 +1,22 @@
+! vscode dark .Xresources
+
+*.foreground: #d4d4d4
+*.background: #1e1e1e
+*.cursorColor: #d4d4d4
+
+*.color0: #1e1e1e
+*.color1: #f44747
+*.color2: #608b4e
+*.color3: #dcdcaa
+*.color4: #569cd6
+*.color5: #c678dd
+*.color6: #56b6c2
+*.color7: #d4d4d4
+*.color8: #808080
+*.color9: #f44747
+*.color10: #608b4e
+*.color11: #dcdcaa
+*.color12: #569cd6
+*.color13: #c678dd
+*.color14: #56b6c2
+*.color15: #d4d4d4
