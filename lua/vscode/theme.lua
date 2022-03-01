@@ -310,9 +310,9 @@ theme.load_syntax = function()
         typescriptPromiseMethod = { c.vscYellow, nil, 'none', nil },
 
         -- XML
-        xmlTag = { c.vscBlueGreen, nil, 'none', nil },
-        xmlTagName = { c.vscBlueGreen, nil, 'none', nil },
-        xmlEndTag = { c.vscBlueGreen, nil, 'none', nil },
+        xmlTag = { c.vscBlue, nil, 'none', nil },
+        xmlTagName = { c.vscBlue, nil, 'none', nil },
+        xmlEndTag = { c.vscBlue, nil, 'none', nil },
 
         -- Ruby
         rubyClassNameTag = { c.vscBlueGreen, nil, 'none', nil },
