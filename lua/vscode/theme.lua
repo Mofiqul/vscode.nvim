@@ -480,9 +480,9 @@ theme.load_syntax = function()
         DiagnosticUnderlineWarn = { nil, nil, 'undercurl', c.vscYellow },
         DiagnosticUnderlineInfo = { nil, nil, 'undercurl', c.vscBlue },
         DiagnosticUnderlineHint = { nil, nil, 'undercurl', c.vscBlue },
-        LspReferenceText = { nil, c.vscPopupHighlightGray, 'none', nil },
-        LspReferenceRead = { nil, c.vscPopupHighlightGray, 'none', nil },
-        LspReferenceWrite = { nil, c.vscPopupHighlightGray, 'none', nil },
+        LspReferenceText = { nil, isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue, 'none', nil },
+        LspReferenceRead = { nil, isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue, 'none', nil },
+        LspReferenceWrite = { nil, isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue, 'none', nil },
 
         -- Nvim compe
         CmpItemKindVariable = { c.vscLightBlue, nil, 'none', nil },

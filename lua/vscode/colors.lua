@@ -116,6 +116,7 @@ local generate = function()
     -- Other ui specific colors
     colors.vscUiBlue = '#084671'
     colors.vscUiOrange = '#f28b25'
+    colors.vscPopupHighlightLightBlue = '#d7eafe'
 
     return colors
 end
