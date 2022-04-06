@@ -412,7 +412,7 @@ theme.load_syntax = function()
         GitSignsAddLn = { c.vscBack, c.vscGreen, 'none', nil },
         GitSignsChangeLn = { c.vscBack, c.vscYellow, 'none', nil },
         GitSignsDeleteLn = { c.vscBack, c.vscRed, 'none', nil },
-        
+
         -- NvimTree
         NvimTreeRootFolder = { c.vscFront, nil, 'bold', nil },
         NvimTreeGitDirty = { c.vscYellow, nil, 'none', nil },
@@ -451,26 +451,11 @@ theme.load_syntax = function()
         BufferTabpagesFill = { c.vscFront, c.vscTabOther, 'none', nil },
 
         -- IndentBlankLine
-        IndentBlanklineContextChar = { c.vscRed, nil, 'nocombine', nil },
-        IndentBlanklineContextStart = { c.vscRed, nil, 'nocombine', nil },
-        IndentBlanklineChar = {
-            isDark and c.vscLineNumber or c.vscTabOther,
-            nil,
-            'nocombine',
-            nil,
-        },
-        IndentBlanklineSpaceChar = {
-            isDark and c.vscLineNumber or c.vscTabOther,
-            nil,
-            'nocombine',
-            nil,
-        },
-        IndentBlanklineSpaceCharBlankline = {
-            isDark and c.vscLineNumber or c.vscTabOther,
-            nil,
-            'nocombine',
-            nil,
-        },
+        IndentBlanklineContextChar = { c.vscContextCurrent, nil, 'nocombine', nil },
+        IndentBlanklineContextStart = { c.vscContextCurrent, nil, 'nocombine', nil },
+        IndentBlanklineChar = { c.vscContext, nil, 'nocombine', nil },
+        IndentBlanklineSpaceChar = { c.vscContext, nil, 'nocombine', nil },
+        IndentBlanklineSpaceCharBlankline = { c.vscContext, nil, 'nocombine', nil },
 
         -- LSP
         DiagnosticError = { c.vscRed, nil, 'none', nil },

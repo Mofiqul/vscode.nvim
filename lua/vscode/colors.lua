@@ -37,6 +37,9 @@ local generate = function()
             vscSearchCurrent = '#4B5632',
             vscSearch = '#264F78',
 
+            vscContext = '#404040',
+            vscContextCurrent = '#707070',
+
             -- Syntax colors
             vscGray = '#808080',
             vscViolet = '#646695',
@@ -90,6 +93,9 @@ local generate = function()
             vscDiffGreenLight = '#EBF1DD',
             vscSearchCurrent = '#A8AC94',
             vscSearch = '#F8C9AB',
+
+            vscContext = '#D2D2D2',
+            vscContextCurrent = '#929292',
 
             -- Syntax colors
             vscGray = '#000000',
