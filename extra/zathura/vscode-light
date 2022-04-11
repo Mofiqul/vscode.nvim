@@ -1,0 +1,37 @@
+# vscode light zathura colorscheme
+
+set default-bg                  "#ffffff"
+set default-fg                  "#1e1e1e"
+
+set statusbar-bg                "#ffffff"
+set statusbar-fg                "#808080"
+
+set inputbar-bg                 "#ffffff"
+set inputbar-fg                 "#000000"
+
+set notification-error-bg       "#ffffff"
+set notification-error-fg       "#c72e0f"
+
+set notification-warning-fg     "#795e25"
+set notification-warning-bg     "#ffffff"
+
+set highlight-color             "#007acc"
+set highlight-active-color      "#808080"
+
+set completion-highlight-bg     "#56b6c2"
+set completion-highlight-fg     "#000000"
+
+set completion-bg               "#ffffff"
+set completion-fg               "#000000"
+
+set notification-bg             "#ffffff"
+set notification-fg             "#000000"
+
+set recolor-lightcolor          "#ffffff"
+set recolor-darkcolor           "#1e1e1e"
+
+set index-bg                    "#ffffff"
+set index-fg                    "#000000"
+
+set index-active-fg             "#000000"
+set index-active-bg             "#56b6c2"
