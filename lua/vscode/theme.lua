@@ -480,10 +480,18 @@ theme.load_syntax = function()
         CmpItemKindProperty = { c.vscFront, nil, 'none', nil },
         CmpItemKindUnit = { c.vscFront, nil, 'none', nil },
         CmpItemKindConstructor = { c.vscUiOrange, nil, 'none', nil },
+        CmpItemMenu = { c.vscPopupFront, nil, 'none', nil },
+        CmpItemAbbr = { c.vscFront, nil, 'none', nil },
         CmpItemAbbrDeprecated = { c.vscCursorDark, c.vscPopupBack, 'strikethrough', nil },
         CmpItemAbbrMatch = {
-            isDark and c.vscBlue or c.vscDarkBlue,
-            c.vscPopupBack,
+            isDark and c.vscMediumBlue or c.vscDarkBlue,
+            nil,
+            'bold',
+            nil,
+        },
+        CmpItemAbbrMatchFuzzy = {
+            isDark and c.vscMediumBlue or c.vscDarkBlue,
+            nil,
             'bold',
             nil,
         },
@@ -583,7 +591,6 @@ theme.link_highlight = function()
     vim.api.nvim_command('highlight link CompeDocumentation Pmenu')
     vim.api.nvim_command('highlight link CompeDocumentationBorder Pmenu')
     vim.api.nvim_command('highlight link CmpItemKind Pmenu')
-    vim.api.nvim_command('highlight link CmpItemAbbr Pmenu')
     vim.api.nvim_command('highlight link CmpItemKindClass CmpItemKindConstructor')
     vim.api.nvim_command('highlight link CmpItemKindModule CmpItemKindKeyword')
     vim.api.nvim_command('highlight link CmpItemKindOperator TSOperator')
