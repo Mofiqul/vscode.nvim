@@ -1,6 +1,6 @@
 local generate = function()
     local colors = {}
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         colors = {
             vscNone = 'NONE',
             vscFront = '#D4D4D4',

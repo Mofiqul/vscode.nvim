@@ -4,7 +4,7 @@ local status_line = {}
 local colors = {}
 
 colors.fg = function()
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         return '#ffffff'
     else
         return '#343434'
@@ -12,7 +12,7 @@ colors.fg = function()
 end
 
 colors.bg = function()
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         return '#252526'
     else
         return '#f3f3f3'
@@ -20,7 +20,7 @@ colors.bg = function()
 end
 
 colors.green = function()
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         return '#619955'
     else
         return '#008000'
@@ -28,7 +28,7 @@ colors.green = function()
 end
 
 colors.bluegreen = function()
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         return '#4ec9b0'
     else
         return '#16825d'
@@ -36,7 +36,7 @@ colors.bluegreen = function()
 end
 
 colors.yellow = function()
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         return '#ffaf00'
     else
         return '#795e26'
@@ -44,7 +44,7 @@ colors.yellow = function()
 end
 
 colors.pink = function()
-    if vim.g.vscode_style == 'dark' then
+    if vim.o.background == 'dark' then
         return '#c586c0'
     else
         return '#af00db'
