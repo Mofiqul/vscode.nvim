@@ -37,10 +37,10 @@ Plug 'Mofiqul/vscode.nvim'
 
 ```lua
 -- Lua:
--- For dark theme
-vim.g.vscode_style = "dark"
+-- For dark theme (default for neovim)
+vim.o.background = "dark"
 -- For light theme
-vim.g.vscode_style = "light"
+vim.o.background = "light"
 -- Enable transparent background
 vim.g.vscode_transparent = 1
 -- Enable italic comment

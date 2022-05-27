@@ -16,7 +16,6 @@ utils.load = function()
         vim.cmd('syntax reset')
     end
 
-    vim.o.background = 'dark'
     vim.o.termguicolors = true
     vim.g.colors_name = 'vscode'
 

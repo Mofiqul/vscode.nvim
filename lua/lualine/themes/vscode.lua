@@ -3,7 +3,7 @@
 local vscode = {}
 local colors = {}
 
-if vim.g.vscode_style == "dark" then
+if vim.o.background == "dark" then
     colors.bg = "#262626"
     colors.bg2 = "#373737"
     colors.fg = "#ffffff"
@@ -27,7 +27,7 @@ end
 
 vscode.normal = {
     b = {fg = colors.blue, bg = colors.bg2},
-    a = {fg = vim.g.vscode_style == "dark" and colors.fg or colors.bg, bg = colors.blue, gui = "bold"},
+    a = {fg = vim.o.background == "dark" and colors.fg or colors.bg, bg = colors.blue, gui = "bold"},
     c = {fg = colors.fg, bg = colors.bg}
 }
 
@@ -43,19 +43,19 @@ vscode.inactive = {
 
 vscode.replace = {
     b = {fg = colors.red, bg = colors.bg2},
-    a = {fg = vim.g.vscode_style == "dark" and colors.bg or colors.fg, bg = colors.red, gui = "bold"},
+    a = {fg = vim.o.background == "dark" and colors.bg or colors.fg, bg = colors.red, gui = "bold"},
     c = {fg = colors.fg, bg = colors.bg}
 }
 
 vscode.insert = {
-    a = {fg = vim.g.vscode_style == "dark" and colors.bg or colors.fg, bg = colors.green, gui = "bold"},
+    a = {fg = vim.o.background == "dark" and colors.bg or colors.fg, bg = colors.green, gui = "bold"},
     b = {fg = colors.green, bg = colors.bg2},
     c = {fg = colors.fg, bg = colors.bg}
 }
 
 vscode.command = {
     b = {fg = colors.pink, bg = colors.bg2},
-    a = {fg = vim.g.vscode_style == "dark" and colors.bg or colors.fg, bg = colors.pink, gui = "bold"},
+    a = {fg = vim.o.background == "dark" and colors.bg or colors.fg, bg = colors.pink, gui = "bold"},
     c = {fg = colors.fg, bg = colors.bg}
 }
 
