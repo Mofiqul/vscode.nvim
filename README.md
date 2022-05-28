@@ -37,7 +37,7 @@ Plug 'Mofiqul/vscode.nvim'
 
 ```lua
 -- Lua:
--- For dark theme (default for neovim)
+-- For dark theme (neovim's default)
 vim.o.background = "dark"
 -- For light theme
 vim.o.background = "light"
@@ -52,10 +52,10 @@ vim.cmd([[colorscheme vscode]])
 
 ```vim
 " Vim-Script:
-" For dark theme
-let g:vscode_style = "dark"
+" For dark theme (neovim's default)
+set background=dark
 " For light theme
-let g:vscode_style = "light"
+set background=light
 " Enable transparent background
 let g:vscode_transparency = 1
 " Enable italic comment
