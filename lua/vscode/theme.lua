@@ -430,7 +430,7 @@ theme.load_syntax = function()
 
         -- Bufferline
         BufferLineFill = { nil, lualine.normal.b.bg, 'none', nil },
-        BufferLineDuplicate = { nil, lualine.normal.b.bg, 'italic', nil },
+        BufferLineDuplicate = { lualine.normal.b.fg, lualine.normal.b.bg, 'italic', nil },
         BufferLineDuplicateSelected = { lualine.insert.a.bg, lualine.normal.a.bg, 'italic', nil },
         BufferLineTab = { lualine.normal.b.fg, lualine.normal.b.bg, 'none', nil },
         BufferLineTabSelected = { nil, lualine.normal.a.bg, 'none', nil },
@@ -438,7 +438,7 @@ theme.load_syntax = function()
         BufferLineCloseButton = { lualine.normal.b.fg, lualine.normal.b.bg, 'none', nil },
         BufferLineCloseButtonSelected = { lualine.normal.a.fg, lualine.normal.a.bg, 'none', nil },
         BufferLineBufferSelected = { lualine.normal.a.fg, lualine.normal.a.bg, 'bold', nil },
-        BufferLineBackground = { lualine.normal.a.fg, lualine.normal.b.bg, 'none', nil },
+        BufferLineBackground = { lualine.normal.b.fg, lualine.normal.b.bg, 'none', nil },
         BufferLineBuffer = { lualine.normal.b.fg, lualine.normal.b.bg, 'none', nil },
         BufferLineModified = { nil, lualine.normal.b.bg, 'none', nil },
         BufferLineModifiedSelected = { nil, lualine.normal.a.bg, 'none', nil },
