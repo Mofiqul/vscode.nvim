@@ -17,7 +17,7 @@ local generate = function()
             vscPopupFront = '#BBBBBB',
             vscPopupBack = '#272727',
             vscPopupHighlightBlue = '#004b72',
-            vscPopupHighlightGray = '#343B41',
+            vscPopupHighlightGray = '#2f628e',
 
             vscSplitLight = '#898989',
             vscSplitDark = '#444444',
