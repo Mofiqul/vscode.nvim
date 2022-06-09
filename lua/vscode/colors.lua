@@ -23,7 +23,7 @@ local generate = function()
             vscSplitDark = '#444444',
             vscSplitThumb = '#424242',
 
-            vscCursorDarkDark = '#222222',
+            vscCursorDarkDark = '#23272e',
             vscCursorDark = '#51504F',
             vscCursorLight = '#AEAFAD',
             vscSelection = '#264F78',
