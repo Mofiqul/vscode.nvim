@@ -29,11 +29,13 @@ local generate = function()
             vscSelection = '#264F78',
             vscLineNumber = '#5A5A5A',
 
+            vscDiffBlueDark = '#344f69',
+            vscDiffBlueLight = '#2f628e',
             vscDiffRedDark = '#4B1818',
-            vscDiffRedLight = '#6F1313',
+            vscDiffRedLight = '#341c28',
             vscDiffRedLightLight = '#FB0101',
             vscDiffGreenDark = '#373D29',
-            vscDiffGreenLight = '#4B5632',
+            vscDiffGreenLight = '#235049',
             vscSearchCurrent = '#515c6a',
             vscSearch = '#613315',
 
