@@ -467,7 +467,7 @@ theme.load_syntax = function()
 
         -- IndentBlankLine
         IndentBlanklineContextChar = { c.vscContextCurrent, nil, 'nocombine', nil },
-        IndentBlanklineContextStart = { c.vscContextCurrent, nil, 'nocombine', nil },
+        -- IndentBlanklineContextStart = { c.vscContextCurrent, nil, 'nocombine', nil },
         IndentBlanklineChar = { c.vscContext, nil, 'nocombine', nil },
         IndentBlanklineSpaceChar = { c.vscContext, nil, 'nocombine', nil },
         IndentBlanklineSpaceCharBlankline = { c.vscContext, nil, 'nocombine', nil },
