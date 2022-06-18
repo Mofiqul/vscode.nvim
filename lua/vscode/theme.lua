@@ -5,7 +5,7 @@ theme.load_syntax = function()
     local c = colors.generate()
     local isDark = vim.o.background == 'dark'
     local isItalic = vim.g.vscode_italic_comment == 1
-    local no_nvimtree_bg = vim.g.vscode_disable_nvimtree_bg == true
+    local no_nvimtree_bg = vim.g.vscode_disable_nvimtree_bg == false
     local syntax = {
         -- GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL
         Normal = { c.vscFront, c.vscBack, 'none', nil },
