@@ -40,6 +40,8 @@ local generate = function()
             vscContext = '#404040',
             vscContextCurrent = '#707070',
 
+            vscFoldBackground = '#202d39',
+
             -- Syntax colors
             vscGray = '#808080',
             vscViolet = '#646695',
@@ -96,6 +98,8 @@ local generate = function()
 
             vscContext = '#D2D2D2',
             vscContextCurrent = '#929292',
+
+            vscFoldBackground = '#e6f3ff',
 
             -- Syntax colors
             vscGray = '#000000',
