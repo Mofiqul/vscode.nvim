@@ -142,6 +142,7 @@ theme.load_syntax = function()
         TSTitle = { isDark and c.vscBlue or c.vscYellowOrange, nil, 'bold', nil },
         TSLiteral = { c.vscFront, 'none', nil },
         markdownTSLiteral = { c.vscOrange, 'none', nil },
+        markdown_inlineTSLiteral = { c.vscOrange, 'none', nil },
         TSEmphasis = { c.vscFront, nil, 'italic', nil },
         TSStrong = { isDark and c.vscBlue or c.vscViolet, nil, 'bold', nil },
         TSURI = { c.vscFront, nil, 'none', nil },
