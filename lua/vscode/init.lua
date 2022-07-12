@@ -12,7 +12,16 @@ vscode.setup = function(user_opts)
         group_overrides = {},
         disable_nvimtree_bg = true,
     }
-    local opts = vim.tbl_extend('force', defaults, user_opts)
+
+    -- backwards compatibility: let users still set settings with global vars
+    local global_settings_opts = vim.tbl_extend('force', defaults, {
+        transparent = vim.g.vscode_transparency == 1,
+        italic_comments = vim.g.vscode_italic_comment == 1,
+        disable_nvimtree_bg = vim.g.vscode_disable_nvim_tree_bg == true,
+    })
+
+    -- but override global vars settings with setup() settings
+    local opts = vim.tbl_extend('force', global_settings_opts, user_opts)
 
     -- setting transparent to true removes the default background
     if opts.transparent then
