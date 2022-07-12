@@ -38,40 +38,41 @@ Plug 'Mofiqul/vscode.nvim'
 ```lua
 -- Lua:
 -- For dark theme (neovim's default)
-vim.o.background = "dark"
+vim.o.background = 'dark'
 -- For light theme
-vim.o.background = "light"
--- Enable transparent background
-vim.g.vscode_transparent = 1
--- Enable italic comment
-vim.g.vscode_italic_comment = 1
--- Disable nvim-tree background color
-vim.g.vscode_disable_nvimtree_bg = true
-vim.cmd([[colorscheme vscode]])
+vim.o.background = 'light'
+
+require('vscode').setup({
+    -- Enable transparent background
+    transparent = true,
+
+    -- Enable italic comment
+    italic_comments = true,
+
+    -- Disable nvim-tree background color
+    disable_nvimtree_bg = true,
+
+    -- Override colors (see ./lua/vscode/colors.lua)
+    color_overrides = {
+        vscLineNumber = '#FFFFFF',
+    }
+
+    -- Override highlight groups (see ./lua/vscode/theme.lua)
+    color_overrides = {
+        -- this supports the same val table as vim.api.nvim_set_hl
+        Cursor = { fg='#FFFFFF', bg='#1F1F1F', bold=true },
+    }
+})
 ```
 
-```vim
-" Vim-Script:
-" For dark theme (neovim's default)
-set background=dark
-" For light theme
-set background=light
-" Enable transparent background
-let g:vscode_transparency = 1
-" Enable italic comment
-let g:vscode_italic_comment = 1
-" Disable nvim-tree background color
-let g:vscode_disable_nvimtree_bg = v:true
-colorscheme vscode
-```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
 
 ```lua
-require("lualine").setup({
+require('lualine').setup({
     options = {
         -- ...
-        theme = "vscode",
+        theme = 'vscode',
         -- ...
     },
 })
@@ -144,8 +145,8 @@ require("bufferline").setup({
 ## Switching theme
 
 ```
-:lua require('vscode').change_style("light")
-:lua require('vscode').change_style("dark")
+:lua require('vscode').change_style('light')
+:lua require('vscode').change_style('dark')
 ```
 
 ## 🍭 Extra folder
