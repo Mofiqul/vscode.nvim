@@ -42,6 +42,7 @@ vim.o.background = 'dark'
 -- For light theme
 vim.o.background = 'light'
 
+local c = require('vscode.colors')
 require('vscode').setup({
     -- Enable transparent background
     transparent = true,
@@ -60,7 +61,8 @@ require('vscode').setup({
     -- Override highlight groups (see ./lua/vscode/theme.lua)
     color_overrides = {
         -- this supports the same val table as vim.api.nvim_set_hl
-        Cursor = { fg='#FFFFFF', bg='#1F1F1F', bold=true },
+        -- use colors from this colorscheme by requiring vscode.colors!
+        Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
     }
 })
 ```
