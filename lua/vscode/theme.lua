@@ -531,19 +531,19 @@ theme.set_highlights = function(opts)
         hl(0, 'LspSagaRenameBorder', { fg = c.vscTabOther, bg = 'NONE' })
         hl(0, 'LspSagaLspFinderBorder', { fg = c.vscTabOther, bg = 'NONE' })
 
-        hl(0, 'TelescopePromptBorder', { fg = c.vscTabOther, bg = 'NONE' })
-        hl(0, 'TelescopeResultsBorder', { fg = c.vscTabOther, bg = 'NONE' })
-        hl(0, 'TelescopePreviewBorder', { fg = c.vscTabOther, bg = 'NONE' })
-        hl(0, 'TelescopeNormal', { fg = c.vscFront, bg = 'NONE' })
-        hl(0, 'TelescopeSelection', { fg = c.vscBack, bg = c.vscPopupHighlightBlue })
-        hl(0, 'TelescopeMultiSelection', { fg = c.vscBack, bg = c.vscPopupHighlightBlue })
-        hl(0, 'TelescopeMatching', { fg = c.vscDarkBlue, bg = 'NONE', 'bold', nil })
-        hl(0, 'TelescopePromptPrefix', { fg = c.vscFront, bg = 'NONE' })
+        hl(0, 'TelescopePromptBorder', { fg=c.vscTabOther, bg='NONE' })
+        hl(0, 'TelescopeResultsBorder', { fg=c.vscTabOther, bg='NONE' })
+        hl(0, 'TelescopePreviewBorder', { fg=c.vscTabOther, bg='NONE' })
+        hl(0, 'TelescopeNormal', { fg=c.vscFront, bg='NONE' })
+        hl(0, 'TelescopeSelection', { fg=c.vscBack, bg=c.vscPopupHighlightBlue })
+        hl(0, 'TelescopeMultiSelection', { fg=c.vscBack, bg=c.vscPopupHighlightBlue })
+        hl(0, 'TelescopeMatching', { fg=c.vscDarkBlue, bg='NONE', bold=true, nil  })
+        hl(0, 'TelescopePromptPrefix', { fg=c.vscFront, bg='NONE' })
 
         -- symbols-outline
         -- white fg and lualine blue bg
-        hl(0, 'FocusedSymbol', { fg = c.vscBack, '#AF00DB' })
-        hl(0, 'SymbolsOutlineConnector', { fg = c.vscTabOther, bg = 'NONE' })
+        hl(0, 'FocusedSymbol', { fg=c.vscBack, bg='#AF00DB' })
+        hl(0, 'SymbolsOutlineConnector', { fg=c.vscTabOther, bg='NONE' })
     end
 end
 
