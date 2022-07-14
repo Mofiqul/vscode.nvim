@@ -118,7 +118,7 @@ theme.set_highlights = function(opts)
     hl(0, 'TSConditional', { fg = c.vscPink, bg = 'NONE' })
     hl(0, 'TSRepeat', { fg = c.vscPink, bg = 'NONE' })
     hl(0, 'TSLabel', { fg = c.vscLightBlue, bg = 'NONE' })
-    hl(0, 'TSKeyword', { fg = c.vscBlue, bg = 'NONE' })
+    hl(0, 'TSKeyword', { fg = c.vscPink, bg = 'NONE' })
     hl(0, 'TSKeywordFunction', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, 'TSKeywordOperator', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, 'TSOperator', { fg = c.vscFront, bg = 'NONE' })
@@ -488,6 +488,13 @@ theme.set_highlights = function(opts)
     hl(0, 'CmpItemAbbrDeprecated', { fg = c.vscCursorDark, bg = c.vscPopupBack, strikethrough = true })
     hl(0, 'CmpItemAbbrMatch', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
     hl(0, 'CmpItemAbbrMatchFuzzy', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
+
+    -- Dashboard
+    hl(0, 'DashboardHeader', { fg = c.vscBlue, bg = 'NONE' })
+    hl(0, 'DashboardCenter', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'DashboardCenterIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'DashboardShortCut', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'DashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
 
     if isDark then
         hl(0, 'NvimTreeFolderIcon', { fg = c.vscBlue, bg = 'NONE' })
