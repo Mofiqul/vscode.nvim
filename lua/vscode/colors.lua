@@ -36,6 +36,17 @@ if vim.o.background == 'dark' then
         vscSearchCurrent = '#515c6a',
         vscSearch = '#613315',
 
+        vscGitAdded = '#81b88b',
+        vscGitModified = '#e2c08d',
+        vscGitDeleted = '#c74e39',
+        vscGitRenamed = '#73c991',
+        vscGitUntracked = '#73c991',
+        vscGitIgnored = '#8c8c8c',
+        vscGitStageModified = '#e2c08d',
+        vscGitStageDeleted = '#c74e39',
+        vscGitConflicting = '#e4676b',
+        vscGitSubmodule = '#8db9e2',
+
         vscContext = '#404040',
         vscContextCurrent = '#707070',
 
@@ -94,6 +105,17 @@ else
         vscDiffGreenLight = '#EBF1DD',
         vscSearchCurrent = '#A8AC94',
         vscSearch = '#F8C9AB',
+
+        vscGitAdded = '#587c0c',
+        vscGitModified = '#895503',
+        vscGitDeleted = '#ad0707',
+        vscGitRenamed = '#007100',
+        vscGitUntracked = '#007100',
+        vscGitIgnored = '#8e8e90',
+        vscGitStageModified = '#895503',
+        vscGitStageDeleted = '#ad0707',
+        vscGitConflicting = '#ad0707',
+        vscGitSubmodule = '#1258a7',
 
         vscContext = '#D2D2D2',
         vscContextCurrent = '#929292',
