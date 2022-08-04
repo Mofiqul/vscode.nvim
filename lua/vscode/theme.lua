@@ -555,6 +555,15 @@ theme.set_highlights = function(opts)
         hl(0, 'TelescopeMatching', { fg='orange', bg='NONE', bold=true, nil  })
         hl(0, 'TelescopePromptPrefix', { fg=c.vscFront, bg='NONE' })
 
+        -- COC.nvim
+        hl(0, 'CocFloating', { fg='NONE', bg=c.vscPopupBack })
+        hl(0, 'CocMenuSel', { fg='#FFFFFF', bg='#285EBA' })
+        hl(0, 'CocSearch', { fg='#2A64B9', bg='NONE' })
+
+        -- Pmenu
+        hl(0, 'Pmenu', { fg='NONE', bg=c.vscPopupBack })
+        hl(0, 'PmenuSel', { fg='#FFFFFF', bg='#285EBA' })
+
         -- symbols-outline
         -- white fg and lualine blue bg
         hl(0, 'FocusedSymbol', { fg=c.vscBack, bg='#AF00DB' })
