@@ -8,6 +8,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 
 - [BarBar](https://github.com/romgrk/barbar.nvim)
 - [BufferLine](https://github.com/akinsho/nvim-bufferline.lua)
+- [Dashboard](https://github.com/glepnir/dashboard-nvim)
 - [Git Gutter](https://github.com/airblade/vim-gitgutter)
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
