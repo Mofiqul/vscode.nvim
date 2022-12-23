@@ -135,12 +135,12 @@ require("bufferline").setup({
             bg = { attribute = "bg", highlight = "StatusLine" },
         },
         close_button_selected = {
-            fg = { attribute = "fg", highlight = "normal" },
-            bg = { attribute = "bg", highlight = "normal" },
+            fg = { attribute = "fg", highlight = "Normal" },
+            bg = { attribute = "bg", highlight = "Normal" },
         },
         close_button_visible = {
-            fg = { attribute = "fg", highlight = "normal" },
-            bg = { attribute = "bg", highlight = "normal" },
+            fg = { attribute = "fg", highlight = "Normal" },
+            bg = { attribute = "bg", highlight = "Normal" },
         },
     },
 })
