@@ -1,0 +1,29 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "schemes": [
+    {
+      "background": "#1E1E1E",
+      "black": "#1E1E1E",
+      "blue": "#569CD6",
+      "brightBlack": "#545454",
+      "brightBlue": "#569CD6",
+      "brightCyan": "#56B6C2",
+      "brightGreen": "#6A9955",
+      "brightPurple": "#C586C0",
+      "brightRed": "#F44747",
+      "brightWhite": "#D4D4D4",
+      "brightYellow": "#DCDCAA",
+      "cursorColor": "#AEAFAD",
+      "cyan": "#56B6C2",
+      "foreground": "#D4D4D4",
+      "green": "#6A9955",
+      "name": "VS Code",
+      "purple": "#C586C0",
+      "red": "#F44747",
+      "selectionBackground": "#264F78",
+      "white": "#D4D4D4",
+      "yellow": "#DCDCAA"
+    }
+  ]
+}
