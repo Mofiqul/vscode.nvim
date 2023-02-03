@@ -149,6 +149,18 @@ theme.set_highlights = function(opts)
     hl(0, '@text.note', { fg = c.vscBlueGreen, bg = 'NONE', bold = true })
     hl(0, '@text.warning', { fg = c.vscYellowOrange, bg = 'NONE', bold = true })
     hl(0, '@text.danger', { fg = c.vscRed, bg = 'NONE', bold = true })
+    
+    -- LSP semantic tokens
+    hl(0, '@class', { link = '@type' })
+    hl(0, '@struct', { link = '@type' })
+    hl(0, '@enum', { link = '@type' })
+    hl(0, '@enumMember', { link = '@constant' })
+    hl(0, '@event', { link = 'Identifier' })
+    hl(0, '@interface', { link = 'Identifier' })
+    hl(0, '@modifier', { link = 'Identifier' })
+    hl(0, '@regexp', { fg = c.vscRed, bg = 'NONE' })
+    hl(0, '@typeParameter', { link = '@type' })
+    hl(0, '@decorator', { link = 'Identifier' })
 
     -- Markdown
     hl(0, 'markdownBold', { fg = isDark and c.vscBlue or c.vscYellowOrange, bold = true })
