@@ -1,0 +1,42 @@
+set_from_resource $color0      i3wm.color0      #1e1e1e
+set_from_resource $color1      i3wm.color1      #f44747
+set_from_resource $color2      i3wm.color2      #608b4e
+set_from_resource $color3      i3wm.color3      #dcdcaa
+set_from_resource $color4      i3wm.color4      #569cd6
+set_from_resource $color5      i3wm.color5      #c678dd
+set_from_resource $color6      i3wm.color6      #56b6c2
+set_from_resource $color7      i3wm.color7      #d4d4d4
+set_from_resource $color8      i3wm.color8      #808080
+set_from_resource $color9      i3wm.color9      #f44747
+set_from_resource $color10     i3wm.color10     #608b4e
+set_from_resource $color11     i3wm.color11     #dcdcaa
+set_from_resource $color12     i3wm.color12     #569cd6
+set_from_resource $color13     i3wm.color13     #c678dd
+set_from_resource $color14     i3wm.color14     #56b6c2
+set_from_resource $color15     i3wm.color15     #d4d4d4
+set_from_resource $foreground  i3wm.foreground  #d4d4d4
+set_from_resource $background  i3wm.background  #1e1e1e
+set_from_resource $cursorColor i3wm.cursorColor #d4d4d4
+
+# class, border, bg, text, indicator, child border
+client.focused           $color6 $color6 $color0 $color6 $color6
+client.focused_inactive  $color8 $color8 $color0 $color8 $color8
+client.unfocused         $color8 $color0 $color8 $color8 $color8
+client.focused_tab_title $color6 $color0 $color6
+client.urgent            $color3 $color0 $color3 $color8 $color8
+client.placeholder       $color6 $color0 $color6 $color6 $color8
+
+client.background $color6
+
+bar {
+  colors {
+    background         $background
+    statusline         $color8
+    separator          $color8
+    focused_workspace  $color6  $color6  $color0
+    active_workspace   $color15 $color15 $color0
+    inactive_workspace $color0  $color0  $color15
+    urgent_workspace   $color3  $color3  $color0
+    binding_mode       $color6  $color6  $color0
+  }
+}
