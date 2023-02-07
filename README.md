@@ -160,6 +160,7 @@ require("bufferline").setup({
 - [Xresources](https://wiki.debian.org/Xresources) color scheme
 - [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) theme
 - [WezTerm](https://wezfurlong.org/wezterm/) color scheme
+- [Windows Terminal](https://github.com/microsoft/terminal)
 - [zathura](https://pwmt.org/projects/zathura/) color scheme
 
 ## Something is broken but I know how to fix it!
