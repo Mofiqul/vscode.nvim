@@ -1,0 +1,34 @@
+[colors]
+ansi = [
+    '#ffffff',
+    '#c72e0f',
+    '#008000',
+    '#795e25',
+    '#007acc',
+    '#af00db',
+    '#56b6c2',
+    '#000000'
+]
+background = '#ffffff'
+brights = [
+    '#808080',
+    '#c72e0f',
+    '#008000',
+    '#795e25',
+    '#007acc',
+    '#af00db',
+    '#56b6c2',
+    '#000000'
+]
+cursor_bg = '#000000'
+cursor_border = '#000000'
+cursor_fg = '#ffffff'
+foreground = '#000000'
+selection_bg = '#d7ba7d'
+selection_fg = '#ffffff'
+
+[colors.indexed]
+
+[metadata]
+name = 'vscode-light'
+origin_url = 'https://github.com/Mofiqul/vscode.nvim'
