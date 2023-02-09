@@ -149,7 +149,7 @@ theme.set_highlights = function(opts)
     hl(0, '@text.note', { fg = c.vscBlueGreen, bg = 'NONE', bold = true })
     hl(0, '@text.warning', { fg = c.vscYellowOrange, bg = 'NONE', bold = true })
     hl(0, '@text.danger', { fg = c.vscRed, bg = 'NONE', bold = true })
-    
+
     -- LSP semantic tokens
     hl(0, '@class', { link = '@type' })
     hl(0, '@struct', { link = '@type' })
