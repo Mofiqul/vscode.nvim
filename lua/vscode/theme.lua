@@ -497,9 +497,10 @@ theme.set_highlights = function(opts)
 
     -- Dashboard
     hl(0, 'DashboardHeader', { fg = c.vscBlue, bg = 'NONE' })
-    hl(0, 'DashboardCenter', { fg = c.vscYellowOrange, bg = 'NONE' })
-    hl(0, 'DashboardCenterIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'DashboardDesc', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'DashboardIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
     hl(0, 'DashboardShortCut', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'DashboardKey', { fg = c.vscWhite, bg = 'NONE' })
     hl(0, 'DashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
 
     if isDark then
