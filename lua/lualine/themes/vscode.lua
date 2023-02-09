@@ -26,8 +26,8 @@ else
 end
 
 vscode.normal = {
-    b = { fg = colors.blue, bg = colors.bg2 },
     a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.blue, gui = 'bold' },
+    b = { fg = colors.blue, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
@@ -37,13 +37,13 @@ vscode.visual = {
 }
 
 vscode.inactive = {
-    b = { fg = colors.bg, bg = colors.fg },
     a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
+    b = { fg = colors.bg, bg = colors.fg },
 }
 
 vscode.replace = {
-    b = { fg = colors.red, bg = colors.bg2 },
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.red, gui = 'bold' },
+    b = { fg = colors.red, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
@@ -54,8 +54,8 @@ vscode.insert = {
 }
 
 vscode.command = {
-    b = { fg = colors.pink, bg = colors.bg2 },
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.pink, gui = 'bold' },
+    b = { fg = colors.pink, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
