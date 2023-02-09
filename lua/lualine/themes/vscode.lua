@@ -56,6 +56,12 @@ vscode.insert = {
     c = { fg = colors.fg, bg = colors.bg },
 }
 
+vscode.terminal = {
+    a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
+    b = { fg = colors.fg, bg = colors.bg2 },
+    c = { fg = colors.fg, bg = colors.bg },
+}
+
 vscode.command = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.pink, gui = 'bold' },
     b = { fg = colors.pink, bg = colors.bg2 },
