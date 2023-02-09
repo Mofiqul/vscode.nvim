@@ -4,6 +4,7 @@ local vscode = {}
 local colors = {}
 
 if vim.o.background == 'dark' then
+    colors.inactive = '#666666'
     colors.bg = '#262626'
     colors.bg2 = '#373737'
     colors.fg = '#ffffff'
@@ -14,6 +15,7 @@ if vim.o.background == 'dark' then
     colors.yellow = '#ffaf00'
     colors.pink = '#DDB6F2'
 else
+    colors.inactive = '#888888'
     colors.bg = '#F5F5F5'
     colors.bg2 = '#E4E4E4'
     colors.fg = '#343434'
@@ -38,7 +40,8 @@ vscode.visual = {
 
 vscode.inactive = {
     a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
-    b = { fg = colors.bg, bg = colors.fg },
+    b = { fg = colors.inactive, bg = colors.bg },
+    c = { fg = colors.inactive, bg = colors.bg },
 }
 
 vscode.replace = {
