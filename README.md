@@ -156,11 +156,12 @@ require("bufferline").setup({
 ## 🍭 Extra folder
 
 - [Alacritty](https://github.com/alacritty/alacritty) color scheme
-- [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
-- [Xresources](https://wiki.debian.org/Xresources) color scheme
 - [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) theme
+- [i3](https://i3wm.org/) color scheme
+- [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
 - [WezTerm](https://wezfurlong.org/wezterm/) color scheme
 - [Windows Terminal](https://github.com/microsoft/terminal) color scheme
+- [Xresources](https://wiki.debian.org/Xresources) color scheme
 - [zathura](https://pwmt.org/projects/zathura/) color scheme
 
 ## Something is broken but I know how to fix it!
