@@ -149,7 +149,7 @@ theme.set_highlights = function(opts)
     hl(0, '@text.note', { fg = c.vscBlueGreen, bg = 'NONE', bold = true })
     hl(0, '@text.warning', { fg = c.vscYellowOrange, bg = 'NONE', bold = true })
     hl(0, '@text.danger', { fg = c.vscRed, bg = 'NONE', bold = true })
-    
+
     -- LSP semantic tokens
     hl(0, '@class', { link = '@type' })
     hl(0, '@struct', { link = '@type' })
@@ -497,9 +497,10 @@ theme.set_highlights = function(opts)
 
     -- Dashboard
     hl(0, 'DashboardHeader', { fg = c.vscBlue, bg = 'NONE' })
-    hl(0, 'DashboardCenter', { fg = c.vscYellowOrange, bg = 'NONE' })
-    hl(0, 'DashboardCenterIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'DashboardDesc', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'DashboardIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
     hl(0, 'DashboardShortCut', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'DashboardKey', { fg = c.vscWhite, bg = 'NONE' })
     hl(0, 'DashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
 
     if isDark then
