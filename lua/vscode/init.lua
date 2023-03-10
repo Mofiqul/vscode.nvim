@@ -5,8 +5,12 @@ local vscode = {}
 local config = require('vscode.config')
 local theme = require('vscode.theme')
 
-vscode.setup = function(user_opts)
-    config.setup(user_opts)
+-- Pass setup to config module
+vscode.setup = config.setup
+
+-- Load colorscheme with a given or default style
+---@param style? string
+vscode.load = function()
     vim.cmd('hi clear')
     if vim.fn.exists('syntax_on') then
         vim.cmd('syntax reset')
