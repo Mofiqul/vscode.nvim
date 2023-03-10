@@ -10,7 +10,7 @@ vscode.setup = config.setup
 
 -- Load colorscheme with a given or default style
 ---@param style? string
-vscode.load = function()
+vscode.load = function(style)
     vim.cmd('hi clear')
     if vim.fn.exists('syntax_on') then
         vim.cmd('syntax reset')
@@ -19,17 +19,14 @@ vscode.load = function()
     vim.o.termguicolors = true
     vim.g.colors_name = 'vscode'
 
+    vim.o.background = style or config.opts.style or vim.o.background
+
     theme.set_highlights(config.opts)
     theme.link_highlight()
 
     for group, val in pairs(config.opts['group_overrides']) do
         vim.api.nvim_set_hl(0, group, val)
     end
-end
-
-vscode.change_style = function(style)
-    vim.o.background = style
-    vim.cmd([[colorscheme vscode]])
 end
 
 return vscode
