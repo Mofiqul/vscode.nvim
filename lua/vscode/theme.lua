@@ -481,6 +481,11 @@ theme.set_highlights = function(opts)
     hl(0, 'LspReferenceRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'LspReferenceWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
 
+    -- COC.nvim
+    hl(0, 'CocHighlightText', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'CocHighlightRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'CocHighlightWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+
     -- Nvim compe
     hl(0, 'CmpItemKindVariable', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, 'CmpItemKindInterface', { fg = c.vscLightBlue, bg = 'NONE' })
