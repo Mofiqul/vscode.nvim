@@ -25,9 +25,9 @@ vscode.load = function(style)
     theme.link_highlight()
 
     if config.opts.group_overrides then
-      for group, val in pairs(config.opts['group_overrides']) do
-          vim.api.nvim_set_hl(0, group, val)
-      end
+        for group, val in pairs(config.opts['group_overrides']) do
+            vim.api.nvim_set_hl(0, group, val)
+        end
     end
 end
 
