@@ -71,6 +71,7 @@ colors.get_colors = function()
             vscLightRed = '#D16969',
             vscYellowOrange = '#D7BA7D',
             vscYellow = '#DCDCAA',
+            vscDarkYellow = '#FFD602',
             vscPink = '#C586C0',
         }
     else
