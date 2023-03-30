@@ -59,6 +59,7 @@ colors.get_colors = function()
             vscGray = '#808080',
             vscViolet = '#646695',
             vscBlue = '#569CD6',
+            vscAccentBlue = '#4FC1FE',
             vscDarkBlue = '#223E55',
             vscMediumBlue = '#18a2fe',
             vscLightBlue = '#9CDCFE',
@@ -70,6 +71,7 @@ colors.get_colors = function()
             vscLightRed = '#D16969',
             vscYellowOrange = '#D7BA7D',
             vscYellow = '#DCDCAA',
+            vscDarkYellow = '#FFD602',
             vscPink = '#C586C0',
         }
     else
