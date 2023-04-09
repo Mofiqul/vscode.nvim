@@ -167,6 +167,7 @@ require("bufferline").setup({
 - [Windows Terminal](https://github.com/microsoft/terminal) color scheme
 - [Xresources](https://wiki.debian.org/Xresources) color scheme
 - [zathura](https://pwmt.org/projects/zathura/) color scheme
+- [Foot](https://codeberg.org/dnkl/foot) color scheme
 
 ## Something is broken but I know how to fix it!
 

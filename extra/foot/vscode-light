@@ -1,0 +1,24 @@
+[colors]
+alpha=1.00
+foreground=000000
+background=ffffff
+
+## Normal/regular colors (color palette 0-7)
+ regular0=000000  # black
+ regular1=c7230f  # red
+ regular2=008000  # green
+ regular3=795e25  # yellow
+ regular4=007acc  # blue
+ regular5=af00db  # magenta
+ regular6=56b6c2  # cyan
+ regular7=000000  # white
+
+## Bright colors (color palette 8-15)
+ bright0=808080   # bright black
+ bright1=c7230f   # bright red
+ bright2=008000   # bright green
+ bright3=795e25   # bright yellow
+ bright4=007acc   # bright blue
+ bright5=af00db   # bright magenta
+ bright6=56b6c2   # bright cyan
+ bright7=000000   # bright white
