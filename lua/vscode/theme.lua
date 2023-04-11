@@ -39,7 +39,7 @@ theme.set_highlights = function(opts)
     hl(0, 'Search', { fg = c.vscNone, bg = c.vscSearch })
     hl(0, 'SpecialKey', { fg = c.vscBlue, bg = c.vscNone })
     hl(0, 'StatusLine', { fg = c.vscFront, bg = c.vscLeftMid })
-    hl(0, 'StatusLineNC', { fg = c.vscFront, bg = c.vscLeftDark })
+    hl(0, 'StatusLineNC', { fg = c.vscFront, bg = opts.transparent and c.vscBack or c.vscLeftDark })
     hl(0, 'TabLine', { fg = c.vscFront, bg = c.vscTabOther })
     hl(0, 'TabLineFill', { fg = c.vscFront, bg = c.vscTabOutside })
     hl(0, 'TabLineSel', { fg = c.vscFront, bg = c.vscTabCurrent })
@@ -445,7 +445,7 @@ theme.set_highlights = function(opts)
 
     -- Bufferline
     hl(0, 'BufferLineIndicatorSelected', { fg = c.vscLeftDark, bg = 'NONE' })
-    hl(0, 'BufferLineFill', { fg = 'NONE', bg = c.vscLeftDark })
+    hl(0, 'BufferLineFill', { fg = 'NONE', bg = opts.transparent and c.vscBack or c.vscLeftDark })
 
     -- BarBar
     hl(0, 'BufferCurrent', { fg = c.vscFront, bg = c.vscTabCurrent })
