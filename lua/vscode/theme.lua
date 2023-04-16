@@ -91,7 +91,7 @@ theme.set_highlights = function(opts)
 
     -- Treesitter
     hl(0, '@error', { fg = c.vscRed, bg = 'NONE' })
-    hl(0, '@punctuation.bracket', { fg = c.vscDarkYellow, bg = 'NONE' })
+    hl(0, '@punctuation.bracket', { fg = c.vscFront, bg = 'NONE' })
     hl(0, '@punctuation.special', { fg = c.vscFront, bg = 'NONE' })
     hl(0, '@comment', { fg = c.vscGreen, bg = 'NONE', italic = opts.italic_comments })
     hl(0, '@constant', { fg = c.vscAccentBlue, bg = 'NONE' })
