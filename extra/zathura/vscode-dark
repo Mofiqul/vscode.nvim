@@ -19,7 +19,7 @@ set highlight-color             "#007acc"
 set highlight-active-color      "#d4d4d4"
 
 set completion-highlight-fg     "#56b6c2"
-set completion-highlight-bg     false
+set completion-highlight-bg     "#1e1e1e"
 
 set completion-bg               "#1e1e1e"
 set completion-fg               "#d4d4d4"
@@ -34,4 +34,4 @@ set index-fg                    "#d4d4d4"
 set index-bg                    "#1e1e1e"
 
 set index-active-fg             "#56b6c2"
-set index-active-bg             false
+set index-active-bg             "#1e1e1e"
