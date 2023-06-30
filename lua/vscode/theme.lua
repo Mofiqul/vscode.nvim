@@ -3,9 +3,6 @@ local theme = {}
 
 theme.set_highlights = function(opts)
     local c = require('vscode.colors').get_colors()
-    if opts.color_overrides then
-        c = vim.tbl_extend('force', c, opts['color_overrides'])
-    end
     local isDark = vim.o.background == 'dark'
 
     hl(0, 'Normal', { fg = c.vscFront, bg = c.vscBack })
