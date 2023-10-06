@@ -621,6 +621,7 @@ theme.set_highlights = function(opts)
 end
 
 theme.link_highlight = function()
+    hl(0, 'netrwMarkFile', { link = 'Search' })
     -- Legacy groups for official git.vim and diff.vim syntax
     hl(0, 'diffAdded', { link = 'DiffAdd' })
     hl(0, 'diffChanged', { link = 'DiffChange' })
