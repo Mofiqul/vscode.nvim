@@ -172,3 +172,8 @@ require("bufferline").setup({
 ## Something is broken but I know how to fix it!
 
 Pull requests are welcome! Feel free to send one with an explanation!
+
+## What this fork is for
+
+Fixes/workarounds for [#161](https://github.com/Mofiqul/vscode.nvim/issues/161)
+and problems with poor contrast in light background mode.
