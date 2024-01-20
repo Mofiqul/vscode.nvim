@@ -52,7 +52,7 @@ vscode.replace = {
 }
 
 vscode.insert = {
-    a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
+    a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.green, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
