@@ -24,7 +24,7 @@ else
     colors.green = '#008000'
     colors.blue = '#AF00DB'
     colors.lightblue = '#0451A5'
-    colors.yellow = '#ffaf00'
+    colors.yellow = '#c08000'
     colors.pink = '#FFA3A3'
 end
 
