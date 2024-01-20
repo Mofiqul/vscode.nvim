@@ -20,7 +20,7 @@ vscode.load = function(style)
     vim.g.colors_name = 'vscode'
 
     local background = style or config.opts.style
-    if background and background ~= vim.o.background then
+    if background then
         vim.o.background = background
     end
 
