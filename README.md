@@ -19,6 +19,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [nvim-compe](https://github.com/hrsh7th/nvim-compe)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 
 ## ⬇️ Installation
 

@@ -540,6 +540,13 @@ theme.set_highlights = function(opts)
     hl(0, 'DashboardKey', { fg = c.vscWhite, bg = 'NONE' })
     hl(0, 'DashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
 
+    -- Illuminate
+    hl(0, 'illuminatedWord', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'illuminatedCurWord', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'IlluminatedWordText', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'IlluminatedWordRead', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'IlluminatedWordWrite', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+
     if isDark then
         hl(0, 'NvimTreeFolderIcon', { fg = c.vscBlue, bg = 'NONE' })
         hl(0, 'NvimTreeIndentMarker', { fg = c.vscLineNumber, bg = 'NONE' })
