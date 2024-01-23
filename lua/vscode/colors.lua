@@ -75,7 +75,7 @@ colors.get_colors = function()
             vscPink = '#C586C0',
 
             -- Low contrast with default background
-            vscDimHighlight = '#00695C',
+            vscDimHighlight = '#51504F',
         }
     else
         mycolors = {
