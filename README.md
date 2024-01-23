@@ -19,6 +19,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [nvim-compe](https://github.com/hrsh7th/nvim-compe)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 
 ## ⬇️ Installation
 
@@ -172,8 +173,3 @@ require("bufferline").setup({
 ## Something is broken but I know how to fix it!
 
 Pull requests are welcome! Feel free to send one with an explanation!
-
-## What this fork is for
-
-Fixes/workarounds for [#161](https://github.com/Mofiqul/vscode.nvim/issues/161)
-and problems with poor contrast in light background mode.
