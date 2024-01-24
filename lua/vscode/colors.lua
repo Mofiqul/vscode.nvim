@@ -73,6 +73,9 @@ colors.get_colors = function()
             vscYellow = '#DCDCAA',
             vscDarkYellow = '#FFD602',
             vscPink = '#C586C0',
+
+            -- Low contrast with default background
+            vscDimHighlight = '#51504F',
         }
     else
         mycolors = {
@@ -142,6 +145,9 @@ colors.get_colors = function()
             vscYellowOrange = '#800000',
             vscYellow = '#795E26',
             vscPink = '#AF00DB',
+
+            -- Low contrast with default background
+            vscDimHighlight = '#B2DFDB',
         }
     end
 

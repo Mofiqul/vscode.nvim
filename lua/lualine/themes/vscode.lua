@@ -24,7 +24,7 @@ else
     colors.green = '#008000'
     colors.blue = '#AF00DB'
     colors.lightblue = '#0451A5'
-    colors.yellow = '#ffaf00'
+    colors.yellow = '#c08000'
     colors.pink = '#FFA3A3'
 end
 
@@ -52,7 +52,7 @@ vscode.replace = {
 }
 
 vscode.insert = {
-    a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
+    a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.green, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
