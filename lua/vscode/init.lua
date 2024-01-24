@@ -19,7 +19,11 @@ vscode.load = function(style)
     vim.o.termguicolors = true
     vim.g.colors_name = 'vscode'
 
-    vim.o.background = style or config.opts.style or vim.o.background
+    local background = style or config.opts.style
+    if background then
+        vim.o.background = background
+    end
+
 
     theme.set_highlights(config.opts)
     theme.link_highlight()
