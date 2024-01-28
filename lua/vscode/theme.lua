@@ -582,6 +582,9 @@ theme.set_highlights = function(opts)
         hl(0, 'TelescopeMatching', { fg = c.vscMediumBlue, bg = 'NONE', bold = true })
         hl(0, 'TelescopePromptPrefix', { fg = c.vscFront, bg = 'NONE' })
 
+        -- Debugging
+        hl(0, 'debugPC', { bg = '#4C4C19' })
+
         -- symbols-outline
         -- white fg and lualine blue bg
         hl(0, 'FocusedSymbol', { fg = '#ffffff', bg = c.vscUiBlue })
@@ -617,6 +620,9 @@ theme.set_highlights = function(opts)
         hl(0, 'TelescopeMultiSelection', { fg = c.vscBack, bg = c.vscPopupHighlightBlue })
         hl(0, 'TelescopeMatching', { fg = 'orange', bg = 'NONE', bold = true, nil })
         hl(0, 'TelescopePromptPrefix', { fg = c.vscFront, bg = 'NONE' })
+
+        -- Debugging
+        hl(0, 'debugPC', { bg = '#FFFFBA' })
 
         -- COC.nvim
         hl(0, 'CocFloating', { fg = 'NONE', bg = c.vscPopupBack })
