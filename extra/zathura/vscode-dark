@@ -4,7 +4,7 @@ set default-bg                  "#1e1e1e"
 set default-fg                  "#d4d4d4"
 
 set statusbar-bg                "#1e1e1e"
-set statusbar-fg                "#808080"
+set statusbar-fg                "#d4d4d4"
 
 set inputbar-bg                 "#1e1e1e"
 set inputbar-fg                 "#d4d4d4"

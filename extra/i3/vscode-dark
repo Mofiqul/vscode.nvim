@@ -33,10 +33,10 @@ bar {
     background         $background
     statusline         $color8
     separator          $color8
-    focused_workspace  $color6  $color6  $color0
-    active_workspace   $color15 $color15 $color0
-    inactive_workspace $color0  $color0  $color15
-    urgent_workspace   $color3  $color3  $color0
-    binding_mode       $color6  $color6  $color0
+    focused_workspace  $color6 $color6 $color0
+    active_workspace   $color8 $color8 $color0
+    inactive_workspace $color0 $color0 $color8
+    urgent_workspace   $color3 $color3 $color0
+    binding_mode       $color5 $color5 $color0
   }
 }
