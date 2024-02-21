@@ -141,7 +141,7 @@ theme.set_highlights = function(opts)
     hl(0, '@text', { fg = c.vscFront, bg = 'NONE' }) -- Legacy
     hl(0, '@markup.strong', { fg = isDark and c.vscBlue or c.vscViolet, bold = true })
     hl(0, '@markup.italic', { fg = c.vscFront, bg = 'NONE', italic = true })
-    hl(0, '@markup.underline', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, '@markup.underline', { fg = c.vscYellowOrange, bg = 'NONE', underline = true })
     hl(0, '@markup.strikethrough', { fg = c.vscFront, bg = 'NONE', strikethrough = true })
     hl(0, '@markup.heading', { fg = isDark and c.vscBlue or c.vscYellowOrange, bold = true })
     hl(0, '@markup.raw', { fg = c.vscFront, bg = 'NONE' })
