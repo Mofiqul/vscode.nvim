@@ -503,6 +503,23 @@ theme.set_highlights = function(opts)
     hl(0, 'IndentBlanklineSpaceChar', { fg = c.vscContext, bg = 'NONE', nocombine = true })
     hl(0, 'IndentBlanklineSpaceCharBlankline', { fg = c.vscContext, bg = 'NONE', nocombine = true })
 
+    -- Neotest
+    hl(0, 'NeotestAdapterName', { fg = c.vscFront, bold = true })
+    hl(0, 'NeotestDir', { fg = c.vscBlue })
+    hl(0, 'NeotestExpandMarker', { fg = c.vscDimHighlight })
+    hl(0, 'NeotestFailed', { fg = c.vscRed })
+    hl(0, 'NeotestFile', { fg = c.vscBlue })
+    hl(0, 'NeotestFocused', { bold = true })
+    hl(0, 'NeotestIndent', { fg = c.vscDimHighlight })
+    hl(0, 'NeotestMarked', { fg = c.vscYellowOrange, bold = true })
+    hl(0, 'NeotestNamespace', { fg = c.vscPink })
+    hl(0, 'NeotestPassed', { fg = c.vscBlueGreen })
+    hl(0, 'NeotestRunning', { fg = c.vscDarkYellow })
+    hl(0, 'NeotestSkipped', { fg = c.vscBlue })
+    hl(0, 'NeotestTarget', { fg = c.vscLightRed })
+    hl(0, 'NeotestWatching', { fg = c.vscDarkYellow })
+    hl(0, 'NeotestWinSelect', { fg = c.vscBlue, bold = true })
+
     -- LSP
     hl(0, 'DiagnosticOk', { fg = c.vscBlueGreen, bg = 'NONE' })
     hl(0, 'DiagnosticError', { fg = c.vscRed, bg = 'NONE' })
