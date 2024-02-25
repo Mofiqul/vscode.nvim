@@ -14,6 +14,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [LSP](https://github.com/neovim/nvim-lspconfig)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [Neogit](https://github.com/NeogitOrg/neogit)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)

@@ -550,6 +550,31 @@ theme.set_highlights = function(opts)
     hl(0, 'IlluminatedWordRead', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'IlluminatedWordWrite', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
 
+    -- NeogitOrg/neogit
+    if isDark then
+        hl(0, 'NeogitDiffAdd', { fg = c.vscGitAdded, bg = c.vscDiffGreenDark })
+        hl(0, 'NeogitDiffAddHighlight', { fg = c.vscGitAdded, bg = c.vscDiffGreenLight })
+        hl(0, 'NeogitDiffContext', { fg = c.vscPopupFront, bg = c.vscLeftDark })
+        hl(0, 'NeogitDiffContextHighlight', { fg = c.vscPopupFront, bg = c.vscLeftMid })
+        hl(0, 'NeogitDiffDelete', { fg = c.vscGitDeleted, bg = c.vscDiffRedDark })
+        hl(0, 'NeogitDiffDeleteHighlight', { fg = c.vscGitDeleted, bg = c.vscDiffRedLight })
+        hl(0, 'NeogitDiffHeader', { fg = c.vscSplitLight, bg = c.vscBack })
+        hl(0, 'NeogitDiffHeaderHighlight', { fg = c.vscSplitLight, bg = c.vscBack })
+        hl(0, 'NeogitHunkHeader', { fg = c.vscGitModified, bg = c.vscLeftDark })
+        hl(0, 'NeogitHunkHeaderHighlight', { fg = c.vscGitModified, bg = c.vscLeftMid })
+    else
+        hl(0, 'NeogitDiffAdd', { fg = c.vscGitAdded, bg = c.vscDiffGreenLight })
+        hl(0, 'NeogitDiffAddHighlight', { fg = c.vscGitAdded, bg = c.vscDiffGreenDark })
+        hl(0, 'NeogitDiffContext', { fg = c.vscPopupFront, bg = c.vscLeftMid })
+        hl(0, 'NeogitDiffContextHighlight', { fg = c.vscPopupFront, bg = c.vscLeftDark })
+        hl(0, 'NeogitDiffDelete', { fg = c.vscGitDeleted, bg = c.vscDiffRedLight })
+        hl(0, 'NeogitDiffDeleteHighlight', { fg = c.vscGitDeleted, bg = c.vscDiffRedDark })
+        hl(0, 'NeogitDiffHeader', { fg = c.vscSplitLight, bg = c.vscBack })
+        hl(0, 'NeogitDiffHeaderHighlight', { fg = c.vscSplitLight, bg = c.vscBack })
+        hl(0, 'NeogitHunkHeader', { fg = c.vscGitModified, bg = c.vscLeftMid })
+        hl(0, 'NeogitHunkHeaderHighlight', { fg = c.vscGitModified, bg = c.vscLeftDark })
+    end
+
     if isDark then
         hl(0, 'NvimTreeFolderIcon', { fg = c.vscBlue, bg = 'NONE' })
         hl(0, 'NvimTreeIndentMarker', { fg = c.vscLineNumber, bg = 'NONE' })
