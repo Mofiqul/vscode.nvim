@@ -491,6 +491,8 @@ theme.set_highlights = function(opts)
     hl(0, 'BufferInactiveMod', { fg = c.vscYellowOrange, bg = c.vscTabOther })
     hl(0, 'BufferInactiveSign', { fg = c.vscGray, bg = c.vscTabOther })
     hl(0, 'BufferInactiveTarget', { fg = c.vscRed, bg = c.vscTabOther })
+    hl(0, 'BufferTabpage', { fg = c.vscFront, bg = c.vscTabOther })
+    hl(0, 'BufferTabpageFill', { fg = c.vscFront, bg = c.vscTabOther })
     hl(0, 'BufferTabpages', { fg = c.vscFront, bg = c.vscTabOther })
     hl(0, 'BufferTabpagesFill', { fg = c.vscFront, bg = c.vscTabOther })
 
