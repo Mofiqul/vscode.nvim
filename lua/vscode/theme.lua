@@ -86,6 +86,9 @@ theme.set_highlights = function(opts)
     hl(0, 'SpellRare', { fg = c.vscRed, bg = c.vscBack, undercurl = true, sp = c.vscRed })
     hl(0, 'SpellLocal', { fg = c.vscRed, bg = c.vscBack, undercurl = true, sp = c.vscRed })
     hl(0, 'Whitespace', { fg = isDark and c.vscLineNumber or c.vscTabOther })
+    hl(0, 'NormalFloat', { bg = c.vscPopupBack })
+    hl(0, 'WinBar', { fg = c.vscFront, bg = c.vscBack, bold = true })
+    hl(0, 'WinBarNc', { fg = c.vscFront, bg = c.vscBack })
 
     -- Treesitter
     hl(0, '@error', { fg = c.vscRed, bg = 'NONE' }) -- Legacy
