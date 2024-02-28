@@ -1,90 +1,49 @@
-# vscode dark and light theme alacritty 
-# Bt https://githib.com/mofiqul
-font:
-  size: 11
-  normal:
-    family: FiraCode Nerd Font
-    style: Regular
-  bold:
-    family: FiraCode Nerd Font
-  italic:
-    family: FiraCode Nerd Font  
-
-background_opacity: 1
-
-window:
-  padding:
-    x: 0
-    y: 0
-
-  dynamic_padding: false
-  
-  decorations: full
-
-  dimensions:
-    columns: 90
-    lines: 30
-
+# To add this to your config, e.g. if using Lazy:
+# import:
+#   - ~/.local/share/nvim/lazy/vscode.nvim/extra/alacritty/alacritty.yml
 schemes:
   codelight: &light
     primary:
-      background: '#ffffff'
-      foreground: '#1e1e1e'
+      background: "#FFFFFF"
+      foreground: "#1E1E1E"
 
     cursor:
-      text: '#d4d4d4'
-      cursor: '#d4d4d4'
+      text: "#FFFFFF"
+      cursor: "#264F78"
 
     normal:
-      black:   '#1e1e1e'
-      red:     '#c72e0f'
-      green:   '#009000'
-      yellow:  '#795e25'
-      blue:    '#007acc'
-      magenta: '#af00db'
-      cyan:    '#56b6c2'
-      white:   '#d4d4d4'
+      black: "#1E1E1E"
+      red: "#F44747"
+      green: "#6A9955"
+      yellow: "#795E26"
+      blue: "#007acc"
+      magenta: "#C586C0"
+      cyan: "#4FC1FE"
+      white: "#D4D4D4"
 
     bright:
-      black:   '#1e1e1e'
-      red:     '#c72e0f'
-      green:   '#009000'
-      yellow:  '#795e25'
-      blue:    '#007acc'
-      magenta: '#af00db'
-      cyan:    '#56b6c2'
-      white:   '#d4d4d4'
+      black: "#808080"
 
   codedark: &dark
-
     primary:
-      background: '#1e1e1e'
-      foreground: '#d4d4d4'
+      background: "#1E1E1E"
+      foreground: "#D4D4D4"
 
     cursor:
-      text: '#d4d4d4'
-      cursor: '#d4d4d4'
+      text: "#1E1E1E"
+      cursor: "#D4D4D4"
 
     normal:
-      black:   '#1e1e1e'
-      red:     '#f44747'
-      green:   '#608b4e'
-      yellow:  '#dcdcaa'
-      blue:    '#569cd6'
-      magenta: '#c678dd'
-      cyan:    '#56b6c2'
-      white:   '#d4d4d4'
+      black: "#1E1E1E"
+      red: "#F44747"
+      green: "#6A9955"
+      yellow: "#795E26"
+      blue: "#007acc"
+      magenta: "#C586C0"
+      cyan: "#4FC1FE"
+      white: "#D4D4D4"
 
     bright:
-      black:   '#545454'
-      red:     '#f44747'
-      green:   '#608b4e'
-      yellow:  '#dcdcaa'
-      blue:    '#569cd6'
-      magenta: '#c678dd'
-      cyan:    '#56b6c2'
-      white:   '#d4d4d4'
+      black: "#808080"
 
 colors: *dark
-
-
