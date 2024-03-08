@@ -20,3 +20,6 @@
 *.color13: #c678dd
 *.color14: #56b6c2
 *.color15: #d4d4d4
+
+Nsxiv.window.foreground: #608b4e
+Nsxiv.mark.foreground: #f44747
