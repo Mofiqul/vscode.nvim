@@ -719,6 +719,9 @@ theme.set_highlights = function(opts)
         hl(0, 'Pmenu', { fg = 'NONE', bg = c.vscPopupBack })
         hl(0, 'PmenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
 
+        -- Copilot
+        hl(0, 'CopilotSuggestion', { fg = colors.vscGray, bg = 'NONE' })
+
         -- symbols-outline
         -- white fg and lualine blue bg
         hl(0, 'FocusedSymbol', { fg = c.vscBack, bg = '#AF00DB' })
