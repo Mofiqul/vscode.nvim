@@ -720,7 +720,7 @@ theme.set_highlights = function(opts)
         hl(0, 'PmenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
 
         -- Copilot
-        hl(0, 'CopilotSuggestion', { fg = colors.vscGray, bg = 'NONE' })
+        hl(0, 'CopilotSuggestion', { fg = c.vscGray, bg = 'NONE' })
 
         -- symbols-outline
         -- white fg and lualine blue bg
