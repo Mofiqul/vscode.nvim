@@ -38,6 +38,30 @@ use 'Mofiqul/vscode.nvim'
 Plug 'Mofiqul/vscode.nvim'
 ```
 
+## ⚠️  Warnings
+
+The theme is manipulating the treesitter highlight queries as follows:
+
+### JavaScript and TypeScript
+
+```query
+[
+  "export"
+] @keyword.import
+
+[
+  "break"
+] @keyword.repeat
+
+[
+  "break"
+] @keyword.conditional
+```
+
+this mimics the behavior of VSCode's default theme more closely. Be aware that 
+this is not a perfect solution but as far as we know, there is no better way to
+achieve this and most popular themes are doing the same thing.
+
 ## 🚀 Usage
 
 ```lua
