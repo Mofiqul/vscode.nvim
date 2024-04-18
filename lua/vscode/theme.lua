@@ -563,6 +563,15 @@ theme.set_highlights = function(opts)
     hl(0, 'CmpItemAbbrMatch', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
     hl(0, 'CmpItemAbbrMatchFuzzy', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
 
+    -- HiPhish/rainbow-delimiters.nvim
+    hl(0, 'RainbowDelimiterRed', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'RainbowDelimiterOrange', { fg = c.vscOrange, bg = 'NONE' })
+    hl(0, 'RainbowDelimiterYellow', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'RainbowDelimiterGreen', { fg = c.vscGreen, bg = 'NONE' })
+    hl(0, 'RainbowDelimiterCyan', { fg = c.vscBlueGreen, bg = 'NONE' })
+    hl(0, 'RainbowDelimiterBlue', { fg = c.vscMediumBlue, bg = 'NONE' })
+    hl(0, 'RainbowDelimiterViolet', { fg = c.vscViolet, bg = 'NONE' })
+
     -- rcarriga/nvim-dap-ui
     -- Source: https://github.com/rcarriga/nvim-dap-ui/blob/master/lua/dapui/config/highlights.lua
     hl(0, 'DapUIBreakpointsCurrentLine', { fg = c.vscBlueGreen, bold = true })
