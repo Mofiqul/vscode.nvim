@@ -62,6 +62,7 @@ colors.get_colors = function()
             vscAccentBlue = '#4FC1FF',
             vscDarkBlue = '#223E55',
             vscMediumBlue = '#18a2fe',
+            vscDisabledBlue = '#729DB3',
             vscLightBlue = '#9CDCFE',
             vscGreen = '#6A9955',
             vscBlueGreen = '#4EC9B0',
