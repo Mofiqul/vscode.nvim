@@ -88,7 +88,7 @@ colors.get_colors = function()
             vscTabOther = '#CECECE',
             vscTabOutside = '#E8E8E8',
 
-            vscLeftDark = '#F3F3F3',
+            vscLeftDark = '#C4C4C4',
             vscLeftMid = '#E5E5E5',
             vscLeftLight = '#F3F3F3',
 
