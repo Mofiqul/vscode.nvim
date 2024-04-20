@@ -159,6 +159,7 @@ theme.set_highlights = function(opts)
     hl(0, '@diff.delta', { link = 'DiffChange' })
 
     -- LSP semantic tokens
+    hl(0, '@type.builtin', { link = '@type' })
     hl(0, '@lsp.typemod.type.defaultLibrary', { link = '@type.builtin' })
     hl(0, '@lsp.type.type', { link = '@type' })
     hl(0, '@lsp.type.typeParameter', { link = '@type' })
