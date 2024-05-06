@@ -1,10 +1,10 @@
 [colors]
 alpha=1.00
 foreground=d4d4d4
-background=1e1e1e
+background=1f1f1f
 
 ## Normal/regular colors (color palette 0-7)
- regular0=1e1e1e  # black
+ regular0=1f1f1f  # black
  regular1=f44747  # red
  regular2=607b4e  # green
  regular3=dcdcaa  # yellow

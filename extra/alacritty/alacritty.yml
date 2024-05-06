@@ -5,14 +5,14 @@ schemes:
   codelight: &light
     primary:
       background: "#FFFFFF"
-      foreground: "#1E1E1E"
+      foreground: "#1F1F1F"
 
     cursor:
       text: "#FFFFFF"
       cursor: "#264F78"
 
     normal:
-      black: "#1E1E1E"
+      black: "#1F1F1F"
       red: "#F44747"
       green: "#6A9955"
       yellow: "#795E26"
@@ -26,15 +26,15 @@ schemes:
 
   codedark: &dark
     primary:
-      background: "#1E1E1E"
+      background: "#1F1F1F"
       foreground: "#D4D4D4"
 
     cursor:
-      text: "#1E1E1E"
+      text: "#1F1F1F"
       cursor: "#D4D4D4"
 
     normal:
-      black: "#1E1E1E"
+      black: "#1F1F1F"
       red: "#F44747"
       green: "#6A9955"
       yellow: "#795E26"

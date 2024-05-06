@@ -4,14 +4,14 @@
 # ]
 [colors.primary]
 background = '#FFFFFF'
-foreground = '#1E1E1E'
+foreground = '#1F1F1F'
 
 [colors.cursor]
 text = "#FFFFFF"
 cursor = "#264F78"
 
 [colors.normal]
-black = "#1E1E1E"
+black = "#1F1F1F"
 red = "#F44747"
 green = "#6A9955"
 yellow = "#795E26"
