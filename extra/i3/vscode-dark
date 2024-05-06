@@ -1,4 +1,4 @@
-set_from_resource $color0      i3wm.color0      #1e1e1e
+set_from_resource $color0      i3wm.color0      #1f1f1f
 set_from_resource $color1      i3wm.color1      #f44747
 set_from_resource $color2      i3wm.color2      #608b4e
 set_from_resource $color3      i3wm.color3      #dcdcaa
@@ -15,7 +15,7 @@ set_from_resource $color13     i3wm.color13     #c678dd
 set_from_resource $color14     i3wm.color14     #56b6c2
 set_from_resource $color15     i3wm.color15     #d4d4d4
 set_from_resource $foreground  i3wm.foreground  #d4d4d4
-set_from_resource $background  i3wm.background  #1e1e1e
+set_from_resource $background  i3wm.background  #1f1f1f
 set_from_resource $cursorColor i3wm.cursorColor #d4d4d4
 
 # class, border, bg, text, indicator, child border

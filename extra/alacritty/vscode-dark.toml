@@ -3,15 +3,15 @@
 #     "~/Projects/personal/vscode.nvim/extra/alacritty/vscode-dark.toml"
 # ]
 [colors.primary]
-background = '#1E1E1E'
+background = '#1F1F1F'
 foreground = '#D4D4D4'
 
 [colors.cursor]
-text = "#1E1E1E"
+text = "#1F1F1F"
 cursor = "#D4D4D4"
 
 [colors.normal]
-black = "#1E1E1E"
+black = "#1F1F1F"
 red = "#F44747"
 green = "#6A9955"
 yellow = "#795E26"
