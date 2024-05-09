@@ -1,7 +1,7 @@
 # vscode light zathura colorscheme
 
 set default-bg                  "#ffffff"
-set default-fg                  "#1e1e1e"
+set default-fg                  "#1f1f1f"
 
 set statusbar-bg                "#ffffff"
 set statusbar-fg                "#808080"
@@ -30,7 +30,7 @@ set notification-bg             "#ffffff"
 set notification-fg             "#000000"
 
 set recolor-lightcolor          "#ffffff"
-set recolor-darkcolor           "#1e1e1e"
+set recolor-darkcolor           "#1f1f1f"
 
 set index-bg                    "#ffffff"
 set index-fg                    "#000000"

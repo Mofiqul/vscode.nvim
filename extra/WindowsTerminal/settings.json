@@ -3,8 +3,8 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "schemes": [
     {
-      "background": "#1E1E1E",
-      "black": "#1E1E1E",
+      "background": "#1F1F1F",
+      "black": "#1F1F1F",
       "blue": "#569CD6",
       "brightBlack": "#545454",
       "brightBlue": "#569CD6",
