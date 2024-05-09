@@ -10,3 +10,5 @@
 [
   "break"
 ] @keyword.conditional
+
+(import_statement "type" @keyword.import)
