@@ -4,6 +4,7 @@
 local vscode = {}
 local config = require('vscode.config')
 local theme = require('vscode.theme')
+local utils = require('vscode.utils')
 
 -- Pass setup to config module
 vscode.setup = config.setup
@@ -18,6 +19,9 @@ vscode.load = function(style)
 
     vim.o.termguicolors = true
     vim.g.colors_name = 'vscode'
+    if config.opts.terminal_colors then
+        utils.terminal(require('vscode.colors').get_colors())
+    end
 
     local background = style or config.opts.style
     if background then

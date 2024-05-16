@@ -7,6 +7,7 @@ local defaults = {
     color_overrides = {},
     group_overrides = {},
     disable_nvimtree_bg = true,
+    terminal_colors = true,
 }
 
 config.opts = {}
