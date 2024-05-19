@@ -135,6 +135,7 @@ theme.set_highlights = function(opts)
     hl(0, '@type.qualifier', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, '@structure', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, '@tag', { fg = c.vscBlue, bg = 'NONE' })
+    hl(0, '@tag.builtin', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, '@tag.delimiter', { fg = c.vscGray, bg = 'NONE' })
     hl(0, '@tag.attribute', { fg = c.vscLightBlue, bg = 'NONE' })
 
