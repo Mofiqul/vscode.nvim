@@ -89,6 +89,7 @@ theme.set_highlights = function(opts)
     hl(0, 'NormalFloat', { bg = c.vscPopupBack })
     hl(0, 'WinBar', { fg = c.vscFront, bg = c.vscBack, bold = true })
     hl(0, 'WinBarNc', { fg = c.vscFront, bg = c.vscBack })
+    hl(0, 'QuickFixLine', { bold = true })
 
     -- Treesitter
     hl(0, '@error', { fg = c.vscRed, bg = 'NONE' }) -- Legacy
