@@ -401,6 +401,7 @@ theme.set_highlights = function(opts)
     hl(0, 'pythonTodo', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, 'pythonClassVar', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, 'pythonClassDef', { fg = c.vscBlueGreen, bg = 'NONE' })
+    hl(0, '@constructor.python', { fg = c.vscBlueGreen, bg = 'NONE' })
 
     -- TeX
     hl(0, 'texStatement', { fg = c.vscBlue, bg = 'NONE' })
