@@ -262,6 +262,9 @@ theme.set_highlights = function(opts)
     hl(0, 'cssStyle', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, 'cssImportant', { fg = c.vscBlue, bg = 'NONE' })
 
+    -- C Sharp
+    hl(0, '@type.builtin.c_sharp', { link = '@keyword' })
+
     -- JavaScript
     hl(0, 'jsVariableDef', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, 'jsFuncArgs', { fg = c.vscLightBlue, bg = 'NONE' })
