@@ -649,6 +649,21 @@ theme.set_highlights = function(opts)
     hl(0, 'MiniStatuslineFileinfo', { bg = c.vscLeftLight, fg = c.vscFront })
     hl(0, 'MiniStatuslineInactive', { bg = c.vscLeftDark, fg = c.vscFront })
 
+	-- Neotree
+	hl(0, 'NeoTreeBufferNumber', { fg = c.vscLineNumber, bg = 'NONE' })
+	hl(0, 'NeoTreeCursorLine', { fg = 'NONE', bg = c.vscCursorDarkDark })
+	hl(0, 'NeoTreeDimText', { fg = 'NONE', bg = c.vscCursorDarkDark })
+	hl(0, 'NeoTreeDirectoryIcon', { fg = c.vscBlue, bg = 'NONE' })
+	hl(0, 'NeoTreeDirectoryName', { fg = c.vscFront, bg = 'NONE' })
+	hl(0, 'NeoTreeDotfile', { fg = c.vscDisabledBlue, bg = 'NONE' })
+	hl(0, 'NeoTreeFileIcon', { fg = c.vscViolet, bg = 'NONE' })
+	hl(0, 'NeoTreeFileName', { fg = c.vscFront, bg = 'NONE' })
+	hl(0, 'NeoTreeFileNameOpened', { fg = c.vscFront, bg = c.vscCursorDarkDark })
+	hl(0, 'NeoTreeFilterTerm', { fg = c.vscFront, bg = 'NONE' })
+	hl(0, 'NeoTreeFloatBorder', { fg = c.vscLineNumber, bg = 'NONE' })
+	hl(0, 'NeoTreeFloatTitle', { fg = c.vscLineNumber, bg = 'NONE' })
+	hl(0, 'NeoTreeTitleBar', { fg = c.vscLineNumber, bg = 'NONE' })
+
     -- NeogitOrg/neogit
     if isDark then
         hl(0, 'NeogitDiffAdd', { fg = c.vscGitAdded, bg = c.vscDiffGreenDark })
