@@ -162,7 +162,7 @@ theme.set_highlights = function(opts)
     hl(0, '@diff.delta', { link = 'DiffChange' })
 
     -- LSP semantic tokens
-    hl(0, '@type.builtin', { link = '@type' })
+    hl(0, '@type.builtin', { fg = c.vscBlue, bg = 'NONE' })
     hl(0, '@lsp.typemod.type.defaultLibrary', { link = '@type.builtin' })
     hl(0, '@lsp.type.type', { link = '@type' })
     hl(0, '@lsp.type.typeParameter', { link = '@type' })
@@ -288,6 +288,8 @@ theme.set_highlights = function(opts)
     hl(0, 'jsSpreadExpression', { fg = c.vscLightBlue, bg = 'NONE' })
 
     -- Typescript
+    hl(0, '@type.builtin.typescript', { link = '@type' })
+    hl(0, '@type.builtin.tsx', { link = '@type' })
     hl(0, 'typescriptLabel', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, 'typescriptExceptions', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, 'typescriptBraces', { fg = c.vscFront, bg = 'NONE' })
