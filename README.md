@@ -40,7 +40,7 @@ use 'Mofiqul/vscode.nvim'
 Plug 'Mofiqul/vscode.nvim'
 ```
 
-## ⚠️  Warnings
+## ⚠️ Warnings
 
 The theme is manipulating the treesitter highlight queries as follows:
 
@@ -60,7 +60,7 @@ The theme is manipulating the treesitter highlight queries as follows:
 ] @keyword.conditional
 ```
 
-this mimics the behavior of VSCode's default theme more closely. Be aware that 
+this mimics the behavior of VSCode's default theme more closely. Be aware that
 this is not a perfect solution but as far as we know, there is no better way to
 achieve this and most popular themes are doing the same thing.
 
@@ -108,7 +108,6 @@ require('vscode').setup({
 vim.cmd.colorscheme "vscode"
 ```
 
-
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
 
 ```lua
@@ -121,7 +120,7 @@ require('lualine').setup({
 })
 ```
 
-[nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua)  setup for exact match as screenshots
+[nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua) setup for exact match as screenshots
 
 ```lua
 require("bufferline").setup({
@@ -188,7 +187,7 @@ require("bufferline").setup({
 
 ## Switching theme
 
-```
+```vim
 :lua require('vscode').load('light')
 :lua require('vscode').load('dark')
 ```
@@ -198,8 +197,9 @@ require("bufferline").setup({
 - [Alacritty](https://github.com/alacritty/alacritty) color scheme
 - [Foot](https://codeberg.org/dnkl/foot) color scheme
 - [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) theme
-- [i3](https://i3wm.org/) color scheme
+- [i3](https://i3wm.org/) and [Sway](https://swaywm.org/) color scheme
 - [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
+- Linux console color scheme
 - [WezTerm](https://wezfurlong.org/wezterm/) color scheme
 - [Windows Terminal](https://github.com/microsoft/terminal) color scheme
 - [Xresources](https://wiki.debian.org/Xresources) color scheme

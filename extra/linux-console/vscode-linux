@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+# .login, .bash_login, .zlogin:
+
+# set Linux console colors
+if [ "$TERM" = "linux" ]; then
+  printf "\033]P0%s" "ffffff"
+  printf "\033]P1%s" "c72e0f"
+  printf "\033]P2%s" "008000"
+  printf "\033]P3%s" "795e25"
+  printf "\033]P4%s" "007acc"
+  printf "\033]P5%s" "af00db"
+  printf "\033]P6%s" "56b6c2"
+  printf "\033]P7%s" "000000"
+  printf "\033]P8%s" "808080"
+  printf "\033]P9%s" "c72e0f"
+  printf "\033]PA%s" "008000"
+  printf "\033]PB%s" "795e25"
+  printf "\033]PC%s" "007acc"
+  printf "\033]PD%s" "af00db"
+  printf "\033]PE%s" "56b6c2"
+  printf "\033]PF%s" "000000"
+fi
+
+# .logout, .bash_logout, .zlogout:
+
+if [ "$TERM" = "linux" ]; then
+  reset
+fi
