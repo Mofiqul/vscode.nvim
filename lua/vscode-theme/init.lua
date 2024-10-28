@@ -39,4 +39,4 @@ vscode_theme.load = function(style)
     end
 end
 
-return vscode-theme
+return vscode_theme
