@@ -60,7 +60,7 @@ The theme is manipulating the treesitter highlight queries as follows:
 ] @keyword.conditional
 ```
 
-this mimics the behavior of VSCode's default theme more closely. Be aware that 
+this mimics the behavior of VSCode's default theme more closely. Be aware that
 this is not a perfect solution but as far as we know, there is no better way to
 achieve this and most popular themes are doing the same thing.
 
@@ -73,8 +73,8 @@ vim.o.background = 'dark'
 -- For light theme
 vim.o.background = 'light'
 
-local c = require('vscode.colors').get_colors()
-require('vscode').setup({
+local c = require('vscode-theme.colors').get_colors()
+require('vscode-theme').setup({
     -- Alternatively set style in setup
     -- style = 'light'
 
@@ -102,7 +102,7 @@ require('vscode').setup({
         Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
     }
 })
--- require('vscode').load()
+-- require('vscode-theme').load()
 
 -- load the theme without affecting devicon colors.
 vim.cmd.colorscheme "vscode"
@@ -115,7 +115,7 @@ If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can a
 require('lualine').setup({
     options = {
         -- ...
-        theme = 'vscode',
+        theme = 'vscode-theme',
         -- ...
     },
 })
@@ -189,8 +189,8 @@ require("bufferline").setup({
 ## Switching theme
 
 ```
-:lua require('vscode').load('light')
-:lua require('vscode').load('dark')
+:lua require('vscode-theme').load('light')
+:lua require('vscode-theme').load('dark')
 ```
 
 ## 🍭 Extra folder

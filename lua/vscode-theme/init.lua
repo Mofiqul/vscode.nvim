@@ -2,9 +2,9 @@
 -- Lua port of https://github.com/tomasiser/vim-code-dark
 -- By http://github.com/mofiqul
 local vscode = {}
-local config = require('vscode.config')
-local theme = require('vscode.theme')
-local utils = require('vscode.utils')
+local config = require('vscode-theme.config')
+local theme = require('vscode-theme.theme')
+local utils = require('vscode-theme.utils')
 
 -- Pass setup to config module
 vscode.setup = config.setup
@@ -18,9 +18,9 @@ vscode.load = function(style)
     end
 
     vim.o.termguicolors = true
-    vim.g.colors_name = 'vscode'
+    vim.g.colors_name = 'vscode-theme'
     if config.opts.terminal_colors then
-        utils.terminal(require('vscode.colors').get_colors())
+        utils.terminal(require('vscode-theme.colors').get_colors())
     end
 
     local background = style or config.opts.style

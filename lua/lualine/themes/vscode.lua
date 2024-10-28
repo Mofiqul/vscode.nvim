@@ -1,6 +1,6 @@
 -- Copyright (c) 2020-2021 Mofiqul Islam
 -- MIT license, see LICENSE for more details.
-local config = require('vscode.config')
+local config = require('vscode-theme.config')
 local vscode = {}
 local colors = {}
 
