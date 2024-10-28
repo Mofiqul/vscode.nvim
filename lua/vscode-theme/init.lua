@@ -1,26 +1,26 @@
 -- vscode.nvim color scheme
 -- Lua port of https://github.com/tomasiser/vim-code-dark
 -- By http://github.com/mofiqul
-local vscode = {}
-local config = require('vscode.config')
-local theme = require('vscode.theme')
-local utils = require('vscode.utils')
+local vscode_theme = {}
+local config = require('vscode-theme.config')
+local theme = require('vscode-theme.theme')
+local utils = require('vscode-theme.utils')
 
 -- Pass setup to config module
-vscode.setup = config.setup
+vscode_theme.setup = config.setup
 
 -- Load colorscheme with a given or default style
 ---@param style? string
-vscode.load = function(style)
+vscode_theme.load = function(style)
     vim.cmd('hi clear')
     if vim.fn.exists('syntax_on') then
         vim.cmd('syntax reset')
     end
 
     vim.o.termguicolors = true
-    vim.g.colors_name = 'vscode'
+    vim.g.colors_name = 'vscode-theme'
     if config.opts.terminal_colors then
-        utils.terminal(require('vscode.colors').get_colors())
+        utils.terminal(require('vscode-theme.colors').get_colors())
     end
 
     local background = style or config.opts.style
@@ -39,4 +39,4 @@ vscode.load = function(style)
     end
 end
 
-return vscode
+return vscode_theme
