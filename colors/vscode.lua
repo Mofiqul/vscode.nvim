@@ -1,2 +1,2 @@
-local vscode = require('vscode-theme')
-vscode.load()
+local vscode-theme = require('vscode-theme')
+vscode-theme.load()
