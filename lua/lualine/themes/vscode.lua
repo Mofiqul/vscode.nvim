@@ -1,7 +1,7 @@
 -- Copyright (c) 2020-2021 Mofiqul Islam
 -- MIT license, see LICENSE for more details.
 local config = require('vscode-theme.config')
-local vscode-theme = {}
+local vscode_theme = {}
 local colors = {}
 
 if vim.o.background == 'dark' then
