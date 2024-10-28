@@ -28,45 +28,45 @@ else
     colors.pink = '#FFA3A3'
 end
 
-vscode-theme.normal = {
+vscode_theme.normal = {
     a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.blue, gui = 'bold' },
     b = { fg = colors.blue, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-vscode-theme.visual = {
+vscode_theme.visual = {
     a = { fg = colors.bg, bg = colors.yellow, gui = 'bold' },
     b = { fg = colors.yellow, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-vscode-theme.inactive = {
+vscode_theme.inactive = {
     a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
     b = { fg = colors.inactive, bg = config.opts.transparent and 'NONE' or colors.bg },
     c = { fg = colors.inactive, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-vscode-theme.replace = {
+vscode_theme.replace = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.red, gui = 'bold' },
     b = { fg = colors.red, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-vscode-theme.insert = {
+vscode_theme.insert = {
     a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.green, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-vscode-theme.terminal = {
+vscode_theme.terminal = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-vscode-theme.command = {
+vscode_theme.command = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.pink, gui = 'bold' },
     b = { fg = colors.pink, bg = config.opts.transparent and 'NONE' or colors.bg2 },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
-return vscode-theme
+return vscode_theme

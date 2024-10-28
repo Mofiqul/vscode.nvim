@@ -7,11 +7,11 @@ local theme = require('vscode-theme.theme')
 local utils = require('vscode-theme.utils')
 
 -- Pass setup to config module
-vscode-theme.setup = config.setup
+vscode_theme.setup = config.setup
 
 -- Load colorscheme with a given or default style
 ---@param style? string
-vscode-theme.load = function(style)
+vscode_theme.load = function(style)
     vim.cmd('hi clear')
     if vim.fn.exists('syntax_on') then
         vim.cmd('syntax reset')
