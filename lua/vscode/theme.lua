@@ -676,6 +676,20 @@ theme.set_highlights = function(opts)
     hl(0, 'SnacksPickerListCursorLine', { link = 'PmenuSel' })
     hl(0, 'SnacksPickerPreviewCursorLine', { fg = 'none', bg = 'none', nocombine = true })
 
+    -- Compiler mode nvim
+    hl(0, 'CompileModeMessage', { underline = true })
+    hl(0, 'CompileModeMessageRow', { fg = c.vscPink })
+    hl(0, 'CompileModeMessageCol', { fg = c.vscBlueGreen })
+    hl(0, 'CompileModeError', { fg = c.vscRed })
+    hl(0, 'CompileModeWarning', { fg = c.vscYellow })
+    hl(0, 'CompileModeInfo', { fg = c.vscGreen })
+    hl(0, 'CompileModeCommandOutput', { fg = '#6699ff' })
+    hl(0, 'CompileModeDirectoryMessage', { fg = '#6699ff' })
+    hl(0, 'CompileModeOutputFile', { fg = '#9966cc' })
+    hl(0, 'CompileModeCheckResult', { fg = '#ff9966', bold = true })
+    hl(0, 'CompileModeCheckTarget', { fg = '#ff9966' })
+    hl(0, 'CompileModeErrorLocus', { link = 'Visual' })
+
     -- NeogitOrg/neogit
     hl(0, 'NeogitWinSeparator', { link = 'WinSeparator' })
     if isDark then
