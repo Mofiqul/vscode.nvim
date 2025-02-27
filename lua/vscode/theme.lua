@@ -692,8 +692,8 @@ theme.set_highlights = function(opts)
     hl(0, 'CompileModeErrorLocus', { link = 'Visual' })
 
     -- Mini Statusline
-    hl(0, 'MiniStatuslineDevinfo', { bg = c.vscLeftDark })
-    hl(0, 'MiniStatuslineFileinfo', { bg = c.vscLeftDark })
+    hl(0, 'MiniStatuslineDevinfo', { bg = isDark and c.vscLeftLight or c.vscLeftDark })
+    hl(0, 'MiniStatuslineFileinfo', { bg = isDark and c.vscLeftLight or c.vscLeftDark })
     hl(0, 'MiniStatuslineModeCommand', { fg = c.vscBack, bg = c.vscLightRed, bold = true })
     hl(0, 'MiniStatuslineModeInsert', { fg = c.vscBack, bg = c.vscLightBlue, bold = true })
     hl(0, 'MiniStatuslineModeNormal', { fg = c.vscBack, bg = c.vscLightGreen, bold = true })
