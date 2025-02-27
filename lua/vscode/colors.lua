@@ -17,15 +17,15 @@ colors.get_colors = function()
             vscLeftLight = '#636369',
 
             vscPopupFront = '#BBBBBB',
-            vscPopupBack = '#272727',
-            vscPopupHighlightBlue = '#004b72',
+            vscPopupBack = '#202020',
+            vscPopupHighlightBlue = '#04395E',
             vscPopupHighlightGray = '#343B41',
 
             vscSplitLight = '#898989',
             vscSplitDark = '#444444',
             vscSplitThumb = '#424242',
 
-            vscCursorDarkDark = '#222222',
+            vscCursorDarkDark = '#363636',
             vscCursorDark = '#51504F',
             vscCursorLight = '#AEAFAD',
             vscSelection = '#264F78',
@@ -93,7 +93,7 @@ colors.get_colors = function()
             vscLeftLight = '#F3F3F3',
 
             vscPopupFront = '#000000',
-            vscPopupBack = '#F3F3F3',
+            vscPopupBack = '#F8F8F8',
             vscPopupHighlightBlue = '#0064c1',
             vscPopupHighlightGray = '#767676',
 
@@ -101,7 +101,7 @@ colors.get_colors = function()
             vscSplitDark = '#DDDDDD',
             vscSplitThumb = '#DFDFDF',
 
-            vscCursorDarkDark = '#E5EBF1',
+            vscCursorDarkDark = '#E5E5E5',
             vscCursorDark = '#6F6F6F',
             vscCursorLight = '#767676',
             vscSelection = '#ADD6FF',

@@ -29,8 +29,12 @@ theme.set_highlights = function(opts)
     hl(0, 'ModeMsg', { fg = c.vscFront, bg = c.vscLeftDark })
     hl(0, 'MoreMsg', { fg = c.vscFront, bg = c.vscLeftDark })
     hl(0, 'NonText', { fg = (isDark and c.vscLineNumber or c.vscTabOther), bg = c.vscNone })
-    hl(0, 'Pmenu', { fg = c.vscPopupFront, bg = c.vscPopupBack })
-    hl(0, 'PmenuSel', { fg = isDark and c.vscPopupFront or c.vscBack, bg = c.vscPopupHighlightBlue })
+    hl(0, 'Pmenu', { fg = isDark and c.vscPopupFront or 'none', bg = c.vscPopupBack })
+    hl(
+        0,
+        'PmenuSel',
+        { fg = isDark and c.vscPopupFront or 'none', bg = isDark and c.vscPopupHighlightBlue or c.vscTabOutside }
+    )
     hl(0, 'PmenuSbar', { fg = 'NONE', bg = c.vscPopupHighlightGray })
     hl(0, 'PmenuThumb', { fg = 'NONE', bg = c.vscPopupFront })
     hl(0, 'Question', { fg = c.vscBlue, bg = c.vscBack })
@@ -664,6 +668,14 @@ theme.set_highlights = function(opts)
     hl(0, 'NeoTreeFloatTitle', { fg = c.vscLineNumber, bg = 'NONE' })
     hl(0, 'NeoTreeTitleBar', { fg = c.vscLineNumber, bg = 'NONE' })
 
+    -- Snacks nvim
+    hl(0, 'SnacksPicker', { link = 'Normal' })
+    hl(0, 'SnacksPickerBorder', { link = 'Normal' })
+    hl(0, 'SnacksPickerDir', { fg = 'NONE', bg = 'NONE', nocombine = true })
+    hl(0, 'SnacksIndent', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'SnacksPickerListCursorLine', { link = 'PmenuSel' })
+    hl(0, 'SnacksPickerPreviewCursorLine', { fg = 'none', bg = 'none', nocombine = true })
+
     -- NeogitOrg/neogit
     hl(0, 'NeogitWinSeparator', { link = 'WinSeparator' })
     if isDark then
@@ -774,10 +786,6 @@ theme.set_highlights = function(opts)
         hl(0, 'CocFloating', { fg = 'NONE', bg = c.vscPopupBack })
         hl(0, 'CocMenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
         hl(0, 'CocSearch', { fg = '#2A64B9', bg = 'NONE' })
-
-        -- Pmenu
-        hl(0, 'Pmenu', { fg = 'NONE', bg = c.vscPopupBack })
-        hl(0, 'PmenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
 
         -- Copilot
         hl(0, 'CopilotSuggestion', { fg = c.vscGray, bg = 'NONE' })
