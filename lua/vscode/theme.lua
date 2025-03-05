@@ -654,15 +654,15 @@ theme.set_highlights = function(opts)
     hl(0, 'MiniStatuslineInactive', { bg = c.vscLeftDark, fg = c.vscFront })
 
     -- mini.icons
-    hl(0, 'MiniIconsAzure', { fg = colors.vscBlue }),
-    hl(0, 'MiniIconsBlue', { fg = colors.vscMediumBlue }),
-    hl(0, 'MiniIconsCyan', { fg = colors.vscBlueGreen }),
-    hl(0, 'MiniIconsGreen', { fg = colors.vscGreen }),
-    hl(0, 'MiniIconsGrey', { fg = colors.vscFront }),
-    hl(0, 'MiniIconsOrange', { fg = colors.vscRed }),
-    hl(0, 'MiniIconsPurple', { fg = colors.vscPink }),
-    hl(0, 'MiniIconsRed', { fg = colors.vscRed }),
-    hl(0, 'MiniIconsYellow', { fg = colors.vscDarkYellow }),
+    hl(0, 'MiniIconsAzure', { fg = c.vscBlue })
+    hl(0, 'MiniIconsBlue', { fg = c.vscMediumBlue })
+    hl(0, 'MiniIconsCyan', { fg = c.vscBlueGreen })
+    hl(0, 'MiniIconsGreen', { fg = c.vscGreen })
+    hl(0, 'MiniIconsGrey', { fg = c.vscFront })
+    hl(0, 'MiniIconsOrange', { fg = c.vscRed })
+    hl(0, 'MiniIconsPurple', { fg = c.vscPink })
+    hl(0, 'MiniIconsRed', { fg = c.vscRed })
+    hl(0, 'MiniIconsYellow', { fg = c.vscDarkYellow })
 
     -- Neotree
     hl(0, 'NeoTreeBufferNumber', { fg = c.vscLineNumber, bg = 'NONE' })
