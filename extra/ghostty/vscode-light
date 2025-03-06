@@ -1,0 +1,28 @@
+# vi: ft=conf :
+
+# normal colors
+palette = 0=#000000
+palette = 1=#c72e0f
+palette = 2=#008000
+palette = 3=#795e25
+palette = 4=#007acc
+palette = 5=#af00db
+palette = 6=#56b6c2
+palette = 7=#000000
+
+# bright colors
+palette = 8=#808080
+palette = 9=#c72e0f
+palette = 10=#008000
+palette = 11=#795e25
+palette = 12=#007acc
+palette = 13=#af00db
+palette = 14=#56b6c2
+palette = 15=#000000
+
+background = #ffffff
+foreground = #000000
+cursor-color = #D4D4D4
+
+selection-background = #264F78
+selection-foreground = #000000
