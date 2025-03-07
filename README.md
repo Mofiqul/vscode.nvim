@@ -201,6 +201,7 @@ require("bufferline").setup({
 - [Foot](https://codeberg.org/dnkl/foot) color scheme
 - [fzf](https://junegunn.github.io/fzf/) color scheme
 - [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) theme
+- [Ghostty](https://ghostty.org/) color scheme
 - [i3](https://i3wm.org/) and [Sway](https://swaywm.org/) color scheme
 - [Kitty](https://sw.kovidgoyal.net/kitty/) color scheme
 - Linux console color scheme
