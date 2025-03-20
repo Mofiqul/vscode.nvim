@@ -1,0 +1,15 @@
+themes {
+    vscode_dark {
+        fg "#D4D4D4"
+        bg "#264F78"
+        black "#1F1F1F"
+        red "#F44747"
+        green "#6A9955"
+        yellow "#DCDCAA"
+        blue "#569CD6"
+        magenta "#C586C0"
+        cyan "#56B6C2"
+        white "#D4D4D4"
+        orange "#CE9178"
+    }
+}

@@ -1,0 +1,15 @@
+themes {
+    vscode_light {
+        fg "#1F1F1F"
+        bg "#ADD6FF"
+        black "#FFFFFF"
+        red "#F44747"
+        green "#6A9955"
+        yellow "#795E26"
+        blue "#007ACC"
+        magenta "#AF00DB"
+        cyan "#56B6C2"
+        white "#FFFFFF"
+        orange "#C72E0F"
+    }
+}
