@@ -516,11 +516,9 @@ theme.set_highlights = function(opts)
     hl(0, 'BufferTabpagesFill', { fg = c.vscFront, bg = c.vscTabOther })
 
     -- IndentBlankLine
-    hl(0, 'IndentBlanklineContextChar', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
-    hl(0, 'IndentBlanklineContextStart', { sp = c.vscContextCurrent, bg = 'NONE', nocombine = true, underline = true })
-    hl(0, 'IndentBlanklineChar', { fg = c.vscContext, bg = 'NONE', nocombine = true })
-    hl(0, 'IndentBlanklineSpaceChar', { fg = c.vscContext, bg = 'NONE', nocombine = true })
-    hl(0, 'IndentBlanklineSpaceCharBlankline', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'IblIndent', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'IblWhitespace', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'IblScope', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
 
     -- Neotest
     hl(0, 'NeotestAdapterName', { fg = c.vscFront, bold = true })
