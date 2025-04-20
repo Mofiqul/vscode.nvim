@@ -757,6 +757,9 @@ theme.set_highlights = function(opts)
     hl(0, 'MiniStatuslineModeReplace', { fg = c.vscBack, bg = c.vscYellowOrange, bold = true })
     hl(0, 'MiniStatuslineModeVisual', { fg = c.vscBack, bg = c.vscPink, bold = true })
 
+    -- Copilot
+    hl(0, 'CopilotSuggestion', { fg = c.vscSuggestion, bg = 'NONE' })
+
     -- NeogitOrg/neogit
     hl(0, 'NeogitWinSeparator', { link = 'WinSeparator' })
     if isDark then
@@ -867,9 +870,6 @@ theme.set_highlights = function(opts)
         hl(0, 'CocFloating', { fg = 'NONE', bg = c.vscPopupBack })
         hl(0, 'CocMenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
         hl(0, 'CocSearch', { fg = '#2A64B9', bg = 'NONE' })
-
-        -- Copilot
-        hl(0, 'CopilotSuggestion', { fg = c.vscGray, bg = 'NONE' })
 
         -- symbols-outline
         -- white fg and lualine blue bg
