@@ -13,11 +13,11 @@ colors.get_colors = function()
             vscTabOutside = '#252526',
 
             vscLeftDark = '#252526',
-            vscLeftMid = '#373737',
+            vscLeftMid = '#393940',
             vscLeftLight = '#636369',
 
             vscPopupFront = '#BBBBBB',
-            vscPopupBack = '#202020',
+            vscPopupBack = '#252529',
             vscPopupHighlightBlue = '#04395E',
             vscPopupHighlightGray = '#343B41',
 
@@ -25,7 +25,7 @@ colors.get_colors = function()
             vscSplitDark = '#444444',
             vscSplitThumb = '#424242',
 
-            vscCursorDarkDark = '#363636',
+            vscCursorDarkDark = '#363437',
             vscCursorDark = '#51504F',
             vscCursorLight = '#AEAFAD',
             vscSelection = '#264F78',
@@ -84,7 +84,7 @@ colors.get_colors = function()
         mycolors = {
             vscNone = 'NONE',
             vscFront = '#343434',
-            vscBack = '#FAFAFA',
+            vscBack = '#FFFFFF',
 
             vscTabCurrent = '#FFFFFF',
             vscTabOther = '#CECECE',
