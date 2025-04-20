@@ -516,11 +516,9 @@ theme.set_highlights = function(opts)
     hl(0, 'BufferTabpagesFill', { fg = c.vscFront, bg = c.vscTabOther })
 
     -- IndentBlankLine
-    hl(0, 'IndentBlanklineContextChar', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
-    hl(0, 'IndentBlanklineContextStart', { sp = c.vscContextCurrent, bg = 'NONE', nocombine = true, underline = true })
-    hl(0, 'IndentBlanklineChar', { fg = c.vscContext, bg = 'NONE', nocombine = true })
-    hl(0, 'IndentBlanklineSpaceChar', { fg = c.vscContext, bg = 'NONE', nocombine = true })
-    hl(0, 'IndentBlanklineSpaceCharBlankline', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'IblIndent', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'IblWhitespace', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'IblScope', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
 
     -- Neotest
     hl(0, 'NeotestAdapterName', { fg = c.vscFront, bold = true })
@@ -580,8 +578,8 @@ theme.set_highlights = function(opts)
     hl(0, 'CmpItemAbbrMatchFuzzy', { fg = isDark and c.vscMediumBlue or c.vscDarkBlue, bg = 'NONE', bold = true })
 
     -- Blink
-    hl(0, 'BlinkCmpMenu', { link = 'FloatBorder' })
-    hl(0, 'BlinkCmpMenuBorder', { link = 'Pmenu' })
+    hl(0, 'BlinkCmpMenu', { link = 'Pmenu' })
+    hl(0, 'BlinkCmpMenuBorder', { link = 'FloatBorder' })
     hl(0, 'BlinkCmpMenuSelection', { link = 'PmenuSel' })
     hl(0, 'BlinkCmpScrollBarThumb', { link = 'PmenuThumb' })
     hl(0, 'BlinkCmpScrollBarGutter', { link = 'PmenuSbar' })
@@ -591,7 +589,7 @@ theme.set_highlights = function(opts)
     hl(0, 'BlinkCmpLabelDescription', { fg = c.vscPopupFront, bg = 'NONE' })
     hl(0, 'BlinkCmpKind', { fg = c.vscPopupFront, bg = 'NONE' })
     hl(0, 'BlinkCmpSource', { fg = c.vscPopupFront, bg = 'NONE' })
-    hl(0, 'BlinkCmpGhostText', { link = 'NonText' })
+    hl(0, 'BlinkCmpGhostText', { fg = c.vscContextCurrent })
     hl(0, 'BlinkCmpDoc', { link = 'NormalFloat' })
     hl(0, 'BlinkCmpDocBorder', { link = 'FloatBorder' })
     hl(0, 'BlinkCmpDocSeparator', { link = 'NormalFloat' })
@@ -604,28 +602,28 @@ theme.set_highlights = function(opts)
     hl(0, 'BlinkCmpKindMethod', { fg = c.vscPink, bg = 'NONE' })
     hl(0, 'BlinkCmpKindFunction', { fg = c.vscPink, bg = 'NONE' })
     hl(0, 'BlinkCmpKindConstructor', { fg = c.vscUiOrange, bg = 'NONE' })
-    hl(0, 'BlinkCmpKindField', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'BlinkCmpKindField', { link = '@variable.member' })
     hl(0, 'BlinkCmpKindVariable', { link = '@variable.member' })
-    hl(0, 'BlinkCmpKindClass', { fg = c.vscUiOrange, bg = 'NONE' })
-    hl(0, 'BlinkCmpKindInterface', { link = 'BlinkCmpKindClass' })
+    hl(0, 'BlinkCmpKindClass', { link = 'BlinkCmpKindConstructor' })
+    hl(0, 'BlinkCmpKindInterface', { fg = c.vscLightBlue, bg = 'NONE' })
     hl(0, 'BlinkCmpKindModule', { link = 'BlinkCmpKindClass' })
     hl(0, 'BlinkCmpKindProperty', { link = 'BlinkCmpKindField' })
     hl(0, 'BlinkCmpKindUnit', { link = 'BlinkCmpKindField' })
     hl(0, 'BlinkCmpKindValue', { link = '@variable.member' })
-    hl(0, 'BlinkCmpKindEnum', { link = '@variable.member' })
+    hl(0, 'BlinkCmpKindEnum', { link = 'BlinkCmpKindConstructor' })
     hl(0, 'BlinkCmpKindKeyword', { fg = c.vscDarkYellow, bg = 'NONE' })
     hl(0, 'BlinkCmpKindSnippet', { fg = c.vscDarkYellow, bg = 'NONE' })
-    hl(0, 'BlinkCmpKindColor', { link = 'BlinkCmpKindText' })
+    hl(0, 'BlinkCmpKindColor', { link = 'cssColor' })
     hl(0, 'BlinkCmpKindFile', { link = '@text.uri' })
     hl(0, 'BlinkCmpKindReference', { link = '@variable.parameter.reference' })
-    hl(0, 'BlinkCmpKindFolder', { link = '@text.uri' })
-    hl(0, 'BlinkCmpKindEnumMember', { link = 'BlinkCmpKindText' })
-    hl(0, 'BlinkCmpKindConstant', { link = 'BlinkCmpKindEnum' })
-    hl(0, 'BlinkCmpKindStruct', { link = 'BlinkCmpKindClass' })
-    hl(0, 'BlinkCmpKindEvent', { link = '@constant' })
+    hl(0, 'BlinkCmpKindFolder', { link = 'NeotestDir' })
+    hl(0, 'BlinkCmpKindEnumMember', { link = '@variable.member' })
+    hl(0, 'BlinkCmpKindConstant', { link = '@constant' })
+    hl(0, 'BlinkCmpKindStruct', { link = '@structure' })
+    hl(0, 'BlinkCmpKindEvent', { fg = c.vscDarkYellow, bg = 'NONE' })
     hl(0, 'BlinkCmpKindOperator', { link = '@operator' })
     hl(0, 'BlinkCmpKindTypeParameter', { link = '@variable.parameter' })
-    
+    hl(0, 'BlinkCmpKindCopilot', { fg = c.vscBlueGreen })
 
     -- HiPhish/rainbow-delimiters.nvim
     hl(0, 'RainbowDelimiterRed', { fg = c.vscPink, bg = 'NONE' })
@@ -759,6 +757,9 @@ theme.set_highlights = function(opts)
     hl(0, 'MiniStatuslineModeReplace', { fg = c.vscBack, bg = c.vscYellowOrange, bold = true })
     hl(0, 'MiniStatuslineModeVisual', { fg = c.vscBack, bg = c.vscPink, bold = true })
 
+    -- Copilot
+    hl(0, 'CopilotSuggestion', { fg = c.vscSuggestion, bg = 'NONE' })
+
     -- NeogitOrg/neogit
     hl(0, 'NeogitWinSeparator', { link = 'WinSeparator' })
     if isDark then
@@ -869,9 +870,6 @@ theme.set_highlights = function(opts)
         hl(0, 'CocFloating', { fg = 'NONE', bg = c.vscPopupBack })
         hl(0, 'CocMenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
         hl(0, 'CocSearch', { fg = '#2A64B9', bg = 'NONE' })
-
-        -- Copilot
-        hl(0, 'CopilotSuggestion', { fg = c.vscGray, bg = 'NONE' })
 
         -- symbols-outline
         -- white fg and lualine blue bg
