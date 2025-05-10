@@ -25,7 +25,7 @@ colors.get_colors = function()
             vscSplitDark = '#444444',
             vscSplitThumb = '#424242',
 
-            vscCursorDarkDark = '#363636',
+            vscCursorDarkDark = '#222222',
             vscCursorDark = '#51504F',
             vscCursorLight = '#AEAFAD',
             vscSelection = '#264F78',
