@@ -198,6 +198,7 @@ require("bufferline").setup({
 ## 🍭 Extra folder
 
 - [Alacritty](https://github.com/alacritty/alacritty) color scheme
+- [Dunst](https://dunst-project.org/) color scheme
 - [Foot](https://codeberg.org/dnkl/foot) color scheme
 - [fzf](https://junegunn.github.io/fzf/) color scheme
 - [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) theme
@@ -209,6 +210,7 @@ require("bufferline").setup({
 - [Windows Terminal](https://github.com/microsoft/terminal) color scheme
 - [Xresources](https://wiki.debian.org/Xresources) color scheme
 - [zathura](https://pwmt.org/projects/zathura/) color scheme
+- [Zellij](https://zellij.dev/) color scheme
 
 ## Something is broken but I know how to fix it!
 
