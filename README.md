@@ -25,6 +25,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [rainbow-delimiters](https://gitlab.com/HiPhish/rainbow-delimiters.nvim)
+- [which-key](https://github.com/folke/which-key.nvim)
 
 ## ⬇️ Installation
 
