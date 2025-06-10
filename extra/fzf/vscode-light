@@ -4,7 +4,7 @@
 
 # Generated using https://vitormv.github.io/fzf-themes#eyJjb2xvcnMiOiJmZzojMDAwMDAwLGZnKzojMDAwMDAwLGJnOiNGRkZGRkYsYmcrOiNGM0YzRjMsaGw6IzAwODAwMCxobCs6I0FGMDBEQixpbmZvOiNBRjAwREIsbWFya2VyOiNBRjAwREIscHJvbXB0OiNBRjAwREIsc3Bpbm5lcjojQUYwMERCLHBvaW50ZXI6I0FGMDBEQixoZWFkZXI6IzAwODAwMCxib3JkZXI6IzAwMDAwMCxsYWJlbDojQUYwMERCLHF1ZXJ5OiMwMDAwMDAifQ==
 
-# .profile, .bash_profile, .zshenv
+# .profile, .bash_profile, .zshenv:
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"'
   --color=fg:#000000,fg+:#000000,bg:#FFFFFF,bg+:#F3F3F3
