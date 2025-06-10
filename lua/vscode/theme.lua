@@ -810,6 +810,23 @@ theme.set_highlights = function(opts)
     hl(0, 'NeogitDiffDeleteCursor', { link = 'NeogitDiffDeleteHighlight' })
     hl(0, 'NeogitHunkHeaderCursor', { link = 'NeogitHunkHeaderHighlight' })
 
+    -- Which key
+    hl(0, 'WhichKeyIconAzure', { fg = c.vscBlueGreen, bg = "NONE" })
+    hl(0, 'WhichKeyIconBlue', { fg = c.vscBlue, bg = 'NONE' })
+    hl(0, 'WhichKeyIconGreen', { fg = c.vscGreen, bg = 'NONE' })
+    hl(0, 'WhichKeyIconGrey', { fg = c.vscGray, bg = 'NONE' })
+    hl(0, 'WhichKeyIconOrange', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'WhichKeyIconPurple', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'WhichKeyIconRed', { fg = c.vscRed, bg = 'NONE' })
+    hl(0, 'WhichKeyIconYellow', { fg = c.vscYellow, bg = 'NONE' })
+    hl(0, 'WhichKeySeparator', { link = 'Normal' })
+    hl(0, 'WhichKeyValue', { link = 'Normal' })
+    if isDark then
+        hl(0, 'WhichKeyBorder', { fg = c.vscLineNumber, bg = 'NONE' })
+    else
+        hl(0, 'WhichKeyBorder', { fg = c.vscTabOther, bg = 'NONE' })
+    end
+
     if isDark then
         hl(0, 'NvimTreeFolderIcon', { fg = c.vscBlue, bg = 'NONE' })
         hl(0, 'NvimTreeIndentMarker', { fg = c.vscLineNumber, bg = 'NONE' })
