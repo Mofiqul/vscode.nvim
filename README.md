@@ -85,6 +85,9 @@ require('vscode').setup({
     -- Enable italic comment
     italic_comments = true,
 
+    -- Enable italic inlay type hints
+    italic_inlayhints = true,
+
     -- Underline `@markup.link.*` variants
     underline_links = true,
 

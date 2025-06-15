@@ -3,6 +3,7 @@ local config = {}
 local defaults = {
     transparent = false,
     italic_comments = false,
+    italic_inlayhints = false,
     underline_links = false,
     color_overrides = {},
     group_overrides = {},
@@ -18,6 +19,7 @@ config.setup = function(user_opts)
     local global_settings_opts = vim.tbl_extend('force', defaults, {
         transparent = (vim.g.vscode_transparent == true or vim.g.vscode_transparent == 1),
         italic_comments = (vim.g.vscode_italic_comment == true or vim.g.vscode_italic_comment == 1),
+        italic_inlayhints = (vim.g.vscode_italic_inlayhints == true or vim.g.vscode_italic_inlayhints == 1),
         underline_links = (vim.g.vscode_underline_links == true or vim.g.vscode_underline_links == 1),
         disable_nvimtree_bg = (vim.g.vscode_disable_nvim_tree_bg == true or vim.g.vscode_disable_nvim_tree_bg == 1),
     })
