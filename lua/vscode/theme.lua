@@ -538,6 +538,10 @@ theme.set_highlights = function(opts)
     hl(0, 'IblWhitespace', { fg = c.vscContext, bg = 'NONE', nocombine = true })
     hl(0, 'IblScope', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
 
+    -- Snacks.indent
+    hl(0, 'SnacksIndent', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'SnacksIndentScope', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
+
     -- Neotest
     hl(0, 'NeotestAdapterName', { fg = c.vscFront, bold = true })
     hl(0, 'NeotestDir', { fg = c.vscBlue })
