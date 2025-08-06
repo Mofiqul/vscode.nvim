@@ -538,6 +538,10 @@ theme.set_highlights = function(opts)
     hl(0, 'IblWhitespace', { fg = c.vscContext, bg = 'NONE', nocombine = true })
     hl(0, 'IblScope', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
 
+    -- Snacks.indent
+    hl(0, 'SnacksIndent', { fg = c.vscContext, bg = 'NONE', nocombine = true })
+    hl(0, 'SnacksIndentScope', { fg = c.vscContextCurrent, bg = 'NONE', nocombine = true })
+
     -- Neotest
     hl(0, 'NeotestAdapterName', { fg = c.vscFront, bold = true })
     hl(0, 'NeotestDir', { fg = c.vscBlue })
@@ -569,6 +573,7 @@ theme.set_highlights = function(opts)
     hl(0, 'LspReferenceText', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'LspReferenceRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'LspReferenceWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'LspInlayHint', { fg = c.vscSuggestion, bg = 'NONE', italic = opts.italic_inlayhints })
 
     -- Trouble
     hl(0, 'TroubleNormal', { link = 'Normal' })

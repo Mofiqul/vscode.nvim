@@ -27,6 +27,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 - [rainbow-delimiters](https://gitlab.com/HiPhish/rainbow-delimiters.nvim)
 - [which-key](https://github.com/folke/which-key.nvim)
 - [Snacks.dashboard](https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md)
+- [Snacks.indent](https://github.com/folke/snacks.nvim/blob/main/docs/indent.md)
 
 ## ⬇️ Installation
 
@@ -85,6 +86,9 @@ require('vscode').setup({
 
     -- Enable italic comment
     italic_comments = true,
+
+    -- Enable italic inlay type hints
+    italic_inlayhints = true,
 
     -- Underline `@markup.link.*` variants
     underline_links = true,
