@@ -573,6 +573,7 @@ theme.set_highlights = function(opts)
     hl(0, 'LspReferenceText', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'LspReferenceRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'LspReferenceWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'LspInlayHint', { fg = c.vscSuggestion, bg = 'NONE', italic = opts.italic_inlayhints })
 
     -- Trouble
     hl(0, 'TroubleNormal', { link = 'Normal' })
