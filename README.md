@@ -26,6 +26,7 @@ vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 - [rainbow-delimiters](https://gitlab.com/HiPhish/rainbow-delimiters.nvim)
 - [which-key](https://github.com/folke/which-key.nvim)
+- [Snacks.dashboard](https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md)
 - [Snacks.indent](https://github.com/folke/snacks.nvim/blob/main/docs/indent.md)
 
 ## ⬇️ Installation

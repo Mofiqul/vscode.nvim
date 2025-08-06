@@ -703,6 +703,14 @@ theme.set_highlights = function(opts)
     hl(0, 'DashboardKey', { fg = c.vscWhite, bg = 'NONE' })
     hl(0, 'DashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
 
+    -- Snacks.Dashboard
+    hl(0, 'SnacksDashboardHeader', { fg = c.vscBlue, bg = 'NONE' })
+    hl(0, 'SnacksDashboardDesc', { fg = c.vscYellow, bg = 'NONE' })
+    hl(0, 'SnacksDashboardIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
+    hl(0, 'SnacksDashboardKey', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'SnacksDashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
+    hl(0, 'SnacksDashboardSpecial', { fg = c.vscYellowOrange, bg = 'NONE', italic = true })
+
     -- Illuminate
     hl(0, 'illuminatedWord', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'illuminatedCurWord', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
