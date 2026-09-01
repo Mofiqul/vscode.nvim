@@ -6,17 +6,16 @@ local background = arg[1] or 'dark'
 -- re-sources the active colorscheme and runs the theme a second time.
 vim.o.background = background
 
-local highlights = {}
+local highlight_names = {}
 
--- `nvim_get_hl` also returns Neovim's own default highlights and thus can 
+-- `nvim_get_hl` also returns Neovim's own default highlights and thus can
 -- corrupt the snapshots on every Neovim upgrade if the defaults are changed in
 -- Neovim. Here we override the function to our own function to only capture
 -- highlights that vscode.nvim sets.
 local real_set_hl = vim.api.nvim_set_hl
 vim.api.nvim_set_hl = function(ns, name, val)
-
     -- Last definition wins, same as Neovim.
-    highlights[name] = val
+    highlight_names[name] = true
 
     -- We actually set the highlight so nothing about the theme's behavior
     -- changes.
@@ -26,17 +25,32 @@ end
 require('vscode').load(background)
 
 -- A dictionary in Lua has no guaranteed order, so we need this for determinism.
-local function sorted_keys(tbl)
-    local keys = vim.tbl_keys(tbl)
+local function sorted_keys(t)
+    local keys = {}
+
+    for key, _ in pairs(t) do
+        table.insert(keys, key)
+    end
+
     table.sort(keys)
+
     return keys
 end
 
-for _, name in ipairs(sorted_keys(highlights)) do
-    local parts = {}
+for _, name in ipairs(sorted_keys(highlight_names)) do
+    local definition = vim.api.nvim_get_hl(0, { create = false, name = name, link = false })
 
-    for _, attr in ipairs(sorted_keys(highlights[name])) do
-        local value = highlights[name][attr]
+    -- Don't care about the cterm values.
+    definition.cterm = nil
+
+    local parts = {}
+    for _, attr in ipairs(sorted_keys(definition)) do
+        local value = definition[attr]
+
+        if (attr == 'fg' or attr == 'bg' or attr == 'sp') and type(value) == 'number' then
+            value = string.format('#%06X', value)
+        end
+
         table.insert(parts, string.format('%s=%s', attr, tostring(value)))
     end
 

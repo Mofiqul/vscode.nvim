@@ -1,166 +1,166 @@
-@annotation, bg=NONE, fg=#795E26
-@attribute, bg=NONE, fg=#795E26
-@attribute.builtin, bg=NONE, fg=#16825D
-@boolean, bg=NONE, fg=#0000FF
-@character, bg=NONE, fg=#C72E0F
-@comment, bg=NONE, fg=#008000, italic=false
-@comment.error, bg=NONE, bold=true, fg=#FF0000
-@comment.note, bg=NONE, bold=true, fg=#16825D
-@comment.warning, bg=NONE, bold=true, fg=#800000
-@conditional, link=@keyword.conditional
-@constant, bg=NONE, fg=#4FC1FF
-@constant.builtin, bg=NONE, fg=#0000FF
-@constant.macro, bg=NONE, fg=#16825D
-@constructor, bg=NONE, fg=#0000FF
-@constructor.python, bg=NONE, fg=#16825D
-@decorator, link=Identifier
-@define, bg=NONE, fg=#AF00DB
-@diff.delta, link=DiffChange
-@diff.minus, link=DiffDelete
-@diff.plus, link=DiffAdd
-@error, bg=NONE, fg=#FF0000
-@event, link=Identifier
-@exception, link=@keyword.exception
-@field, link=@variable.member
-@float, link=@number.float
-@function, bg=NONE, fg=#795E26
-@function.builtin, bg=NONE, fg=#795E26
-@function.macro, bg=NONE, fg=#795E26
-@function.method, bg=NONE, fg=#795E26
-@include, link=@keyword.import
-@interface, link=Identifier
-@keyword, bg=NONE, fg=#0000FF
-@keyword.conditional, bg=NONE, fg=#AF00DB
-@keyword.exception, bg=NONE, fg=#AF00DB
-@keyword.import, bg=NONE, fg=#AF00DB
-@keyword.repeat, bg=NONE, fg=#AF00DB
-@keyword.return, bg=NONE, fg=#AF00DB
-@label, bg=NONE, fg=#0451A5
-@lsp.type.comment.c, bg=NONE, fg=#B2DFDB
-@lsp.type.comment.cpp, bg=NONE, fg=#B2DFDB
-@lsp.type.enumMember, link=@constant
-@lsp.type.keyword, link=@keyword
-@lsp.type.macro, link=@constant
-@lsp.type.member, link=@function
-@lsp.type.type, link=@type
-@lsp.type.typeParameter, link=@type
-@lsp.typemod.keyword.controlFlow, bg=NONE, fg=#AF00DB
-@lsp.typemod.property.readonly, link=@constant
-@lsp.typemod.type.defaultLibrary, link=@type.builtin
-@lsp.typemod.variable.constant, link=@constant
-@lsp.typemod.variable.readonly, link=@constant
+@annotation, fg=#795E26
+@attribute, fg=#795E26
+@attribute.builtin, fg=#16825D
+@boolean, fg=#0000FF
+@character, fg=#C72E0F
+@comment, fg=#008000
+@comment.error, bold=true, fg=#FF0000
+@comment.note, bold=true, fg=#16825D
+@comment.warning, bold=true, fg=#800000
+@conditional, fg=#AF00DB
+@constant, fg=#4FC1FF
+@constant.builtin, fg=#0000FF
+@constant.macro, fg=#16825D
+@constructor, fg=#0000FF
+@constructor.python, fg=#16825D
+@decorator, fg=#0451A5
+@define, fg=#AF00DB
+@diff.delta, bg=#FFCCCC
+@diff.minus, bg=#FFA3A3
+@diff.plus, bg=#EBF1DD
+@error, fg=#FF0000
+@event, fg=#0451A5
+@exception, fg=#AF00DB
+@field, fg=#0451A5
+@float, fg=#098658
+@function, fg=#795E26
+@function.builtin, fg=#795E26
+@function.macro, fg=#795E26
+@function.method, fg=#795E26
+@include, fg=#AF00DB
+@interface, fg=#0451A5
+@keyword, fg=#0000FF
+@keyword.conditional, fg=#AF00DB
+@keyword.exception, fg=#AF00DB
+@keyword.import, fg=#AF00DB
+@keyword.repeat, fg=#AF00DB
+@keyword.return, fg=#AF00DB
+@label, fg=#0451A5
+@lsp.type.comment.c, fg=#B2DFDB
+@lsp.type.comment.cpp, fg=#B2DFDB
+@lsp.type.enumMember, fg=#4FC1FF
+@lsp.type.keyword, fg=#0000FF
+@lsp.type.macro, fg=#4FC1FF
+@lsp.type.member, fg=#795E26
+@lsp.type.type, fg=#16825D
+@lsp.type.typeParameter, fg=#16825D
+@lsp.typemod.keyword.controlFlow, fg=#AF00DB
+@lsp.typemod.property.readonly, fg=#4FC1FF
+@lsp.typemod.type.defaultLibrary, fg=#0000FF
+@lsp.typemod.variable.constant, fg=#4FC1FF
+@lsp.typemod.variable.readonly, fg=#4FC1FF
 @markup.heading, bold=true, fg=#800000
-@markup.heading.1.markdown, bg=NONE, bold=true, fg=#0000FF
-@markup.heading.2.markdown, bg=NONE, bold=true, fg=#C72E0F
-@markup.heading.3.markdown, bg=NONE, bold=true, fg=#795E26
-@markup.heading.4.markdown, bg=NONE, bold=true, fg=#008000
-@markup.heading.5.markdown, bg=NONE, bold=true, fg=#0000FF
-@markup.heading.6.markdown, bg=NONE, bold=true, fg=#AF00DB
-@markup.italic, bg=NONE, fg=#343434, italic=true
-@markup.link.label, bg=NONE, fg=#0451A5, underline=false
-@markup.link.url, bg=NONE, fg=#343434, underline=false
-@markup.list.checked, link=Todo
-@markup.list.unchecked, link=Todo
-@markup.raw, bg=NONE, fg=#343434
-@markup.raw.markdown, bg=NONE, fg=#C72E0F
-@markup.raw.markdown_inline, bg=NONE, fg=#C72E0F
-@markup.strikethrough, bg=NONE, fg=#343434, strikethrough=true
+@markup.heading.1.markdown, bold=true, fg=#0000FF
+@markup.heading.2.markdown, bold=true, fg=#C72E0F
+@markup.heading.3.markdown, bold=true, fg=#795E26
+@markup.heading.4.markdown, bold=true, fg=#008000
+@markup.heading.5.markdown, bold=true, fg=#0000FF
+@markup.heading.6.markdown, bold=true, fg=#AF00DB
+@markup.italic, fg=#343434, italic=true
+@markup.link.label, fg=#0451A5
+@markup.link.url, fg=#343434
+@markup.list.checked, bg=#FFFFFF, bold=true, fg=#800000
+@markup.list.unchecked, bg=#FFFFFF, bold=true, fg=#800000
+@markup.raw, fg=#343434
+@markup.raw.markdown, fg=#C72E0F
+@markup.raw.markdown_inline, fg=#C72E0F
+@markup.strikethrough, fg=#343434, strikethrough=true
 @markup.strong, bold=true, fg=#000080
-@markup.underline, bg=NONE, fg=#800000, underline=true
-@method, link=@function.method
-@modifier, link=Identifier
-@module, bg=NONE, fg=#16825D
-@namespace, link=@module
-@number, bg=NONE, fg=#098658
-@number.float, bg=NONE, fg=#098658
-@operator, bg=NONE, fg=#343434
-@parameter, link=@variable.parameter
-@property, bg=NONE, fg=#0451A5
-@punctuation.bracket, bg=NONE, fg=#343434
-@punctuation.delimiter, bg=NONE, fg=#343434
-@punctuation.special, bg=NONE, fg=#343434
-@regexp, bg=NONE, fg=#FF0000
-@repeat, link=@keyword.repeat
-@storageclass, link=@keyword.storage
-@string, bg=NONE, fg=#C72E0F
-@string.regex, link=@string.regexp
-@string.regexp, bg=NONE, fg=#C72E0F
+@markup.underline, fg=#800000, underline=true
+@method, fg=#795E26
+@modifier, fg=#0451A5
+@module, fg=#16825D
+@namespace, fg=#16825D
+@number, fg=#098658
+@number.float, fg=#098658
+@operator, fg=#343434
+@parameter, fg=#0451A5
+@property, fg=#0451A5
+@punctuation.bracket, fg=#343434
+@punctuation.delimiter, fg=#343434
+@punctuation.special, fg=#343434
+@regexp, fg=#FF0000
+@repeat, fg=#AF00DB
+@storageclass, fg=#0000FF
+@string, fg=#C72E0F
+@string.regex, fg=#C72E0F
+@string.regexp, fg=#C72E0F
 @stringEscape, bold=true, fg=#800000
-@structure, bg=NONE, fg=#0451A5
-@tag, bg=NONE, fg=#0000FF
-@tag.attribute, bg=NONE, fg=#0451A5
-@tag.builtin, bg=NONE, fg=#0000FF
-@tag.delimiter, bg=NONE, fg=#000000
-@text, bg=NONE, fg=#343434
-@text.danger, link=@comment.error
-@text.diff.add, link=@diff.plus
-@text.diff.delete, link=@diff.minus
-@text.emphasis, link=@markup.italic
-@text.literal, link=@markup.raw
-@text.note, link=@comment.note
-@text.strike, link=@markup.strikethrough
-@text.strong, link=@markup.strong
-@text.title, link=@markup.heading
-@text.underline, link=@markup.underline
-@text.uri, link=@markup.link.url
-@text.warning, link=@comment.warning
+@structure, fg=#0451A5
+@tag, fg=#0000FF
+@tag.attribute, fg=#0451A5
+@tag.builtin, fg=#0000FF
+@tag.delimiter, fg=#000000
+@text, fg=#343434
+@text.danger, bold=true, fg=#FF0000
+@text.diff.add, bg=#EBF1DD
+@text.diff.delete, bg=#FFA3A3
+@text.emphasis, fg=#343434, italic=true
+@text.literal, fg=#343434
+@text.note, bold=true, fg=#16825D
+@text.strike, fg=#343434, strikethrough=true
+@text.strong, bold=true, fg=#000080
+@text.title, bold=true, fg=#800000
+@text.underline, fg=#800000, underline=true
+@text.uri, fg=#343434
+@text.warning, bold=true, fg=#800000
 @textReference, fg=#800000
-@type, bg=NONE, fg=#16825D
-@type.builtin, bg=NONE, fg=#0000FF
-@type.builtin.tsx, link=@type
-@type.builtin.typescript, link=@type
-@type.qualifier, bg=NONE, fg=#0000FF
-@variable, bg=NONE, fg=#0451A5
-@variable.builtin, bg=NONE, fg=#0000FF
-@variable.member, bg=NONE, fg=#0451A5
-@variable.parameter, bg=NONE, fg=#0451A5
-@variable.parameter.reference, bg=NONE, fg=#0451A5
-BlinkCmpDoc, link=NormalFloat
-BlinkCmpDocBorder, link=FloatBorder
-BlinkCmpDocCursorLine, link=Visual
-BlinkCmpDocSeparator, link=NormalFloat
+@type, fg=#16825D
+@type.builtin, fg=#0000FF
+@type.builtin.tsx, fg=#16825D
+@type.builtin.typescript, fg=#16825D
+@type.qualifier, fg=#0000FF
+@variable, fg=#0451A5
+@variable.builtin, fg=#0000FF
+@variable.member, fg=#0451A5
+@variable.parameter, fg=#0451A5
+@variable.parameter.reference, fg=#0451A5
+BlinkCmpDoc, bg=#F8F8F8
+BlinkCmpDocBorder, bg=#F8F8F8
+BlinkCmpDocCursorLine, bg=#ADD6FF
+BlinkCmpDocSeparator, bg=#F8F8F8
 BlinkCmpGhostText, fg=#929292
-BlinkCmpKind, bg=NONE, fg=#000000
-BlinkCmpKindClass, link=BlinkCmpKindConstructor
-BlinkCmpKindColor, link=cssColor
-BlinkCmpKindConstant, link=@constant
-BlinkCmpKindConstructor, bg=NONE, fg=#f28b25
+BlinkCmpKind, fg=#000000
+BlinkCmpKindClass, fg=#F28B25
+BlinkCmpKindColor, fg=#C72E0F
+BlinkCmpKindConstant, fg=#4FC1FF
+BlinkCmpKindConstructor, fg=#F28B25
 BlinkCmpKindCopilot, fg=#16825D
-BlinkCmpKindEnum, link=BlinkCmpKindConstructor
-BlinkCmpKindEnumMember, link=@variable.member
-BlinkCmpKindEvent, bg=NONE, fg=#B8860B
-BlinkCmpKindField, link=@variable.member
-BlinkCmpKindFile, link=@text.uri
-BlinkCmpKindFolder, link=NeotestDir
-BlinkCmpKindFunction, bg=NONE, fg=#AF00DB
-BlinkCmpKindInterface, bg=NONE, fg=#0451A5
-BlinkCmpKindKeyword, bg=NONE, fg=#B8860B
-BlinkCmpKindMethod, bg=NONE, fg=#AF00DB
-BlinkCmpKindModule, link=BlinkCmpKindClass
-BlinkCmpKindOperator, link=@operator
-BlinkCmpKindProperty, link=BlinkCmpKindField
-BlinkCmpKindReference, link=@variable.parameter.reference
-BlinkCmpKindSnippet, bg=NONE, fg=#B8860B
-BlinkCmpKindStruct, link=@structure
-BlinkCmpKindText, bg=NONE, fg=#000000
-BlinkCmpKindTypeParameter, link=@variable.parameter
-BlinkCmpKindUnit, link=BlinkCmpKindField
-BlinkCmpKindValue, link=@variable.member
-BlinkCmpKindVariable, link=@variable.member
-BlinkCmpLabel, bg=NONE, fg=#343434
-BlinkCmpLabelDescription, bg=NONE, fg=#000000
-BlinkCmpLabelDetail, bg=NONE, fg=#000000
-BlinkCmpLabelMatch, bg=NONE, bold=true, fg=#007ACC
-BlinkCmpMenu, link=Pmenu
-BlinkCmpMenuBorder, link=FloatBorder
-BlinkCmpMenuSelection, link=PmenuSel
-BlinkCmpScrollBarGutter, link=PmenuSbar
-BlinkCmpScrollBarThumb, link=PmenuThumb
-BlinkCmpSignatureHelp, link=NormalFloat
-BlinkCmpSignatureHelpActiveParameter, link=LspSignatureActiveParameter
-BlinkCmpSignatureHelpBorder, link=NormalFloat
-BlinkCmpSource, bg=NONE, fg=#000000
-Boolean, bg=NONE, fg=#0000FF
+BlinkCmpKindEnum, fg=#F28B25
+BlinkCmpKindEnumMember, fg=#0451A5
+BlinkCmpKindEvent, fg=#B8860B
+BlinkCmpKindField, fg=#0451A5
+BlinkCmpKindFile, fg=#343434
+BlinkCmpKindFolder, fg=#0000FF
+BlinkCmpKindFunction, fg=#AF00DB
+BlinkCmpKindInterface, fg=#0451A5
+BlinkCmpKindKeyword, fg=#B8860B
+BlinkCmpKindMethod, fg=#AF00DB
+BlinkCmpKindModule, fg=#F28B25
+BlinkCmpKindOperator, fg=#343434
+BlinkCmpKindProperty, fg=#0451A5
+BlinkCmpKindReference, fg=#0451A5
+BlinkCmpKindSnippet, fg=#B8860B
+BlinkCmpKindStruct, fg=#0451A5
+BlinkCmpKindText, fg=#000000
+BlinkCmpKindTypeParameter, fg=#0451A5
+BlinkCmpKindUnit, fg=#0451A5
+BlinkCmpKindValue, fg=#0451A5
+BlinkCmpKindVariable, fg=#0451A5
+BlinkCmpLabel, fg=#343434
+BlinkCmpLabelDescription, fg=#000000
+BlinkCmpLabelDetail, fg=#000000
+BlinkCmpLabelMatch, bold=true, fg=#007ACC
+BlinkCmpMenu, bg=#F8F8F8
+BlinkCmpMenuBorder, bg=#F8F8F8
+BlinkCmpMenuSelection, bg=#E8E8E8
+BlinkCmpScrollBarGutter, bg=#767676
+BlinkCmpScrollBarThumb, bg=#000000
+BlinkCmpSignatureHelp, bg=#F8F8F8
+BlinkCmpSignatureHelpActiveParameter, bg=#ADD6FF
+BlinkCmpSignatureHelpBorder, bg=#F8F8F8
+BlinkCmpSource, fg=#000000
+Boolean, fg=#0000FF
 BufferCurrent, bg=#FFFFFF, fg=#343434
 BufferCurrentIndex, bg=#FFFFFF, fg=#343434
 BufferCurrentMod, bg=#FFFFFF, fg=#800000
@@ -171,8 +171,8 @@ BufferInactiveIndex, bg=#CECECE, fg=#000000
 BufferInactiveMod, bg=#CECECE, fg=#800000
 BufferInactiveSign, bg=#CECECE, fg=#000000
 BufferInactiveTarget, bg=#CECECE, fg=#FF0000
-BufferLineFill, bg=#C4C4C4, fg=NONE
-BufferLineIndicatorSelected, bg=NONE, fg=#C4C4C4
+BufferLineFill, bg=#C4C4C4
+BufferLineIndicatorSelected, fg=#C4C4C4
 BufferTabpage, bg=#CECECE, fg=#343434
 BufferTabpageFill, bg=#CECECE, fg=#343434
 BufferTabpages, bg=#CECECE, fg=#343434
@@ -182,66 +182,66 @@ BufferVisibleIndex, bg=#FFFFFF, fg=#000000
 BufferVisibleMod, bg=#FFFFFF, fg=#800000
 BufferVisibleSign, bg=#FFFFFF, fg=#000000
 BufferVisibleTarget, bg=#FFFFFF, fg=#FF0000
-Character, bg=NONE, fg=#C72E0F
-CmpItemAbbr, bg=NONE, fg=#343434
+Character, fg=#C72E0F
+CmpItemAbbr, fg=#343434
 CmpItemAbbrDeprecated, bg=#F8F8F8, fg=#6F6F6F, strikethrough=true
-CmpItemAbbrMatch, bg=NONE, bold=true, fg=#007ACC
-CmpItemAbbrMatchFuzzy, bg=NONE, bold=true, fg=#007ACC
-CmpItemKind, link=Pmenu
-CmpItemKindClass, link=CmpItemKindConstructor
-CmpItemKindColor, link=cssColor
-CmpItemKindConstant, link=@constant
-CmpItemKindConstructor, bg=NONE, fg=#f28b25
-CmpItemKindEnum, link=@variable.member
-CmpItemKindEnumMember, link=@variable.member
-CmpItemKindEvent, link=@constant
-CmpItemKindField, link=@variable.member
-CmpItemKindFile, link=@text.uri
-CmpItemKindFolder, link=@text.uri
-CmpItemKindFunction, bg=NONE, fg=#AF00DB
-CmpItemKindInterface, bg=NONE, fg=#0451A5
-CmpItemKindKeyword, bg=NONE, fg=#343434
-CmpItemKindMethod, bg=NONE, fg=#AF00DB
-CmpItemKindModule, link=CmpItemKindKeyword
-CmpItemKindOperator, link=@operator
-CmpItemKindProperty, bg=NONE, fg=#343434
-CmpItemKindReference, link=@variable.parameter.reference
-CmpItemKindSnippet, link=@text
-CmpItemKindStruct, link=@structure
-CmpItemKindText, bg=NONE, fg=#0451A5
-CmpItemKindTypeParameter, link=@variable.parameter
-CmpItemKindUnit, bg=NONE, fg=#343434
-CmpItemKindValue, link=@variable.member
-CmpItemKindVariable, bg=NONE, fg=#0451A5
-CmpItemMenu, bg=NONE, fg=#000000
-CocFloating, bg=#F8F8F8, fg=NONE
-CocHighlightRead, bg=#d7eafe, fg=NONE
-CocHighlightText, bg=#d7eafe, fg=NONE
-CocHighlightWrite, bg=#d7eafe, fg=NONE
+CmpItemAbbrMatch, bold=true, fg=#007ACC
+CmpItemAbbrMatchFuzzy, bold=true, fg=#007ACC
+CmpItemKind, bg=#F8F8F8
+CmpItemKindClass, fg=#F28B25
+CmpItemKindColor, fg=#C72E0F
+CmpItemKindConstant, fg=#4FC1FF
+CmpItemKindConstructor, fg=#F28B25
+CmpItemKindEnum, fg=#0451A5
+CmpItemKindEnumMember, fg=#0451A5
+CmpItemKindEvent, fg=#4FC1FF
+CmpItemKindField, fg=#0451A5
+CmpItemKindFile, fg=#343434
+CmpItemKindFolder, fg=#343434
+CmpItemKindFunction, fg=#AF00DB
+CmpItemKindInterface, fg=#0451A5
+CmpItemKindKeyword, fg=#343434
+CmpItemKindMethod, fg=#AF00DB
+CmpItemKindModule, fg=#343434
+CmpItemKindOperator, fg=#343434
+CmpItemKindProperty, fg=#343434
+CmpItemKindReference, fg=#0451A5
+CmpItemKindSnippet, fg=#343434
+CmpItemKindStruct, fg=#0451A5
+CmpItemKindText, fg=#0451A5
+CmpItemKindTypeParameter, fg=#0451A5
+CmpItemKindUnit, fg=#343434
+CmpItemKindValue, fg=#0451A5
+CmpItemKindVariable, fg=#0451A5
+CmpItemMenu, fg=#000000
+CocFloating, bg=#F8F8F8
+CocHighlightRead, bg=#D7EAFE
+CocHighlightText, bg=#D7EAFE
+CocHighlightWrite, bg=#D7EAFE
 CocMenuSel, bg=#285EBA, fg=#FFFFFF
-CocSearch, bg=NONE, fg=#2A64B9
-ColorColumn, bg=#E5E5E5, fg=NONE
-Comment, bg=NONE, fg=#008000, italic=false
-CompeDocumentation, link=Pmenu
-CompeDocumentationBorder, link=Pmenu
-CompileModeCheckResult, bold=true, fg=#ff9966
-CompileModeCheckTarget, fg=#ff9966
-CompileModeCommandOutput, fg=#6699ff
-CompileModeDirectoryMessage, fg=#6699ff
+CocSearch, fg=#2A64B9
+ColorColumn, bg=#E5E5E5
+Comment, fg=#008000
+CompeDocumentation, bg=#F8F8F8
+CompeDocumentationBorder, bg=#F8F8F8
+CompileModeCheckResult, bold=true, fg=#FF9966
+CompileModeCheckTarget, fg=#FF9966
+CompileModeCommandOutput, fg=#6699FF
+CompileModeDirectoryMessage, fg=#6699FF
 CompileModeError, fg=#FF0000
-CompileModeErrorLocus, link=Visual
+CompileModeErrorLocus, bg=#ADD6FF
 CompileModeInfo, fg=#008000
 CompileModeMessage, underline=true
 CompileModeMessageCol, fg=#16825D
 CompileModeMessageRow, fg=#AF00DB
-CompileModeOutputFile, fg=#9966cc
+CompileModeOutputFile, fg=#9966CC
 CompileModeWarning, fg=#795E26
 Conceal, bg=#FFFFFF, fg=#343434
-Conditional, bg=NONE, fg=#AF00DB
-Constant, bg=NONE, fg=#0000FF
-CopilotSuggestion, bg=NONE, fg=#868686
+Conditional, fg=#AF00DB
+Constant, fg=#0000FF
+CopilotSuggestion, fg=#868686
 Cursor, bg=#767676, fg=#6F6F6F
-CursorColumn, bg=#E5E5E5, fg=NONE
+CursorColumn, bg=#E5E5E5
 CursorLine, bg=#E5E5E5
 CursorLineNr, bg=#FFFFFF, fg=#000000
 DapUIBreakpointsCurrentLine, bold=true, fg=#16825D
@@ -259,7 +259,7 @@ DapUIPlayPauseNC, fg=#16825D
 DapUIRestart, fg=#16825D
 DapUIRestartNC, fg=#16825D
 DapUIScope, fg=#AF00DB
-DapUISource, fg=#18a2fe
+DapUISource, fg=#18A2FE
 DapUIStepBack, fg=#AF00DB
 DapUIStepBackNC, fg=#AF00DB
 DapUIStepInto, fg=#AF00DB
@@ -279,84 +279,84 @@ DapUIWatchesEmpty, fg=#B2DFDB
 DapUIWatchesError, fg=#FF0000
 DapUIWatchesValue, fg=#16825D
 DapUIWinSelect, bold=true, fg=#AF00DB
-DashboardDesc, bg=NONE, fg=#800000
-DashboardFooter, bg=NONE, fg=#0000FF, italic=true
-DashboardHeader, bg=NONE, fg=#0000FF
-DashboardIcon, bg=NONE, fg=#800000
-DashboardKey, bg=NONE, fg=#343434
-DashboardShortCut, bg=NONE, fg=#AF00DB
-Debug, bg=NONE, fg=#343434
-Define, bg=NONE, fg=#AF00DB
-Delimiter, bg=NONE, fg=#343434
-DiagnosticError, bg=NONE, fg=#FF0000
-DiagnosticHint, bg=NONE, fg=#0000FF
-DiagnosticInfo, bg=NONE, fg=#0000FF
-DiagnosticOk, bg=NONE, fg=#16825D
-DiagnosticUnderlineError, bg=NONE, fg=NONE, sp=#FF0000, undercurl=true
-DiagnosticUnderlineHint, bg=NONE, fg=NONE, sp=#0000FF, undercurl=true
-DiagnosticUnderlineInfo, bg=NONE, fg=NONE, sp=#0000FF, undercurl=true
-DiagnosticUnderlineWarn, bg=NONE, fg=NONE, sp=#795E26, undercurl=true
-DiagnosticUnnecessary, bg=NONE, fg=#729DB3
-DiagnosticWarn, bg=NONE, fg=#795E26
-DiffAdd, bg=#EBF1DD, fg=NONE
-DiffChange, bg=#FFCCCC, fg=NONE
-DiffDelete, bg=#FFA3A3, fg=NONE
-DiffText, bg=#FFA3A3, fg=NONE
+DashboardDesc, fg=#800000
+DashboardFooter, fg=#0000FF, italic=true
+DashboardHeader, fg=#0000FF
+DashboardIcon, fg=#800000
+DashboardKey, fg=#343434
+DashboardShortCut, fg=#AF00DB
+Debug, fg=#343434
+Define, fg=#AF00DB
+Delimiter, fg=#343434
+DiagnosticError, fg=#FF0000
+DiagnosticHint, fg=#0000FF
+DiagnosticInfo, fg=#0000FF
+DiagnosticOk, fg=#16825D
+DiagnosticUnderlineError, sp=#FF0000, undercurl=true
+DiagnosticUnderlineHint, sp=#0000FF, undercurl=true
+DiagnosticUnderlineInfo, sp=#0000FF, undercurl=true
+DiagnosticUnderlineWarn, sp=#795E26, undercurl=true
+DiagnosticUnnecessary, fg=#729DB3
+DiagnosticWarn, fg=#795E26
+DiffAdd, bg=#EBF1DD
+DiffChange, bg=#FFCCCC
+DiffDelete, bg=#FFA3A3
+DiffText, bg=#FFA3A3
 Directory, bg=#FFFFFF, fg=#0000FF
-EndOfBuffer, bg=NONE, fg=#FFFFFF
+EndOfBuffer, fg=#FFFFFF
 Error, bg=#FFFFFF, fg=#FF0000, sp=#FF0000, undercurl=true
 ErrorMsg, bg=#FFFFFF, fg=#FF0000
-Exception, bg=NONE, fg=#AF00DB
-Float, bg=NONE, fg=#098658
+Exception, fg=#AF00DB
+Float, fg=#098658
 FocusedSymbol, bg=#AF00DB, fg=#FFFFFF
 FoldColumn, bg=#FFFFFF, fg=#098658
-Folded, bg=#e6f3ff, fg=NONE
-Function, bg=NONE, fg=#795E26
-GitGutterAdd, bg=NONE, fg=#008000
-GitGutterChange, bg=NONE, fg=#795E26
-GitGutterDelete, bg=NONE, fg=#FF0000
-GitSignsAdd, bg=NONE, fg=#008000
+Folded, bg=#E6F3FF
+Function, fg=#795E26
+GitGutterAdd, fg=#008000
+GitGutterChange, fg=#795E26
+GitGutterDelete, fg=#FF0000
+GitSignsAdd, fg=#008000
 GitSignsAddLn, bg=#008000, fg=#FFFFFF
-GitSignsChange, bg=NONE, fg=#795E26
+GitSignsChange, fg=#795E26
 GitSignsChangeLn, bg=#795E26, fg=#FFFFFF
-GitSignsDelete, bg=NONE, fg=#FF0000
+GitSignsDelete, fg=#FF0000
 GitSignsDeleteLn, bg=#FF0000, fg=#FFFFFF
-IblIndent, bg=NONE, fg=#D2D2D2, nocombine=true
-IblScope, bg=NONE, fg=#929292, nocombine=true
-IblWhitespace, bg=NONE, fg=#D2D2D2, nocombine=true
-Identifier, bg=NONE, fg=#0451A5
-Ignore, bg=NONE, fg=#343434
-IlluminatedWordRead, bg=#d7eafe
-IlluminatedWordText, bg=#d7eafe
-IlluminatedWordWrite, bg=#d7eafe
-IncSearch, bg=#A8AC94, fg=NONE
-Include, bg=NONE, fg=#AF00DB
-Keyword, bg=NONE, fg=#AF00DB
-LSPSagaDiagnosticTruncateLine, bg=NONE, fg=#CECECE
-Label, bg=NONE, fg=#AF00DB
+IblIndent, fg=#D2D2D2, nocombine=true
+IblScope, fg=#929292, nocombine=true
+IblWhitespace, fg=#D2D2D2, nocombine=true
+Identifier, fg=#0451A5
+Ignore, fg=#343434
+IlluminatedWordRead, bg=#D7EAFE
+IlluminatedWordText, bg=#D7EAFE
+IlluminatedWordWrite, bg=#D7EAFE
+IncSearch, bg=#A8AC94
+Include, fg=#AF00DB
+Keyword, fg=#AF00DB
+LSPSagaDiagnosticTruncateLine, fg=#CECECE
+Label, fg=#AF00DB
 LineNr, bg=#FFFFFF, fg=#098658
-LspFloatWinBorder, bg=NONE, fg=#CECECE
-LspFloatWinNormal, bg=NONE, fg=#343434
-LspInfoBorder, bg=NONE, fg=#CECECE
-LspInlayHint, bg=NONE, fg=#868686, italic=false
-LspLinesDiagBorder, bg=NONE, fg=#CECECE
-LspReferenceRead, bg=#d7eafe, fg=NONE
-LspReferenceText, bg=#d7eafe, fg=NONE
-LspReferenceWrite, bg=#d7eafe, fg=NONE
-LspSagaBorderTitle, bg=NONE, fg=#6F6F6F
-LspSagaCodeActionBorder, bg=NONE, fg=#CECECE
-LspSagaDefPreviewBorder, bg=NONE, fg=#CECECE
-LspSagaDiagnosticBorder, bg=NONE, fg=#CECECE
-LspSagaDocTruncateLine, bg=NONE, fg=#CECECE
-LspSagaHoverBorder, bg=NONE, fg=#CECECE
-LspSagaLspFinderBorder, bg=NONE, fg=#CECECE
-LspSagaRenameBorder, bg=NONE, fg=#CECECE
-LspSagaShTruncateLine, bg=NONE, fg=#CECECE
-LspSagaSignatureHelpBorder, bg=NONE, fg=#CECECE
-Macro, bg=NONE, fg=#AF00DB
-MatchParen, bg=#B2DFDB, fg=NONE
+LspFloatWinBorder, fg=#CECECE
+LspFloatWinNormal, fg=#343434
+LspInfoBorder, fg=#CECECE
+LspInlayHint, fg=#868686
+LspLinesDiagBorder, fg=#CECECE
+LspReferenceRead, bg=#D7EAFE
+LspReferenceText, bg=#D7EAFE
+LspReferenceWrite, bg=#D7EAFE
+LspSagaBorderTitle, fg=#6F6F6F
+LspSagaCodeActionBorder, fg=#CECECE
+LspSagaDefPreviewBorder, fg=#CECECE
+LspSagaDiagnosticBorder, fg=#CECECE
+LspSagaDocTruncateLine, fg=#CECECE
+LspSagaHoverBorder, fg=#CECECE
+LspSagaLspFinderBorder, fg=#CECECE
+LspSagaRenameBorder, fg=#CECECE
+LspSagaShTruncateLine, fg=#CECECE
+LspSagaSignatureHelpBorder, fg=#CECECE
+Macro, fg=#AF00DB
+MatchParen, bg=#B2DFDB
 MiniIconsAzure, fg=#0000FF
-MiniIconsBlue, fg=#18a2fe
+MiniIconsBlue, fg=#18A2FE
 MiniIconsCyan, fg=#16825D
 MiniIconsGreen, fg=#008000
 MiniIconsGrey, fg=#343434
@@ -376,34 +376,34 @@ MiniStatuslineModeReplace, bg=#800000, bold=true, fg=#FFFFFF
 MiniStatuslineModeVisual, bg=#AF00DB, bold=true, fg=#FFFFFF
 ModeMsg, bg=#C4C4C4, fg=#343434
 MoreMsg, bg=#C4C4C4, fg=#343434
-NeoTreeBufferNumber, bg=NONE, fg=#098658
-NeoTreeCursorLine, bg=#E5E5E5, fg=NONE
-NeoTreeDimText, bg=#E5E5E5, fg=NONE
-NeoTreeDirectoryIcon, bg=NONE, fg=#0000FF
-NeoTreeDirectoryName, bg=NONE, fg=#343434
-NeoTreeDotfile, bg=NONE, fg=#729DB3
-NeoTreeFileIcon, bg=NONE, fg=#000080
-NeoTreeFileName, bg=NONE, fg=#343434
+NeoTreeBufferNumber, fg=#098658
+NeoTreeCursorLine, bg=#E5E5E5
+NeoTreeDimText, bg=#E5E5E5
+NeoTreeDirectoryIcon, fg=#0000FF
+NeoTreeDirectoryName, fg=#343434
+NeoTreeDotfile, fg=#729DB3
+NeoTreeFileIcon, fg=#000080
+NeoTreeFileName, fg=#343434
 NeoTreeFileNameOpened, bg=#E5E5E5, fg=#343434
-NeoTreeFilterTerm, bg=NONE, fg=#343434
-NeoTreeFloatBorder, bg=NONE, fg=#098658
-NeoTreeFloatTitle, bg=NONE, fg=#098658
-NeoTreeTitleBar, bg=NONE, fg=#098658
-NeogitDiffAdd, bg=#EBF1DD, fg=#587c0c
-NeogitDiffAddCursor, link=NeogitDiffAddHighlight
-NeogitDiffAddHighlight, bg=#DBE6C2, fg=#587c0c
+NeoTreeFilterTerm, fg=#343434
+NeoTreeFloatBorder, fg=#098658
+NeoTreeFloatTitle, fg=#098658
+NeoTreeTitleBar, fg=#098658
+NeogitDiffAdd, bg=#EBF1DD, fg=#587C0C
+NeogitDiffAddCursor, bg=#DBE6C2, fg=#587C0C
+NeogitDiffAddHighlight, bg=#DBE6C2, fg=#587C0C
 NeogitDiffContext, bg=#E5E5E5, fg=#000000
-NeogitDiffContextCursor, link=NeogitDiffContextHighlight
+NeogitDiffContextCursor, bg=#C4C4C4, fg=#000000
 NeogitDiffContextHighlight, bg=#C4C4C4, fg=#000000
-NeogitDiffDelete, bg=#FFA3A3, fg=#ad0707
-NeogitDiffDeleteCursor, link=NeogitDiffDeleteHighlight
-NeogitDiffDeleteHighlight, bg=#FFCCCC, fg=#ad0707
+NeogitDiffDelete, bg=#FFA3A3, fg=#AD0707
+NeogitDiffDeleteCursor, bg=#FFCCCC, fg=#AD0707
+NeogitDiffDeleteHighlight, bg=#FFCCCC, fg=#AD0707
 NeogitDiffHeader, bg=#FFFFFF, fg=#EEEEEE
 NeogitDiffHeaderHighlight, bg=#FFFFFF, fg=#EEEEEE
 NeogitHunkHeader, bg=#E5E5E5, fg=#895503
-NeogitHunkHeaderCursor, link=NeogitHunkHeaderHighlight
+NeogitHunkHeaderCursor, bg=#C4C4C4, fg=#895503
 NeogitHunkHeaderHighlight, bg=#C4C4C4, fg=#895503
-NeogitWinSeparator, link=WinSeparator
+NeogitWinSeparator, bg=#FFFFFF, fg=#DDDDDD
 NeotestAdapterName, bold=true, fg=#343434
 NeotestDir, fg=#0000FF
 NeotestExpandMarker, fg=#B2DFDB
@@ -419,44 +419,44 @@ NeotestSkipped, fg=#0000FF
 NeotestTarget, fg=#A31515
 NeotestWatching, fg=#B8860B
 NeotestWinSelect, bold=true, fg=#0000FF
-NonText, bg=NONE, fg=#CECECE
+NonText, fg=#CECECE
 Normal, bg=#FFFFFF, fg=#343434
 NormalFloat, bg=#F8F8F8
-Number, bg=NONE, fg=#098658
-NvimTreeCursorLine, bg=#E5E5E5, fg=NONE
-NvimTreeEmptyFolderName, bg=NONE, fg=#000000
+Number, fg=#098658
+NvimTreeCursorLine, bg=#E5E5E5
+NvimTreeEmptyFolderName, fg=#000000
 NvimTreeEndOfBuffer, fg=#C4C4C4
-NvimTreeFolderIcon, bg=NONE, fg=#007ACC
-NvimTreeFolderName, bg=NONE, fg=#343434
-NvimTreeGitDeleted, bg=NONE, fg=#ad0707
-NvimTreeGitDirty, bg=NONE, fg=#895503
-NvimTreeGitIgnored, bg=NONE, fg=#8e8e90
-NvimTreeGitMerge, bg=NONE, fg=#007100
-NvimTreeGitNew, bg=NONE, fg=#587c0c
-NvimTreeGitRenamed, bg=NONE, fg=#007100
-NvimTreeGitStaged, bg=NONE, fg=#895503
-NvimTreeImageFile, bg=NONE, fg=#000080
-NvimTreeIndentMarker, bg=NONE, fg=#CECECE
+NvimTreeFolderIcon, fg=#007ACC
+NvimTreeFolderName, fg=#343434
+NvimTreeGitDeleted, fg=#AD0707
+NvimTreeGitDirty, fg=#895503
+NvimTreeGitIgnored, fg=#8E8E90
+NvimTreeGitMerge, fg=#007100
+NvimTreeGitNew, fg=#587C0C
+NvimTreeGitRenamed, fg=#007100
+NvimTreeGitStaged, fg=#895503
+NvimTreeImageFile, fg=#000080
+NvimTreeIndentMarker, fg=#CECECE
 NvimTreeNormal, bg=#C4C4C4, fg=#343434
-NvimTreeOpenedFolderName, bg=#C4C4C4, fg=NONE
-NvimTreeRootFolder, bg=NONE, bold=true, fg=#343434
-NvimTreeSpecialFile, bg=NONE, fg=#AF00DB, underline=true
+NvimTreeOpenedFolderName, bg=#C4C4C4
+NvimTreeRootFolder, bold=true, fg=#343434
+NvimTreeSpecialFile, fg=#AF00DB, underline=true
 NvimTreeVertSplit, bg=#FFFFFF, fg=#FFFFFF
-Operator, bg=NONE, fg=#343434
-Pmenu, bg=#F8F8F8, fg=none
-PmenuSbar, bg=#767676, fg=NONE
-PmenuSel, bg=#E8E8E8, fg=none
-PmenuThumb, bg=#000000, fg=NONE
-PreProc, bg=NONE, fg=#AF00DB
+Operator, fg=#343434
+Pmenu, bg=#F8F8F8
+PmenuSbar, bg=#767676
+PmenuSel, bg=#E8E8E8
+PmenuThumb, bg=#000000
+PreProc, fg=#AF00DB
 Question, bg=#FFFFFF, fg=#0000FF
 QuickFixLine, bold=true
-RainbowDelimiterBlue, bg=NONE, fg=#18a2fe
-RainbowDelimiterCyan, bg=NONE, fg=#16825D
-RainbowDelimiterGreen, bg=NONE, fg=#008000
-RainbowDelimiterOrange, bg=NONE, fg=#C72E0F
-RainbowDelimiterRed, bg=NONE, fg=#AF00DB
-RainbowDelimiterViolet, bg=NONE, fg=#000080
-RainbowDelimiterYellow, bg=NONE, fg=#800000
+RainbowDelimiterBlue, fg=#18A2FE
+RainbowDelimiterCyan, fg=#16825D
+RainbowDelimiterGreen, fg=#008000
+RainbowDelimiterOrange, fg=#C72E0F
+RainbowDelimiterRed, fg=#AF00DB
+RainbowDelimiterViolet, fg=#000080
+RainbowDelimiterYellow, fg=#800000
 RenderMarkdownH1, bold=true, fg=#0000FF
 RenderMarkdownH1Bg, bg=#767676, bold=true
 RenderMarkdownH2, bold=true, fg=#C72E0F
@@ -469,301 +469,301 @@ RenderMarkdownH5, bold=true, fg=#0000FF
 RenderMarkdownH5Bg, bg=#767676, bold=true
 RenderMarkdownH6, bold=true, fg=#AF00DB
 RenderMarkdownH6Bg, bg=#767676, bold=true
-Repeat, bg=NONE, fg=#AF00DB
-Search, bg=#F8C9AB, fg=NONE
-SignColumn, bg=#FFFFFF, fg=NONE
-SnacksIndent, bg=NONE, fg=#D2D2D2, nocombine=true
-SnacksIndentScope, bg=NONE, fg=#929292, nocombine=true
-SnacksPicker, link=Normal
-SnacksPickerBorder, link=Normal
-SnacksPickerDir, bg=NONE, fg=NONE, nocombine=true
-SnacksPickerDirectory, bg=NONE, fg=NONE, nocombine=true
-SnacksPickerListCursorLine, link=PmenuSel
-SnacksPickerPreviewCursorLine, bg=none, fg=none, nocombine=true
-Special, bg=NONE, fg=#800000
-SpecialChar, bg=NONE, fg=#343434
-SpecialComment, bg=NONE, fg=#008000
-SpecialKey, bg=NONE, fg=#0000FF
-SpellBad, fg=NONE, sp=#FF0000, undercurl=true
-SpellCap, fg=NONE, sp=#795E26, undercurl=true
-SpellLocal, fg=NONE, sp=#0000FF, undercurl=true
-SpellRare, fg=NONE, sp=#000080, undercurl=true
-Statement, bg=NONE, fg=#AF00DB
+Repeat, fg=#AF00DB
+Search, bg=#F8C9AB
+SignColumn, bg=#FFFFFF
+SnacksIndent, fg=#D2D2D2, nocombine=true
+SnacksIndentScope, fg=#929292, nocombine=true
+SnacksPicker, bg=#FFFFFF, fg=#343434
+SnacksPickerBorder, bg=#FFFFFF, fg=#343434
+SnacksPickerDir, nocombine=true
+SnacksPickerDirectory, nocombine=true
+SnacksPickerListCursorLine, bg=#E8E8E8
+SnacksPickerPreviewCursorLine, nocombine=true
+Special, fg=#800000
+SpecialChar, fg=#343434
+SpecialComment, fg=#008000
+SpecialKey, fg=#0000FF
+SpellBad, sp=#FF0000, undercurl=true
+SpellCap, sp=#795E26, undercurl=true
+SpellLocal, sp=#0000FF, undercurl=true
+SpellRare, sp=#000080, undercurl=true
+Statement, fg=#AF00DB
 StatusLine, bg=#E5E5E5, fg=#343434
 StatusLineNC, bg=#C4C4C4, fg=#343434
-StorageClass, bg=NONE, fg=#0000FF
-String, bg=NONE, fg=#C72E0F
-Structure, bg=NONE, fg=#16825D
-SymbolsOutlineConnector, bg=NONE, fg=#CECECE
+StorageClass, fg=#0000FF
+String, fg=#C72E0F
+Structure, fg=#16825D
+SymbolsOutlineConnector, fg=#CECECE
 TabLine, bg=#CECECE, fg=#343434
 TabLineFill, bg=#E8E8E8, fg=#343434
 TabLineSel, bg=#FFFFFF, fg=#343434
-Tag, bg=NONE, fg=#343434
-TelescopeMatching, bg=NONE, bold=true, fg=orange
-TelescopeMultiSelection, bg=#0064c1, fg=#FFFFFF
-TelescopeNormal, bg=NONE, fg=#343434
-TelescopePreviewBorder, bg=NONE, fg=#CECECE
-TelescopePromptBorder, bg=NONE, fg=#CECECE
-TelescopePromptPrefix, bg=NONE, fg=#343434
-TelescopeResultsBorder, bg=NONE, fg=#CECECE
-TelescopeSelection, bg=#0064c1, fg=#FFFFFF
-Title, bg=NONE, bold=true, fg=NONE
+Tag, fg=#343434
+TelescopeMatching, bold=true, fg=#FFA500
+TelescopeMultiSelection, bg=#0064C1, fg=#FFFFFF
+TelescopeNormal, fg=#343434
+TelescopePreviewBorder, fg=#CECECE
+TelescopePromptBorder, fg=#CECECE
+TelescopePromptPrefix, fg=#343434
+TelescopeResultsBorder, fg=#CECECE
+TelescopeSelection, bg=#0064C1, fg=#FFFFFF
+Title, bold=true
 Todo, bg=#FFFFFF, bold=true, fg=#800000
-TroubleNormal, link=Normal
-TroubleNormalNC, link=Normal
-Type, bg=NONE, fg=#0000FF
-Typedef, bg=NONE, fg=#0000FF
-Underlined, bg=NONE, fg=NONE, underline=true
+TroubleNormal, bg=#FFFFFF, fg=#343434
+TroubleNormalNC, bg=#FFFFFF, fg=#343434
+Type, fg=#0000FF
+Typedef, fg=#0000FF
+Underlined, underline=true
 VertSplit, bg=#FFFFFF, fg=#DDDDDD
-Visual, bg=#ADD6FF, fg=NONE
-VisualNOS, bg=#ADD6FF, fg=NONE
+Visual, bg=#ADD6FF
+VisualNOS, bg=#ADD6FF
 WarningMsg, bg=#FFFFFF, fg=#795E26
-WhichKeyBorder, bg=NONE, fg=#CECECE
-WhichKeyIconAzure, bg=NONE, fg=#16825D
-WhichKeyIconBlue, bg=NONE, fg=#0000FF
-WhichKeyIconGreen, bg=NONE, fg=#008000
-WhichKeyIconGrey, bg=NONE, fg=#000000
-WhichKeyIconOrange, bg=NONE, fg=#800000
-WhichKeyIconPurple, bg=NONE, fg=#AF00DB
-WhichKeyIconRed, bg=NONE, fg=#FF0000
-WhichKeyIconYellow, bg=NONE, fg=#795E26
-WhichKeySeparator, link=Normal
-WhichKeyValue, link=Normal
+WhichKeyBorder, fg=#CECECE
+WhichKeyIconAzure, fg=#16825D
+WhichKeyIconBlue, fg=#0000FF
+WhichKeyIconGreen, fg=#008000
+WhichKeyIconGrey, fg=#000000
+WhichKeyIconOrange, fg=#800000
+WhichKeyIconPurple, fg=#AF00DB
+WhichKeyIconRed, fg=#FF0000
+WhichKeyIconYellow, fg=#795E26
+WhichKeySeparator, bg=#FFFFFF, fg=#343434
+WhichKeyValue, bg=#FFFFFF, fg=#343434
 Whitespace, fg=#CECECE
-WildMenu, bg=#ADD6FF, fg=NONE
+WildMenu, bg=#ADD6FF
 WinBar, bg=#FFFFFF, bold=true, fg=#343434
 WinBarNc, bg=#FFFFFF, fg=#343434
-WinSeparator, link=VertSplit
+WinSeparator, bg=#FFFFFF, fg=#DDDDDD
 asciidocAdmonition, fg=#C72E0F
 asciidocAttributeEntry, fg=#800000
 asciidocAttributeList, fg=#AF00DB
 asciidocAttributeRef, fg=#800000
-asciidocBackslash, link=Keyword
+asciidocBackslash, fg=#AF00DB
 asciidocHLabel, bold=true, fg=#0000FF
 asciidocListingBlock, fg=#C72E0F
 asciidocMacro, fg=#AF00DB
 asciidocMacroAttributes, fg=#800000
 asciidocOneLineTitle, bold=true, fg=#0000FF
 asciidocPassthroughBlock, fg=#0000FF
-asciidocQuotedBold, link=markdownBold
+asciidocQuotedBold, bold=true, fg=#800000
 asciidocQuotedEmphasized, fg=#0000FF, italic=true
 asciidocQuotedEmphasized2, fg=#0000FF, italic=true
 asciidocQuotedEmphasizedItalic, fg=#0000FF, italic=true
 asciidocQuotedMonospaced, fg=#C72E0F
-asciidocQuotedMonospaced2, link=asciidocQuotedMonospaced
-asciidocQuotedUnconstrainedBold, link=asciidocQuotedBold
-asciidocQuotedUnconstrainedEmphasized, link=asciidocQuotedEmphasized
+asciidocQuotedMonospaced2, fg=#C72E0F
+asciidocQuotedUnconstrainedBold, bold=true, fg=#800000
+asciidocQuotedUnconstrainedEmphasized, fg=#0000FF, italic=true
 asciidocTriplePlusPassthrough, fg=#795E26
-asciidocURL, link=markdownUrl
-cssAttr, bg=NONE, fg=#C72E0F
-cssAttrRegion, bg=NONE, fg=#C72E0F
-cssBraces, bg=NONE, fg=#343434
-cssClassName, bg=NONE, fg=#800000
-cssColor, bg=NONE, fg=#C72E0F
-cssDefinition, bg=NONE, fg=#0451A5
-cssFunction, bg=NONE, fg=#C72E0F
-cssFunctionName, bg=NONE, fg=#C72E0F
-cssIdentifier, bg=NONE, fg=#800000
-cssImportant, bg=NONE, fg=#0000FF
-cssInclude, bg=NONE, fg=#AF00DB
-cssProp, bg=NONE, fg=#0451A5
-cssPseudoClass, bg=NONE, fg=#800000
-cssPseudoClassId, bg=NONE, fg=#800000
-cssPseudoClassLang, bg=NONE, fg=#800000
-cssStyle, bg=NONE, fg=#0451A5
-cssTagName, bg=NONE, fg=#800000
-cssUnitDecorators, bg=NONE, fg=#C72E0F
-cssValueLength, bg=NONE, fg=#C72E0F
-cssValueNumber, bg=NONE, fg=#C72E0F
-cssVendor, bg=NONE, fg=#C72E0F
+asciidocURL, fg=#343434, underline=true
+cssAttr, fg=#C72E0F
+cssAttrRegion, fg=#C72E0F
+cssBraces, fg=#343434
+cssClassName, fg=#800000
+cssColor, fg=#C72E0F
+cssDefinition, fg=#0451A5
+cssFunction, fg=#C72E0F
+cssFunctionName, fg=#C72E0F
+cssIdentifier, fg=#800000
+cssImportant, fg=#0000FF
+cssInclude, fg=#AF00DB
+cssProp, fg=#0451A5
+cssPseudoClass, fg=#800000
+cssPseudoClassId, fg=#800000
+cssPseudoClassLang, fg=#800000
+cssStyle, fg=#0451A5
+cssTagName, fg=#800000
+cssUnitDecorators, fg=#C72E0F
+cssValueLength, fg=#C72E0F
+cssValueNumber, fg=#C72E0F
+cssVendor, fg=#C72E0F
 debugPC, bg=#FFFFBA
-diffAdded, link=DiffAdd
-diffChanged, link=DiffChange
-diffRemoved, link=DiffDelete
-gitcommitBlank, bg=NONE, fg=#AF00DB
-gitcommitBranch, bg=NONE, fg=#AF00DB
-gitcommitComment, bg=NONE, fg=#000000
-gitcommitDiscardedFile, bg=NONE, fg=#FF0000
-gitcommitDiscardedType, bg=NONE, fg=#FF0000
-gitcommitHeader, bg=NONE, fg=#000000
-gitcommitOnBranch, bg=NONE, fg=#000000
-gitcommitOverflow, bg=NONE, fg=#FF0000
-gitcommitSelectedFile, bg=NONE, fg=#008000
-gitcommitSelectedType, bg=NONE, fg=#008000
-gitcommitSummary, bg=NONE, fg=#AF00DB
-goBoolean, bg=NONE, fg=#0000FF
-goBuiltins, bg=NONE, fg=#795E26
-goComplexes, bg=NONE, fg=#16825D
-goConst, bg=NONE, fg=#0000FF
-goDeclType, bg=NONE, fg=#0000FF
-goDeclaration, bg=NONE, fg=#0000FF
-goFloats, bg=NONE, fg=#16825D
-goFunctionCall, bg=NONE, fg=#795E26
-goImport, bg=NONE, fg=#0000FF
-goMethodCall, bg=NONE, fg=#795E26
-goPackage, bg=NONE, fg=#0000FF
-goPredefinedIdentifiers, bg=NONE, fg=#0000FF
-goReceiver, bg=NONE, fg=#343434
-goReceiverType, bg=NONE, fg=#343434
-goSignedInts, bg=NONE, fg=#16825D
-goSingleDecl, bg=NONE, fg=#0451A5
-goStatement, bg=NONE, fg=#AF00DB
-goTodo, bg=NONE, fg=#008000
-goType, bg=NONE, fg=#16825D
-goTypeDecl, bg=NONE, fg=#0000FF
-goTypeName, bg=NONE, fg=#16825D
-goUnsignedInts, bg=NONE, fg=#16825D
-goVar, bg=NONE, fg=#0000FF
-goVarAssign, bg=NONE, fg=#0451A5
-goVarDefs, bg=NONE, fg=#0451A5
-htmlArg, bg=NONE, fg=#0451A5
-htmlEndTag, bg=NONE, fg=#000000
-htmlSpecialTagName, bg=NONE, fg=#0000FF
-htmlTag, bg=NONE, fg=#000000
-htmlTagName, bg=NONE, fg=#0000FF
-illuminatedCurWord, bg=#d7eafe
-illuminatedWord, bg=#d7eafe
-jsClassDefinition, bg=NONE, fg=#16825D
-jsClassKeyword, bg=NONE, fg=#0000FF
-jsDestructuringBlock, bg=NONE, fg=#0451A5
-jsExportDefault, bg=NONE, fg=#AF00DB
-jsExtendsKeyword, bg=NONE, fg=#0000FF
-jsFuncArgs, bg=NONE, fg=#0451A5
-jsFuncBlock, bg=NONE, fg=#0451A5
-jsFuncCall, bg=NONE, fg=#795E26
-jsGlobalObjects, bg=NONE, fg=#16825D
-jsIfElseBlock, bg=NONE, fg=#0451A5
-jsModuleKeyword, bg=NONE, fg=#0451A5
-jsObjectKey, bg=NONE, fg=#0451A5
-jsObjectProp, bg=NONE, fg=#0451A5
-jsObjectValue, bg=NONE, fg=#0451A5
-jsOperatorKeyword, bg=NONE, fg=#0000FF
-jsParen, bg=NONE, fg=#0451A5
-jsParenIfElse, bg=NONE, fg=#0451A5
-jsRegexpString, bg=NONE, fg=#A31515
-jsSpreadExpression, bg=NONE, fg=#0451A5
-jsSpreadOperator, bg=NONE, fg=#0451A5
-jsThis, bg=NONE, fg=#0000FF
-jsVariableDef, bg=NONE, fg=#0451A5
-jsonBoolean, bg=NONE, fg=#0000FF
-jsonEscape, bg=NONE, fg=#800000
-jsonKeyword, bg=NONE, fg=#0451A5
-jsonNull, bg=NONE, fg=#0000FF
-luaBuiltIn, bg=NONE, fg=#0000FF
-luaFuncArgName, bg=NONE, fg=#0451A5
-luaFuncCall, bg=NONE, fg=#795E26
-luaFuncKeyword, bg=NONE, fg=#AF00DB
-luaLocal, bg=NONE, fg=#AF00DB
+diffAdded, bg=#EBF1DD
+diffChanged, bg=#FFCCCC
+diffRemoved, bg=#FFA3A3
+gitcommitBlank, fg=#AF00DB
+gitcommitBranch, fg=#AF00DB
+gitcommitComment, fg=#000000
+gitcommitDiscardedFile, fg=#FF0000
+gitcommitDiscardedType, fg=#FF0000
+gitcommitHeader, fg=#000000
+gitcommitOnBranch, fg=#000000
+gitcommitOverflow, fg=#FF0000
+gitcommitSelectedFile, fg=#008000
+gitcommitSelectedType, fg=#008000
+gitcommitSummary, fg=#AF00DB
+goBoolean, fg=#0000FF
+goBuiltins, fg=#795E26
+goComplexes, fg=#16825D
+goConst, fg=#0000FF
+goDeclType, fg=#0000FF
+goDeclaration, fg=#0000FF
+goFloats, fg=#16825D
+goFunctionCall, fg=#795E26
+goImport, fg=#0000FF
+goMethodCall, fg=#795E26
+goPackage, fg=#0000FF
+goPredefinedIdentifiers, fg=#0000FF
+goReceiver, fg=#343434
+goReceiverType, fg=#343434
+goSignedInts, fg=#16825D
+goSingleDecl, fg=#0451A5
+goStatement, fg=#AF00DB
+goTodo, fg=#008000
+goType, fg=#16825D
+goTypeDecl, fg=#0000FF
+goTypeName, fg=#16825D
+goUnsignedInts, fg=#16825D
+goVar, fg=#0000FF
+goVarAssign, fg=#0451A5
+goVarDefs, fg=#0451A5
+htmlArg, fg=#0451A5
+htmlEndTag, fg=#000000
+htmlSpecialTagName, fg=#0000FF
+htmlTag, fg=#000000
+htmlTagName, fg=#0000FF
+illuminatedCurWord, bg=#D7EAFE
+illuminatedWord, bg=#D7EAFE
+jsClassDefinition, fg=#16825D
+jsClassKeyword, fg=#0000FF
+jsDestructuringBlock, fg=#0451A5
+jsExportDefault, fg=#AF00DB
+jsExtendsKeyword, fg=#0000FF
+jsFuncArgs, fg=#0451A5
+jsFuncBlock, fg=#0451A5
+jsFuncCall, fg=#795E26
+jsGlobalObjects, fg=#16825D
+jsIfElseBlock, fg=#0451A5
+jsModuleKeyword, fg=#0451A5
+jsObjectKey, fg=#0451A5
+jsObjectProp, fg=#0451A5
+jsObjectValue, fg=#0451A5
+jsOperatorKeyword, fg=#0000FF
+jsParen, fg=#0451A5
+jsParenIfElse, fg=#0451A5
+jsRegexpString, fg=#A31515
+jsSpreadExpression, fg=#0451A5
+jsSpreadOperator, fg=#0451A5
+jsThis, fg=#0000FF
+jsVariableDef, fg=#0451A5
+jsonBoolean, fg=#0000FF
+jsonEscape, fg=#800000
+jsonKeyword, fg=#0451A5
+jsonNull, fg=#0000FF
+luaBuiltIn, fg=#0000FF
+luaFuncArgName, fg=#0451A5
+luaFuncCall, fg=#795E26
+luaFuncKeyword, fg=#AF00DB
+luaLocal, fg=#AF00DB
 markdownBold, bold=true, fg=#800000
-markdownCode, bg=NONE, fg=#C72E0F
-markdownCodeDelimiter, bg=NONE, fg=#343434
+markdownCode, fg=#C72E0F
+markdownCodeDelimiter, fg=#343434
 markdownEscape, fg=#800000
-markdownFootnote, bg=NONE, fg=#800000
+markdownFootnote, fg=#800000
 markdownFootnoteDefinition, fg=#800000
-markdownHeadingDelimiter, bg=NONE, fg=#800000
+markdownHeadingDelimiter, fg=#800000
 markdownLinkText, fg=#800000
 markdownRule, bold=true, fg=#800000
-markdownUrl, bg=NONE, fg=#343434, underline=true
-phpClass, bg=NONE, fg=#16825D
-phpFunction, bg=NONE, fg=#795E26
-phpInclude, bg=NONE, fg=#0000FF
-phpMethod, bg=NONE, fg=#795E26
-phpMethodsVar, bg=NONE, fg=#0451A5
-phpRegion, bg=NONE, fg=#16825D
-phpStaticClasses, bg=NONE, fg=#16825D
-phpUseClass, bg=NONE, fg=#16825D
-pythonBoolean, bg=NONE, fg=#0000FF
-pythonBuiltinObj, bg=NONE, fg=#0451A5
-pythonBuiltinType, bg=NONE, fg=#16825D
-pythonClassDef, bg=NONE, fg=#16825D
-pythonClassVar, bg=NONE, fg=#0000FF
-pythonExClass, bg=NONE, fg=#16825D
-pythonException, bg=NONE, fg=#AF00DB
-pythonNone, bg=NONE, fg=#0000FF
-pythonOperator, bg=NONE, fg=#0000FF
-pythonStatement, bg=NONE, fg=#0000FF
-pythonTodo, bg=NONE, fg=#0000FF
-rubyClassName, bg=NONE, fg=#16825D
-rubyClassNameTag, bg=NONE, fg=#16825D
-rubyConstant, bg=NONE, fg=#16825D
-rubyModuleName, bg=NONE, fg=#16825D
-shDeref, bg=NONE, fg=#0451A5
-shVariable, bg=NONE, fg=#0451A5
-sqlFunction, bg=NONE, fg=#800000
-sqlKeyword, bg=NONE, fg=#AF00DB
-sqlOperator, bg=NONE, fg=#AF00DB
-texBeginEnd, bg=NONE, fg=#795E26
-texBeginEndModifier, bg=NONE, fg=#0451A5
-texBeginEndName, bg=NONE, fg=#0451A5
-texDocType, bg=NONE, fg=#AF00DB
-texDocTypeArgs, bg=NONE, fg=#0451A5
-texOption, bg=NONE, fg=#0451A5
-texStatement, bg=NONE, fg=#0000FF
-typescriptAccessibilityModifier, bg=NONE, fg=#0000FF
-typescriptAliasDeclaration, bg=NONE, fg=#16825D
-typescriptAliasKeyword, bg=NONE, fg=#0000FF
-typescriptAmbientDeclaration, bg=NONE, fg=#0000FF
-typescriptArray, bg=NONE, fg=#795E26
-typescriptArrowFunc, bg=NONE, fg=#0000FF
-typescriptArrowFuncArg, bg=NONE, fg=#0451A5
-typescriptAsyncFuncKeyword, bg=NONE, fg=#0000FF
-typescriptBOM, bg=NONE, fg=#0451A5
-typescriptBlock, bg=NONE, fg=#0451A5
-typescriptBraces, bg=NONE, fg=#343434
-typescriptCall, bg=NONE, fg=#0000FF
-typescriptCase, bg=NONE, fg=#0451A5
-typescriptCastKeyword, bg=NONE, fg=#0451A5
-typescriptClassBlock, bg=NONE, fg=#0451A5
-typescriptClassExtends, bg=NONE, fg=#0000FF
-typescriptClassHeritage, bg=NONE, fg=#16825D
-typescriptClassKeyword, bg=NONE, fg=#0000FF
-typescriptClassName, bg=NONE, fg=#16825D
-typescriptConditionalParen, bg=NONE, fg=#0451A5
-typescriptDOMDocProp, bg=NONE, fg=#0451A5
-typescriptDecorator, bg=NONE, fg=#795E26
-typescriptDefault, bg=NONE, fg=#0451A5
-typescriptDocComment, bg=NONE, fg=#16825D
-typescriptDocTags, bg=NONE, fg=#0000FF
-typescriptES6SetProp, bg=NONE, fg=#0451A5
-typescriptEndColons, bg=NONE, fg=#0451A5
-typescriptEnum, bg=NONE, fg=#16825D
-typescriptEnumKeyword, bg=NONE, fg=#0000FF
-typescriptExceptions, bg=NONE, fg=#0451A5
-typescriptExport, bg=NONE, fg=#AF00DB
-typescriptFuncCallArg, bg=NONE, fg=#0451A5
-typescriptFuncComma, bg=NONE, fg=#0451A5
-typescriptFuncKeyword, bg=NONE, fg=#0000FF
-typescriptFuncTypeArrow, bg=NONE, fg=#0000FF
-typescriptGlobal, bg=NONE, fg=#16825D
-typescriptGlobalMethod, bg=NONE, fg=#795E26
-typescriptImport, bg=NONE, fg=#AF00DB
-typescriptIndexExpr, bg=NONE, fg=#0451A5
-typescriptInterfaceExtends, bg=NONE, fg=#0000FF
-typescriptInterfaceHeritage, bg=NONE, fg=#16825D
-typescriptInterfaceKeyword, bg=NONE, fg=#0000FF
-typescriptInterfaceName, bg=NONE, fg=#16825D
-typescriptLabel, bg=NONE, fg=#0451A5
-typescriptLogicSymbols, bg=NONE, fg=#0451A5
-typescriptLoopParen, bg=NONE, fg=#0451A5
-typescriptMember, bg=NONE, fg=#795E26
-typescriptMethodAccessor, bg=NONE, fg=#0000FF
-typescriptModule, bg=NONE, fg=#0451A5
-typescriptObjectLiteral, bg=NONE, fg=#0451A5
-typescriptOperator, bg=NONE, fg=#0000FF
-typescriptParamImpl, bg=NONE, fg=#0451A5
-typescriptParenExp, bg=NONE, fg=#0451A5
-typescriptParens, bg=NONE, fg=#343434
-typescriptPredefinedType, bg=NONE, fg=#16825D
-typescriptPromiseMethod, bg=NONE, fg=#795E26
-typescriptReserved, bg=NONE, fg=#AF00DB
-typescriptTemplateSB, bg=NONE, fg=#800000
-typescriptTemplateSubstitution, bg=NONE, fg=#0451A5
-typescriptTypeParameter, bg=NONE, fg=#16825D
-typescriptTypeReference, bg=NONE, fg=#16825D
-typescriptVariable, bg=NONE, fg=#0000FF
-typescriptVariableDeclaration, bg=NONE, fg=#0451A5
-xmlEndTag, bg=NONE, fg=#0000FF
-xmlTag, bg=NONE, fg=#0000FF
-xmlTagName, bg=NONE, fg=#0000FF
-yamlConstant, bg=NONE, fg=#0000FF
-yamlKey, bg=NONE, fg=#0000FF
+markdownUrl, fg=#343434, underline=true
+phpClass, fg=#16825D
+phpFunction, fg=#795E26
+phpInclude, fg=#0000FF
+phpMethod, fg=#795E26
+phpMethodsVar, fg=#0451A5
+phpRegion, fg=#16825D
+phpStaticClasses, fg=#16825D
+phpUseClass, fg=#16825D
+pythonBoolean, fg=#0000FF
+pythonBuiltinObj, fg=#0451A5
+pythonBuiltinType, fg=#16825D
+pythonClassDef, fg=#16825D
+pythonClassVar, fg=#0000FF
+pythonExClass, fg=#16825D
+pythonException, fg=#AF00DB
+pythonNone, fg=#0000FF
+pythonOperator, fg=#0000FF
+pythonStatement, fg=#0000FF
+pythonTodo, fg=#0000FF
+rubyClassName, fg=#16825D
+rubyClassNameTag, fg=#16825D
+rubyConstant, fg=#16825D
+rubyModuleName, fg=#16825D
+shDeref, fg=#0451A5
+shVariable, fg=#0451A5
+sqlFunction, fg=#800000
+sqlKeyword, fg=#AF00DB
+sqlOperator, fg=#AF00DB
+texBeginEnd, fg=#795E26
+texBeginEndModifier, fg=#0451A5
+texBeginEndName, fg=#0451A5
+texDocType, fg=#AF00DB
+texDocTypeArgs, fg=#0451A5
+texOption, fg=#0451A5
+texStatement, fg=#0000FF
+typescriptAccessibilityModifier, fg=#0000FF
+typescriptAliasDeclaration, fg=#16825D
+typescriptAliasKeyword, fg=#0000FF
+typescriptAmbientDeclaration, fg=#0000FF
+typescriptArray, fg=#795E26
+typescriptArrowFunc, fg=#0000FF
+typescriptArrowFuncArg, fg=#0451A5
+typescriptAsyncFuncKeyword, fg=#0000FF
+typescriptBOM, fg=#0451A5
+typescriptBlock, fg=#0451A5
+typescriptBraces, fg=#343434
+typescriptCall, fg=#0000FF
+typescriptCase, fg=#0451A5
+typescriptCastKeyword, fg=#0451A5
+typescriptClassBlock, fg=#0451A5
+typescriptClassExtends, fg=#0000FF
+typescriptClassHeritage, fg=#16825D
+typescriptClassKeyword, fg=#0000FF
+typescriptClassName, fg=#16825D
+typescriptConditionalParen, fg=#0451A5
+typescriptDOMDocProp, fg=#0451A5
+typescriptDecorator, fg=#795E26
+typescriptDefault, fg=#0451A5
+typescriptDocComment, fg=#16825D
+typescriptDocTags, fg=#0000FF
+typescriptES6SetProp, fg=#0451A5
+typescriptEndColons, fg=#0451A5
+typescriptEnum, fg=#16825D
+typescriptEnumKeyword, fg=#0000FF
+typescriptExceptions, fg=#0451A5
+typescriptExport, fg=#AF00DB
+typescriptFuncCallArg, fg=#0451A5
+typescriptFuncComma, fg=#0451A5
+typescriptFuncKeyword, fg=#0000FF
+typescriptFuncTypeArrow, fg=#0000FF
+typescriptGlobal, fg=#16825D
+typescriptGlobalMethod, fg=#795E26
+typescriptImport, fg=#AF00DB
+typescriptIndexExpr, fg=#0451A5
+typescriptInterfaceExtends, fg=#0000FF
+typescriptInterfaceHeritage, fg=#16825D
+typescriptInterfaceKeyword, fg=#0000FF
+typescriptInterfaceName, fg=#16825D
+typescriptLabel, fg=#0451A5
+typescriptLogicSymbols, fg=#0451A5
+typescriptLoopParen, fg=#0451A5
+typescriptMember, fg=#795E26
+typescriptMethodAccessor, fg=#0000FF
+typescriptModule, fg=#0451A5
+typescriptObjectLiteral, fg=#0451A5
+typescriptOperator, fg=#0000FF
+typescriptParamImpl, fg=#0451A5
+typescriptParenExp, fg=#0451A5
+typescriptParens, fg=#343434
+typescriptPredefinedType, fg=#16825D
+typescriptPromiseMethod, fg=#795E26
+typescriptReserved, fg=#AF00DB
+typescriptTemplateSB, fg=#800000
+typescriptTemplateSubstitution, fg=#0451A5
+typescriptTypeParameter, fg=#16825D
+typescriptTypeReference, fg=#16825D
+typescriptVariable, fg=#0000FF
+typescriptVariableDeclaration, fg=#0451A5
+xmlEndTag, fg=#0000FF
+xmlTag, fg=#0000FF
+xmlTagName, fg=#0000FF
+yamlConstant, fg=#0000FF
+yamlKey, fg=#0000FF
