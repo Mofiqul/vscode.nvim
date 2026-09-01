@@ -1,0 +1,769 @@
+@annotation, bg=NONE, fg=#DCDCAA
+@attribute, bg=NONE, fg=#DCDCAA
+@attribute.builtin, bg=NONE, fg=#4EC9B0
+@boolean, bg=NONE, fg=#569CD6
+@character, bg=NONE, fg=#CE9178
+@comment, bg=NONE, fg=#6A9955, italic=false
+@comment.error, bg=NONE, bold=true, fg=#F44747
+@comment.note, bg=NONE, bold=true, fg=#4EC9B0
+@comment.warning, bg=NONE, bold=true, fg=#D7BA7D
+@conditional, link=@keyword.conditional
+@constant, bg=NONE, fg=#4FC1FF
+@constant.builtin, bg=NONE, fg=#569CD6
+@constant.macro, bg=NONE, fg=#4EC9B0
+@constructor, bg=NONE, fg=#569CD6
+@constructor.python, bg=NONE, fg=#4EC9B0
+@decorator, link=Identifier
+@define, bg=NONE, fg=#C586C0
+@diff.delta, link=DiffChange
+@diff.minus, link=DiffDelete
+@diff.plus, link=DiffAdd
+@error, bg=NONE, fg=#F44747
+@event, link=Identifier
+@exception, link=@keyword.exception
+@field, link=@variable.member
+@float, link=@number.float
+@function, bg=NONE, fg=#DCDCAA
+@function.builtin, bg=NONE, fg=#DCDCAA
+@function.macro, bg=NONE, fg=#DCDCAA
+@function.method, bg=NONE, fg=#DCDCAA
+@include, link=@keyword.import
+@interface, link=Identifier
+@keyword, bg=NONE, fg=#569CD6
+@keyword.conditional, bg=NONE, fg=#C586C0
+@keyword.exception, bg=NONE, fg=#C586C0
+@keyword.import, bg=NONE, fg=#C586C0
+@keyword.repeat, bg=NONE, fg=#C586C0
+@keyword.return, bg=NONE, fg=#C586C0
+@label, bg=NONE, fg=#9CDCFE
+@lsp.type.comment.c, bg=NONE, fg=#51504F
+@lsp.type.comment.cpp, bg=NONE, fg=#51504F
+@lsp.type.enumMember, link=@constant
+@lsp.type.keyword, link=@keyword
+@lsp.type.macro, link=@constant
+@lsp.type.member, link=@function
+@lsp.type.type, link=@type
+@lsp.type.typeParameter, link=@type
+@lsp.typemod.keyword.controlFlow, bg=NONE, fg=#C586C0
+@lsp.typemod.property.readonly, link=@constant
+@lsp.typemod.type.defaultLibrary, link=@type.builtin
+@lsp.typemod.variable.constant, link=@constant
+@lsp.typemod.variable.readonly, link=@constant
+@markup.heading, bold=true, fg=#569CD6
+@markup.heading.1.markdown, bg=NONE, bold=true, fg=#569CD6
+@markup.heading.2.markdown, bg=NONE, bold=true, fg=#CE9178
+@markup.heading.3.markdown, bg=NONE, bold=true, fg=#DCDCAA
+@markup.heading.4.markdown, bg=NONE, bold=true, fg=#6A9955
+@markup.heading.5.markdown, bg=NONE, bold=true, fg=#569CD6
+@markup.heading.6.markdown, bg=NONE, bold=true, fg=#C586C0
+@markup.italic, bg=NONE, fg=#D4D4D4, italic=true
+@markup.link.label, bg=NONE, fg=#9CDCFE, underline=false
+@markup.link.url, bg=NONE, fg=#D4D4D4, underline=false
+@markup.list.checked, link=Todo
+@markup.list.unchecked, link=Todo
+@markup.raw, bg=NONE, fg=#D4D4D4
+@markup.raw.markdown, bg=NONE, fg=#CE9178
+@markup.raw.markdown_inline, bg=NONE, fg=#CE9178
+@markup.strikethrough, bg=NONE, fg=#D4D4D4, strikethrough=true
+@markup.strong, bold=true, fg=#569CD6
+@markup.underline, bg=NONE, fg=#D7BA7D, underline=true
+@method, link=@function.method
+@modifier, link=Identifier
+@module, bg=NONE, fg=#4EC9B0
+@namespace, link=@module
+@number, bg=NONE, fg=#B5CEA8
+@number.float, bg=NONE, fg=#B5CEA8
+@operator, bg=NONE, fg=#D4D4D4
+@parameter, link=@variable.parameter
+@property, bg=NONE, fg=#9CDCFE
+@punctuation.bracket, bg=NONE, fg=#D4D4D4
+@punctuation.delimiter, bg=NONE, fg=#D4D4D4
+@punctuation.special, bg=NONE, fg=#D4D4D4
+@regexp, bg=NONE, fg=#F44747
+@repeat, link=@keyword.repeat
+@storageclass, link=@keyword.storage
+@string, bg=NONE, fg=#CE9178
+@string.regex, link=@string.regexp
+@string.regexp, bg=NONE, fg=#CE9178
+@stringEscape, bold=true, fg=#CE9178
+@structure, bg=NONE, fg=#9CDCFE
+@tag, bg=NONE, fg=#569CD6
+@tag.attribute, bg=NONE, fg=#9CDCFE
+@tag.builtin, bg=NONE, fg=#569CD6
+@tag.delimiter, bg=NONE, fg=#808080
+@text, bg=NONE, fg=#D4D4D4
+@text.danger, link=@comment.error
+@text.diff.add, link=@diff.plus
+@text.diff.delete, link=@diff.minus
+@text.emphasis, link=@markup.italic
+@text.literal, link=@markup.raw
+@text.note, link=@comment.note
+@text.strike, link=@markup.strikethrough
+@text.strong, link=@markup.strong
+@text.title, link=@markup.heading
+@text.underline, link=@markup.underline
+@text.uri, link=@markup.link.url
+@text.warning, link=@comment.warning
+@textReference, fg=#CE9178
+@type, bg=NONE, fg=#4EC9B0
+@type.builtin, bg=NONE, fg=#569CD6
+@type.builtin.tsx, link=@type
+@type.builtin.typescript, link=@type
+@type.qualifier, bg=NONE, fg=#569CD6
+@variable, bg=NONE, fg=#9CDCFE
+@variable.builtin, bg=NONE, fg=#569CD6
+@variable.member, bg=NONE, fg=#9CDCFE
+@variable.parameter, bg=NONE, fg=#9CDCFE
+@variable.parameter.reference, bg=NONE, fg=#9CDCFE
+BlinkCmpDoc, link=NormalFloat
+BlinkCmpDocBorder, link=FloatBorder
+BlinkCmpDocCursorLine, link=Visual
+BlinkCmpDocSeparator, link=NormalFloat
+BlinkCmpGhostText, fg=#707070
+BlinkCmpKind, bg=NONE, fg=#BBBBBB
+BlinkCmpKindClass, link=BlinkCmpKindConstructor
+BlinkCmpKindColor, link=cssColor
+BlinkCmpKindConstant, link=@constant
+BlinkCmpKindConstructor, bg=NONE, fg=#f28b25
+BlinkCmpKindCopilot, fg=#4EC9B0
+BlinkCmpKindEnum, link=BlinkCmpKindConstructor
+BlinkCmpKindEnumMember, link=@variable.member
+BlinkCmpKindEvent, bg=NONE, fg=#FFD602
+BlinkCmpKindField, link=@variable.member
+BlinkCmpKindFile, link=@text.uri
+BlinkCmpKindFolder, link=NeotestDir
+BlinkCmpKindFunction, bg=NONE, fg=#C586C0
+BlinkCmpKindInterface, bg=NONE, fg=#9CDCFE
+BlinkCmpKindKeyword, bg=NONE, fg=#FFD602
+BlinkCmpKindMethod, bg=NONE, fg=#C586C0
+BlinkCmpKindModule, link=BlinkCmpKindClass
+BlinkCmpKindOperator, link=@operator
+BlinkCmpKindProperty, link=BlinkCmpKindField
+BlinkCmpKindReference, link=@variable.parameter.reference
+BlinkCmpKindSnippet, bg=NONE, fg=#FFD602
+BlinkCmpKindStruct, link=@structure
+BlinkCmpKindText, bg=NONE, fg=#BBBBBB
+BlinkCmpKindTypeParameter, link=@variable.parameter
+BlinkCmpKindUnit, link=BlinkCmpKindField
+BlinkCmpKindValue, link=@variable.member
+BlinkCmpKindVariable, link=@variable.member
+BlinkCmpLabel, bg=NONE, fg=#D4D4D4
+BlinkCmpLabelDescription, bg=NONE, fg=#BBBBBB
+BlinkCmpLabelDetail, bg=NONE, fg=#BBBBBB
+BlinkCmpLabelMatch, bg=NONE, bold=true, fg=#18a2fe
+BlinkCmpMenu, link=Pmenu
+BlinkCmpMenuBorder, link=FloatBorder
+BlinkCmpMenuSelection, link=PmenuSel
+BlinkCmpScrollBarGutter, link=PmenuSbar
+BlinkCmpScrollBarThumb, link=PmenuThumb
+BlinkCmpSignatureHelp, link=NormalFloat
+BlinkCmpSignatureHelpActiveParameter, link=LspSignatureActiveParameter
+BlinkCmpSignatureHelpBorder, link=NormalFloat
+BlinkCmpSource, bg=NONE, fg=#BBBBBB
+Boolean, bg=NONE, fg=#569CD6
+BufferCurrent, bg=#1F1F1F, fg=#D4D4D4
+BufferCurrentIndex, bg=#1F1F1F, fg=#D4D4D4
+BufferCurrentMod, bg=#1F1F1F, fg=#D7BA7D
+BufferCurrentSign, bg=#1F1F1F, fg=#D4D4D4
+BufferCurrentTarget, bg=#1F1F1F, fg=#F44747
+BufferInactive, bg=#2D2D2D, fg=#808080
+BufferInactiveIndex, bg=#2D2D2D, fg=#808080
+BufferInactiveMod, bg=#2D2D2D, fg=#D7BA7D
+BufferInactiveSign, bg=#2D2D2D, fg=#808080
+BufferInactiveTarget, bg=#2D2D2D, fg=#F44747
+BufferLineFill, bg=#252526, fg=NONE
+BufferLineIndicatorSelected, bg=NONE, fg=#252526
+BufferTabpage, bg=#2D2D2D, fg=#D4D4D4
+BufferTabpageFill, bg=#2D2D2D, fg=#D4D4D4
+BufferTabpages, bg=#2D2D2D, fg=#D4D4D4
+BufferTabpagesFill, bg=#2D2D2D, fg=#D4D4D4
+BufferVisible, bg=#1F1F1F, fg=#808080
+BufferVisibleIndex, bg=#1F1F1F, fg=#808080
+BufferVisibleMod, bg=#1F1F1F, fg=#D7BA7D
+BufferVisibleSign, bg=#1F1F1F, fg=#808080
+BufferVisibleTarget, bg=#1F1F1F, fg=#F44747
+Character, bg=NONE, fg=#CE9178
+CmpItemAbbr, bg=NONE, fg=#D4D4D4
+CmpItemAbbrDeprecated, bg=#202020, fg=#51504F, strikethrough=true
+CmpItemAbbrMatch, bg=NONE, bold=true, fg=#18a2fe
+CmpItemAbbrMatchFuzzy, bg=NONE, bold=true, fg=#18a2fe
+CmpItemKind, link=Pmenu
+CmpItemKindClass, link=CmpItemKindConstructor
+CmpItemKindColor, link=cssColor
+CmpItemKindConstant, link=@constant
+CmpItemKindConstructor, bg=NONE, fg=#f28b25
+CmpItemKindEnum, link=@variable.member
+CmpItemKindEnumMember, link=@variable.member
+CmpItemKindEvent, link=@constant
+CmpItemKindField, link=@variable.member
+CmpItemKindFile, link=@text.uri
+CmpItemKindFolder, link=@text.uri
+CmpItemKindFunction, bg=NONE, fg=#C586C0
+CmpItemKindInterface, bg=NONE, fg=#9CDCFE
+CmpItemKindKeyword, bg=NONE, fg=#D4D4D4
+CmpItemKindMethod, bg=NONE, fg=#C586C0
+CmpItemKindModule, link=CmpItemKindKeyword
+CmpItemKindOperator, link=@operator
+CmpItemKindProperty, bg=NONE, fg=#D4D4D4
+CmpItemKindReference, link=@variable.parameter.reference
+CmpItemKindSnippet, link=@text
+CmpItemKindStruct, link=@structure
+CmpItemKindText, bg=NONE, fg=#9CDCFE
+CmpItemKindTypeParameter, link=@variable.parameter
+CmpItemKindUnit, bg=NONE, fg=#D4D4D4
+CmpItemKindValue, link=@variable.member
+CmpItemKindVariable, bg=NONE, fg=#9CDCFE
+CmpItemMenu, bg=NONE, fg=#BBBBBB
+CocFloating, bg=#202020, fg=NONE
+CocHighlightRead, bg=#343B41, fg=NONE
+CocHighlightText, bg=#343B41, fg=NONE
+CocHighlightWrite, bg=#343B41, fg=NONE
+CocMenuSel, bg=#04395E, fg=#BBBBBB
+CocSearch, bg=NONE, fg=#18a2fe
+ColorColumn, bg=#222222, fg=NONE
+Comment, bg=NONE, fg=#6A9955, italic=false
+CompeDocumentation, link=Pmenu
+CompeDocumentationBorder, link=Pmenu
+CompileModeCheckResult, bold=true, fg=#ff9966
+CompileModeCheckTarget, fg=#ff9966
+CompileModeCommandOutput, fg=#6699ff
+CompileModeDirectoryMessage, fg=#6699ff
+CompileModeError, fg=#F44747
+CompileModeErrorLocus, link=Visual
+CompileModeInfo, fg=#6A9955
+CompileModeMessage, underline=true
+CompileModeMessageCol, fg=#4EC9B0
+CompileModeMessageRow, fg=#C586C0
+CompileModeOutputFile, fg=#9966cc
+CompileModeWarning, fg=#DCDCAA
+Conceal, bg=#1F1F1F, fg=#D4D4D4
+Conditional, bg=NONE, fg=#C586C0
+Constant, bg=NONE, fg=#569CD6
+CopilotSuggestion, bg=NONE, fg=#6A6A6A
+Cursor, bg=#AEAFAD, fg=#51504F
+CursorColumn, bg=#222222, fg=NONE
+CursorLine, bg=#222222
+CursorLineNr, bg=#1F1F1F, fg=#BBBBBB
+DapUIBreakpointsCurrentLine, bold=true, fg=#4EC9B0
+DapUIBreakpointsDisabledLine, fg=#51504F
+DapUIBreakpointsInfo, fg=#4EC9B0
+DapUIBreakpointsLine, fg=#C586C0
+DapUIBreakpointsPath, fg=#C586C0
+DapUICurrentFrameName, bold=true, fg=#4EC9B0
+DapUIDecoration, fg=#C586C0
+DapUIFloatBorder, fg=#C586C0
+DapUILineNumber, fg=#C586C0
+DapUIModifiedValue, bold=true, fg=#C586C0
+DapUIPlayPause, fg=#4EC9B0
+DapUIPlayPauseNC, fg=#4EC9B0
+DapUIRestart, fg=#4EC9B0
+DapUIRestartNC, fg=#4EC9B0
+DapUIScope, fg=#C586C0
+DapUISource, fg=#18a2fe
+DapUIStepBack, fg=#C586C0
+DapUIStepBackNC, fg=#C586C0
+DapUIStepInto, fg=#C586C0
+DapUIStepIntoNC, fg=#C586C0
+DapUIStepOut, fg=#C586C0
+DapUIStepOutNC, fg=#C586C0
+DapUIStepOver, fg=#C586C0
+DapUIStepOverNC, fg=#C586C0
+DapUIStop, fg=#F44747
+DapUIStopNC, fg=#F44747
+DapUIStoppedThread, fg=#C586C0
+DapUIThread, fg=#4EC9B0
+DapUIType, fg=#C586C0
+DapUIUnavailable, fg=#51504F
+DapUIUnavailableNC, fg=#51504F
+DapUIWatchesEmpty, fg=#51504F
+DapUIWatchesError, fg=#F44747
+DapUIWatchesValue, fg=#4EC9B0
+DapUIWinSelect, bold=true, fg=#C586C0
+DashboardDesc, bg=NONE, fg=#D7BA7D
+DashboardFooter, bg=NONE, fg=#569CD6, italic=true
+DashboardHeader, bg=NONE, fg=#569CD6
+DashboardIcon, bg=NONE, fg=#D7BA7D
+DashboardKey, bg=NONE, fg=#D4D4D4
+DashboardShortCut, bg=NONE, fg=#C586C0
+Debug, bg=NONE, fg=#D4D4D4
+Define, bg=NONE, fg=#C586C0
+Delimiter, bg=NONE, fg=#D4D4D4
+DiagnosticError, bg=NONE, fg=#F44747
+DiagnosticHint, bg=NONE, fg=#569CD6
+DiagnosticInfo, bg=NONE, fg=#569CD6
+DiagnosticOk, bg=NONE, fg=#4EC9B0
+DiagnosticUnderlineError, bg=NONE, fg=NONE, sp=#F44747, undercurl=true
+DiagnosticUnderlineHint, bg=NONE, fg=NONE, sp=#569CD6, undercurl=true
+DiagnosticUnderlineInfo, bg=NONE, fg=NONE, sp=#569CD6, undercurl=true
+DiagnosticUnderlineWarn, bg=NONE, fg=NONE, sp=#DCDCAA, undercurl=true
+DiagnosticUnnecessary, bg=NONE, fg=#729DB3
+DiagnosticWarn, bg=NONE, fg=#DCDCAA
+DiffAdd, bg=#4B5632, fg=NONE
+DiffChange, bg=#4B1818, fg=NONE
+DiffDelete, bg=#6F1313, fg=NONE
+DiffText, bg=#6F1313, fg=NONE
+Directory, bg=#1F1F1F, fg=#569CD6
+EndOfBuffer, bg=NONE, fg=#1F1F1F
+Error, bg=#1F1F1F, fg=#F44747, sp=#F44747, undercurl=true
+ErrorMsg, bg=#1F1F1F, fg=#F44747
+Exception, bg=NONE, fg=#C586C0
+Float, bg=NONE, fg=#B5CEA8
+FocusedSymbol, bg=#084671, fg=#ffffff
+FoldColumn, bg=#1F1F1F, fg=#5A5A5A
+Folded, bg=#202d39, fg=NONE
+Function, bg=NONE, fg=#DCDCAA
+GitGutterAdd, bg=NONE, fg=#6A9955
+GitGutterChange, bg=NONE, fg=#DCDCAA
+GitGutterDelete, bg=NONE, fg=#F44747
+GitSignsAdd, bg=NONE, fg=#6A9955
+GitSignsAddLn, bg=#6A9955, fg=#1F1F1F
+GitSignsChange, bg=NONE, fg=#DCDCAA
+GitSignsChangeLn, bg=#DCDCAA, fg=#1F1F1F
+GitSignsDelete, bg=NONE, fg=#F44747
+GitSignsDeleteLn, bg=#F44747, fg=#1F1F1F
+IblIndent, bg=NONE, fg=#404040, nocombine=true
+IblScope, bg=NONE, fg=#707070, nocombine=true
+IblWhitespace, bg=NONE, fg=#404040, nocombine=true
+Identifier, bg=NONE, fg=#9CDCFE
+Ignore, bg=NONE, fg=#D4D4D4
+IlluminatedWordRead, bg=#343B41
+IlluminatedWordText, bg=#343B41
+IlluminatedWordWrite, bg=#343B41
+IncSearch, bg=#515c6a, fg=NONE
+Include, bg=NONE, fg=#C586C0
+Keyword, bg=NONE, fg=#C586C0
+LSPSagaDiagnosticTruncateLine, bg=NONE, fg=#5A5A5A
+Label, bg=NONE, fg=#C586C0
+LineNr, bg=#1F1F1F, fg=#5A5A5A
+LspFloatWinBorder, bg=NONE, fg=#5A5A5A
+LspFloatWinNormal, bg=NONE, fg=#D4D4D4
+LspInfoBorder, bg=NONE, fg=#5A5A5A
+LspInlayHint, bg=NONE, fg=#6A6A6A, italic=false
+LspLinesDiagBorder, bg=NONE, fg=#5A5A5A
+LspReferenceRead, bg=#343B41, fg=NONE
+LspReferenceText, bg=#343B41, fg=NONE
+LspReferenceWrite, bg=#343B41, fg=NONE
+LspSagaBorderTitle, bg=NONE, fg=#51504F
+LspSagaCodeActionBorder, bg=NONE, fg=#5A5A5A
+LspSagaDefPreviewBorder, bg=NONE, fg=#5A5A5A
+LspSagaDiagnosticBorder, bg=NONE, fg=#5A5A5A
+LspSagaDocTruncateLine, bg=NONE, fg=#5A5A5A
+LspSagaHoverBorder, bg=NONE, fg=#5A5A5A
+LspSagaLspFinderBorder, bg=NONE, fg=#5A5A5A
+LspSagaRenameBorder, bg=NONE, fg=#5A5A5A
+LspSagaShTruncateLine, bg=NONE, fg=#5A5A5A
+LspSagaSignatureHelpBorder, bg=NONE, fg=#5A5A5A
+Macro, bg=NONE, fg=#C586C0
+MatchParen, bg=#51504F, fg=NONE
+MiniIconsAzure, fg=#569CD6
+MiniIconsBlue, fg=#18a2fe
+MiniIconsCyan, fg=#4EC9B0
+MiniIconsGreen, fg=#6A9955
+MiniIconsGrey, fg=#D4D4D4
+MiniIconsOrange, fg=#F44747
+MiniIconsPurple, fg=#C586C0
+MiniIconsRed, fg=#F44747
+MiniIconsYellow, fg=#FFD602
+MiniStatuslineDevinfo, bg=#636369
+MiniStatuslineFileinfo, bg=#636369
+MiniStatuslineFilename, bg=#373737, fg=#D4D4D4
+MiniStatuslineInactive, bg=#252526, fg=#D4D4D4
+MiniStatuslineModeCommand, bg=#D16969, bold=true, fg=#1F1F1F
+MiniStatuslineModeInsert, bg=#9CDCFE, bold=true, fg=#1F1F1F
+MiniStatuslineModeNormal, bg=#B5CEA8, bold=true, fg=#1F1F1F
+MiniStatuslineModeOther, bg=#252526, fg=#D4D4D4
+MiniStatuslineModeReplace, bg=#D7BA7D, bold=true, fg=#1F1F1F
+MiniStatuslineModeVisual, bg=#C586C0, bold=true, fg=#1F1F1F
+ModeMsg, bg=#252526, fg=#D4D4D4
+MoreMsg, bg=#252526, fg=#D4D4D4
+NeoTreeBufferNumber, bg=NONE, fg=#5A5A5A
+NeoTreeCursorLine, bg=#222222, fg=NONE
+NeoTreeDimText, bg=#222222, fg=NONE
+NeoTreeDirectoryIcon, bg=NONE, fg=#569CD6
+NeoTreeDirectoryName, bg=NONE, fg=#D4D4D4
+NeoTreeDotfile, bg=NONE, fg=#729DB3
+NeoTreeFileIcon, bg=NONE, fg=#646695
+NeoTreeFileName, bg=NONE, fg=#D4D4D4
+NeoTreeFileNameOpened, bg=#222222, fg=#D4D4D4
+NeoTreeFilterTerm, bg=NONE, fg=#D4D4D4
+NeoTreeFloatBorder, bg=NONE, fg=#5A5A5A
+NeoTreeFloatTitle, bg=NONE, fg=#5A5A5A
+NeoTreeTitleBar, bg=NONE, fg=#5A5A5A
+NeogitDiffAdd, bg=#373D29, fg=#81b88b
+NeogitDiffAddCursor, link=NeogitDiffAddHighlight
+NeogitDiffAddHighlight, bg=#4B5632, fg=#81b88b
+NeogitDiffContext, bg=#252526, fg=#BBBBBB
+NeogitDiffContextCursor, link=NeogitDiffContextHighlight
+NeogitDiffContextHighlight, bg=#373737, fg=#BBBBBB
+NeogitDiffDelete, bg=#4B1818, fg=#c74e39
+NeogitDiffDeleteCursor, link=NeogitDiffDeleteHighlight
+NeogitDiffDeleteHighlight, bg=#6F1313, fg=#c74e39
+NeogitDiffHeader, bg=#1F1F1F, fg=#898989
+NeogitDiffHeaderHighlight, bg=#1F1F1F, fg=#898989
+NeogitHunkHeader, bg=#252526, fg=#e2c08d
+NeogitHunkHeaderCursor, link=NeogitHunkHeaderHighlight
+NeogitHunkHeaderHighlight, bg=#373737, fg=#e2c08d
+NeogitWinSeparator, link=WinSeparator
+NeotestAdapterName, bold=true, fg=#D4D4D4
+NeotestDir, fg=#569CD6
+NeotestExpandMarker, fg=#51504F
+NeotestFailed, fg=#F44747
+NeotestFile, fg=#569CD6
+NeotestFocused, bold=true
+NeotestIndent, fg=#51504F
+NeotestMarked, bold=true, fg=#D7BA7D
+NeotestNamespace, fg=#C586C0
+NeotestPassed, fg=#4EC9B0
+NeotestRunning, fg=#FFD602
+NeotestSkipped, fg=#569CD6
+NeotestTarget, fg=#D16969
+NeotestWatching, fg=#FFD602
+NeotestWinSelect, bold=true, fg=#569CD6
+NonText, bg=NONE, fg=#5A5A5A
+Normal, bg=#1F1F1F, fg=#D4D4D4
+NormalFloat, bg=#202020
+Number, bg=NONE, fg=#B5CEA8
+NvimTreeCursorLine, bg=#373737, fg=NONE
+NvimTreeEmptyFolderName, bg=NONE, fg=#808080
+NvimTreeEndOfBuffer, fg=#252526
+NvimTreeFolderIcon, bg=NONE, fg=#569CD6
+NvimTreeFolderName, bg=NONE, fg=#D4D4D4
+NvimTreeGitDeleted, bg=NONE, fg=#c74e39
+NvimTreeGitDirty, bg=NONE, fg=#e2c08d
+NvimTreeGitIgnored, bg=NONE, fg=#8c8c8c
+NvimTreeGitMerge, bg=NONE, fg=#73c991
+NvimTreeGitNew, bg=NONE, fg=#81b88b
+NvimTreeGitRenamed, bg=NONE, fg=#73c991
+NvimTreeGitStaged, bg=NONE, fg=#e2c08d
+NvimTreeImageFile, bg=NONE, fg=#646695
+NvimTreeIndentMarker, bg=NONE, fg=#5A5A5A
+NvimTreeNormal, bg=#252526, fg=#D4D4D4
+NvimTreeOpenedFolderName, bg=#252526, fg=NONE
+NvimTreeRootFolder, bg=NONE, bold=true, fg=#D4D4D4
+NvimTreeSpecialFile, bg=NONE, fg=#C586C0, underline=true
+NvimTreeVertSplit, bg=#1F1F1F, fg=#1F1F1F
+Operator, bg=NONE, fg=#D4D4D4
+Pmenu, bg=#202020, fg=#BBBBBB
+PmenuSbar, bg=#343B41, fg=NONE
+PmenuSel, bg=#04395E, fg=#BBBBBB
+PmenuThumb, bg=#BBBBBB, fg=NONE
+PreProc, bg=NONE, fg=#C586C0
+Question, bg=#1F1F1F, fg=#569CD6
+QuickFixLine, bold=true
+RainbowDelimiterBlue, bg=NONE, fg=#18a2fe
+RainbowDelimiterCyan, bg=NONE, fg=#4EC9B0
+RainbowDelimiterGreen, bg=NONE, fg=#6A9955
+RainbowDelimiterOrange, bg=NONE, fg=#CE9178
+RainbowDelimiterRed, bg=NONE, fg=#C586C0
+RainbowDelimiterViolet, bg=NONE, fg=#646695
+RainbowDelimiterYellow, bg=NONE, fg=#D7BA7D
+RenderMarkdownH1, bold=true, fg=#569CD6
+RenderMarkdownH1Bg, bg=#343B41, bold=true
+RenderMarkdownH2, bold=true, fg=#CE9178
+RenderMarkdownH2Bg, bg=#343B41, bold=true
+RenderMarkdownH3, bold=true, fg=#DCDCAA
+RenderMarkdownH3Bg, bg=#343B41, bold=true
+RenderMarkdownH4, bold=true, fg=#6A9955
+RenderMarkdownH4Bg, bg=#343B41, bold=true
+RenderMarkdownH5, bold=true, fg=#569CD6
+RenderMarkdownH5Bg, bg=#343B41, bold=true
+RenderMarkdownH6, bold=true, fg=#C586C0
+RenderMarkdownH6Bg, bg=#343B41, bold=true
+Repeat, bg=NONE, fg=#C586C0
+Search, bg=#613315, fg=NONE
+SignColumn, bg=#1F1F1F, fg=NONE
+SnacksIndent, bg=NONE, fg=#404040, nocombine=true
+SnacksIndentScope, bg=NONE, fg=#707070, nocombine=true
+SnacksPicker, link=Normal
+SnacksPickerBorder, link=Normal
+SnacksPickerDir, bg=NONE, fg=NONE, nocombine=true
+SnacksPickerDirectory, bg=NONE, fg=NONE, nocombine=true
+SnacksPickerListCursorLine, link=PmenuSel
+SnacksPickerPreviewCursorLine, bg=none, fg=none, nocombine=true
+Special, bg=NONE, fg=#D7BA7D
+SpecialChar, bg=NONE, fg=#D4D4D4
+SpecialComment, bg=NONE, fg=#6A9955
+SpecialKey, bg=NONE, fg=#569CD6
+SpellBad, fg=NONE, sp=#F44747, undercurl=true
+SpellCap, fg=NONE, sp=#DCDCAA, undercurl=true
+SpellLocal, fg=NONE, sp=#569CD6, undercurl=true
+SpellRare, fg=NONE, sp=#646695, undercurl=true
+Statement, bg=NONE, fg=#C586C0
+StatusLine, bg=#373737, fg=#D4D4D4
+StatusLineNC, bg=#252526, fg=#D4D4D4
+StorageClass, bg=NONE, fg=#569CD6
+String, bg=NONE, fg=#CE9178
+Structure, bg=NONE, fg=#4EC9B0
+SymbolsOutlineConnector, bg=NONE, fg=#5A5A5A
+TabLine, bg=#2D2D2D, fg=#D4D4D4
+TabLineFill, bg=#252526, fg=#D4D4D4
+TabLineSel, bg=#1F1F1F, fg=#D4D4D4
+Tag, bg=NONE, fg=#D4D4D4
+TelescopeMatching, bg=NONE, bold=true, fg=#18a2fe
+TelescopeMultiSelection, bg=#04395E, fg=#D4D4D4
+TelescopeNormal, bg=NONE, fg=#D4D4D4
+TelescopePreviewBorder, bg=NONE, fg=#5A5A5A
+TelescopePromptBorder, bg=NONE, fg=#5A5A5A
+TelescopePromptPrefix, bg=NONE, fg=#D4D4D4
+TelescopeResultsBorder, bg=NONE, fg=#5A5A5A
+TelescopeSelection, bg=#04395E, fg=#D4D4D4
+Title, bg=NONE, bold=true, fg=NONE
+Todo, bg=#1F1F1F, bold=true, fg=#D7BA7D
+TroubleNormal, link=Normal
+TroubleNormalNC, link=Normal
+Type, bg=NONE, fg=#569CD6
+Typedef, bg=NONE, fg=#569CD6
+Underlined, bg=NONE, fg=NONE, underline=true
+VertSplit, bg=#1F1F1F, fg=#444444
+Visual, bg=#264F78, fg=NONE
+VisualNOS, bg=#264F78, fg=NONE
+WarningMsg, bg=#1F1F1F, fg=#DCDCAA
+WhichKeyBorder, bg=NONE, fg=#5A5A5A
+WhichKeyIconAzure, bg=NONE, fg=#4EC9B0
+WhichKeyIconBlue, bg=NONE, fg=#569CD6
+WhichKeyIconGreen, bg=NONE, fg=#6A9955
+WhichKeyIconGrey, bg=NONE, fg=#808080
+WhichKeyIconOrange, bg=NONE, fg=#D7BA7D
+WhichKeyIconPurple, bg=NONE, fg=#C586C0
+WhichKeyIconRed, bg=NONE, fg=#F44747
+WhichKeyIconYellow, bg=NONE, fg=#DCDCAA
+WhichKeySeparator, link=Normal
+WhichKeyValue, link=Normal
+Whitespace, fg=#5A5A5A
+WildMenu, bg=#264F78, fg=NONE
+WinBar, bg=#1F1F1F, bold=true, fg=#D4D4D4
+WinBarNc, bg=#1F1F1F, fg=#D4D4D4
+WinSeparator, link=VertSplit
+asciidocAdmonition, fg=#CE9178
+asciidocAttributeEntry, fg=#D7BA7D
+asciidocAttributeList, fg=#C586C0
+asciidocAttributeRef, fg=#D7BA7D
+asciidocBackslash, link=Keyword
+asciidocHLabel, bold=true, fg=#569CD6
+asciidocListingBlock, fg=#CE9178
+asciidocMacro, fg=#C586C0
+asciidocMacroAttributes, fg=#D7BA7D
+asciidocOneLineTitle, bold=true, fg=#569CD6
+asciidocPassthroughBlock, fg=#569CD6
+asciidocQuotedBold, link=markdownBold
+asciidocQuotedEmphasized, fg=#569CD6, italic=true
+asciidocQuotedEmphasized2, fg=#569CD6, italic=true
+asciidocQuotedEmphasizedItalic, fg=#569CD6, italic=true
+asciidocQuotedMonospaced, fg=#CE9178
+asciidocQuotedMonospaced2, link=asciidocQuotedMonospaced
+asciidocQuotedUnconstrainedBold, link=asciidocQuotedBold
+asciidocQuotedUnconstrainedEmphasized, link=asciidocQuotedEmphasized
+asciidocTriplePlusPassthrough, fg=#DCDCAA
+asciidocURL, link=markdownUrl
+cssAttr, bg=NONE, fg=#CE9178
+cssAttrRegion, bg=NONE, fg=#CE9178
+cssBraces, bg=NONE, fg=#D4D4D4
+cssClassName, bg=NONE, fg=#D7BA7D
+cssColor, bg=NONE, fg=#CE9178
+cssDefinition, bg=NONE, fg=#9CDCFE
+cssFunction, bg=NONE, fg=#CE9178
+cssFunctionName, bg=NONE, fg=#CE9178
+cssIdentifier, bg=NONE, fg=#D7BA7D
+cssImportant, bg=NONE, fg=#569CD6
+cssInclude, bg=NONE, fg=#C586C0
+cssProp, bg=NONE, fg=#9CDCFE
+cssPseudoClass, bg=NONE, fg=#D7BA7D
+cssPseudoClassId, bg=NONE, fg=#D7BA7D
+cssPseudoClassLang, bg=NONE, fg=#D7BA7D
+cssStyle, bg=NONE, fg=#9CDCFE
+cssTagName, bg=NONE, fg=#D7BA7D
+cssUnitDecorators, bg=NONE, fg=#CE9178
+cssValueLength, bg=NONE, fg=#CE9178
+cssValueNumber, bg=NONE, fg=#CE9178
+cssVendor, bg=NONE, fg=#CE9178
+debugPC, bg=#4C4C19
+diffAdded, link=DiffAdd
+diffChanged, link=DiffChange
+diffRemoved, link=DiffDelete
+gitcommitBlank, bg=NONE, fg=#C586C0
+gitcommitBranch, bg=NONE, fg=#C586C0
+gitcommitComment, bg=NONE, fg=#808080
+gitcommitDiscardedFile, bg=NONE, fg=#F44747
+gitcommitDiscardedType, bg=NONE, fg=#F44747
+gitcommitHeader, bg=NONE, fg=#808080
+gitcommitOnBranch, bg=NONE, fg=#808080
+gitcommitOverflow, bg=NONE, fg=#F44747
+gitcommitSelectedFile, bg=NONE, fg=#6A9955
+gitcommitSelectedType, bg=NONE, fg=#6A9955
+gitcommitSummary, bg=NONE, fg=#C586C0
+goBoolean, bg=NONE, fg=#569CD6
+goBuiltins, bg=NONE, fg=#DCDCAA
+goComplexes, bg=NONE, fg=#4EC9B0
+goConst, bg=NONE, fg=#569CD6
+goDeclType, bg=NONE, fg=#569CD6
+goDeclaration, bg=NONE, fg=#569CD6
+goFloats, bg=NONE, fg=#4EC9B0
+goFunctionCall, bg=NONE, fg=#DCDCAA
+goImport, bg=NONE, fg=#569CD6
+goMethodCall, bg=NONE, fg=#DCDCAA
+goPackage, bg=NONE, fg=#569CD6
+goPredefinedIdentifiers, bg=NONE, fg=#569CD6
+goReceiver, bg=NONE, fg=#D4D4D4
+goReceiverType, bg=NONE, fg=#D4D4D4
+goSignedInts, bg=NONE, fg=#4EC9B0
+goSingleDecl, bg=NONE, fg=#9CDCFE
+goStatement, bg=NONE, fg=#C586C0
+goTodo, bg=NONE, fg=#6A9955
+goType, bg=NONE, fg=#4EC9B0
+goTypeDecl, bg=NONE, fg=#569CD6
+goTypeName, bg=NONE, fg=#4EC9B0
+goUnsignedInts, bg=NONE, fg=#4EC9B0
+goVar, bg=NONE, fg=#569CD6
+goVarAssign, bg=NONE, fg=#9CDCFE
+goVarDefs, bg=NONE, fg=#9CDCFE
+htmlArg, bg=NONE, fg=#9CDCFE
+htmlEndTag, bg=NONE, fg=#808080
+htmlSpecialTagName, bg=NONE, fg=#569CD6
+htmlTag, bg=NONE, fg=#808080
+htmlTagName, bg=NONE, fg=#569CD6
+illuminatedCurWord, bg=#343B41
+illuminatedWord, bg=#343B41
+jsClassDefinition, bg=NONE, fg=#4EC9B0
+jsClassKeyword, bg=NONE, fg=#569CD6
+jsDestructuringBlock, bg=NONE, fg=#9CDCFE
+jsExportDefault, bg=NONE, fg=#C586C0
+jsExtendsKeyword, bg=NONE, fg=#569CD6
+jsFuncArgs, bg=NONE, fg=#9CDCFE
+jsFuncBlock, bg=NONE, fg=#9CDCFE
+jsFuncCall, bg=NONE, fg=#DCDCAA
+jsGlobalObjects, bg=NONE, fg=#4EC9B0
+jsIfElseBlock, bg=NONE, fg=#9CDCFE
+jsModuleKeyword, bg=NONE, fg=#9CDCFE
+jsObjectKey, bg=NONE, fg=#9CDCFE
+jsObjectProp, bg=NONE, fg=#9CDCFE
+jsObjectValue, bg=NONE, fg=#9CDCFE
+jsOperatorKeyword, bg=NONE, fg=#569CD6
+jsParen, bg=NONE, fg=#9CDCFE
+jsParenIfElse, bg=NONE, fg=#9CDCFE
+jsRegexpString, bg=NONE, fg=#D16969
+jsSpreadExpression, bg=NONE, fg=#9CDCFE
+jsSpreadOperator, bg=NONE, fg=#9CDCFE
+jsThis, bg=NONE, fg=#569CD6
+jsVariableDef, bg=NONE, fg=#9CDCFE
+jsonBoolean, bg=NONE, fg=#569CD6
+jsonEscape, bg=NONE, fg=#D7BA7D
+jsonKeyword, bg=NONE, fg=#9CDCFE
+jsonNull, bg=NONE, fg=#569CD6
+luaBuiltIn, bg=NONE, fg=#569CD6
+luaFuncArgName, bg=NONE, fg=#9CDCFE
+luaFuncCall, bg=NONE, fg=#DCDCAA
+luaFuncKeyword, bg=NONE, fg=#C586C0
+luaLocal, bg=NONE, fg=#C586C0
+markdownBold, bold=true, fg=#569CD6
+markdownCode, bg=NONE, fg=#CE9178
+markdownCodeDelimiter, bg=NONE, fg=#D4D4D4
+markdownEscape, fg=#CE9178
+markdownFootnote, bg=NONE, fg=#CE9178
+markdownFootnoteDefinition, fg=#CE9178
+markdownHeadingDelimiter, bg=NONE, fg=#569CD6
+markdownLinkText, fg=#CE9178
+markdownRule, bold=true, fg=#569CD6
+markdownUrl, bg=NONE, fg=#D4D4D4, underline=true
+phpClass, bg=NONE, fg=#4EC9B0
+phpFunction, bg=NONE, fg=#DCDCAA
+phpInclude, bg=NONE, fg=#569CD6
+phpMethod, bg=NONE, fg=#DCDCAA
+phpMethodsVar, bg=NONE, fg=#9CDCFE
+phpRegion, bg=NONE, fg=#4EC9B0
+phpStaticClasses, bg=NONE, fg=#4EC9B0
+phpUseClass, bg=NONE, fg=#4EC9B0
+pythonBoolean, bg=NONE, fg=#569CD6
+pythonBuiltinObj, bg=NONE, fg=#9CDCFE
+pythonBuiltinType, bg=NONE, fg=#4EC9B0
+pythonClassDef, bg=NONE, fg=#4EC9B0
+pythonClassVar, bg=NONE, fg=#569CD6
+pythonExClass, bg=NONE, fg=#4EC9B0
+pythonException, bg=NONE, fg=#C586C0
+pythonNone, bg=NONE, fg=#569CD6
+pythonOperator, bg=NONE, fg=#569CD6
+pythonStatement, bg=NONE, fg=#569CD6
+pythonTodo, bg=NONE, fg=#569CD6
+rubyClassName, bg=NONE, fg=#4EC9B0
+rubyClassNameTag, bg=NONE, fg=#4EC9B0
+rubyConstant, bg=NONE, fg=#4EC9B0
+rubyModuleName, bg=NONE, fg=#4EC9B0
+shDeref, bg=NONE, fg=#9CDCFE
+shVariable, bg=NONE, fg=#9CDCFE
+sqlFunction, bg=NONE, fg=#D7BA7D
+sqlKeyword, bg=NONE, fg=#C586C0
+sqlOperator, bg=NONE, fg=#C586C0
+texBeginEnd, bg=NONE, fg=#DCDCAA
+texBeginEndModifier, bg=NONE, fg=#9CDCFE
+texBeginEndName, bg=NONE, fg=#9CDCFE
+texDocType, bg=NONE, fg=#C586C0
+texDocTypeArgs, bg=NONE, fg=#9CDCFE
+texOption, bg=NONE, fg=#9CDCFE
+texStatement, bg=NONE, fg=#569CD6
+typescriptAccessibilityModifier, bg=NONE, fg=#569CD6
+typescriptAliasDeclaration, bg=NONE, fg=#4EC9B0
+typescriptAliasKeyword, bg=NONE, fg=#569CD6
+typescriptAmbientDeclaration, bg=NONE, fg=#569CD6
+typescriptArray, bg=NONE, fg=#DCDCAA
+typescriptArrowFunc, bg=NONE, fg=#569CD6
+typescriptArrowFuncArg, bg=NONE, fg=#9CDCFE
+typescriptAsyncFuncKeyword, bg=NONE, fg=#569CD6
+typescriptBOM, bg=NONE, fg=#9CDCFE
+typescriptBlock, bg=NONE, fg=#9CDCFE
+typescriptBraces, bg=NONE, fg=#D4D4D4
+typescriptCall, bg=NONE, fg=#569CD6
+typescriptCase, bg=NONE, fg=#9CDCFE
+typescriptCastKeyword, bg=NONE, fg=#9CDCFE
+typescriptClassBlock, bg=NONE, fg=#9CDCFE
+typescriptClassExtends, bg=NONE, fg=#569CD6
+typescriptClassHeritage, bg=NONE, fg=#4EC9B0
+typescriptClassKeyword, bg=NONE, fg=#569CD6
+typescriptClassName, bg=NONE, fg=#4EC9B0
+typescriptConditionalParen, bg=NONE, fg=#9CDCFE
+typescriptDOMDocProp, bg=NONE, fg=#9CDCFE
+typescriptDecorator, bg=NONE, fg=#DCDCAA
+typescriptDefault, bg=NONE, fg=#9CDCFE
+typescriptDocComment, bg=NONE, fg=#4EC9B0
+typescriptDocTags, bg=NONE, fg=#569CD6
+typescriptES6SetProp, bg=NONE, fg=#9CDCFE
+typescriptEndColons, bg=NONE, fg=#9CDCFE
+typescriptEnum, bg=NONE, fg=#4EC9B0
+typescriptEnumKeyword, bg=NONE, fg=#569CD6
+typescriptExceptions, bg=NONE, fg=#9CDCFE
+typescriptExport, bg=NONE, fg=#C586C0
+typescriptFuncCallArg, bg=NONE, fg=#9CDCFE
+typescriptFuncComma, bg=NONE, fg=#9CDCFE
+typescriptFuncKeyword, bg=NONE, fg=#569CD6
+typescriptFuncTypeArrow, bg=NONE, fg=#569CD6
+typescriptGlobal, bg=NONE, fg=#4EC9B0
+typescriptGlobalMethod, bg=NONE, fg=#DCDCAA
+typescriptImport, bg=NONE, fg=#C586C0
+typescriptIndexExpr, bg=NONE, fg=#9CDCFE
+typescriptInterfaceExtends, bg=NONE, fg=#569CD6
+typescriptInterfaceHeritage, bg=NONE, fg=#4EC9B0
+typescriptInterfaceKeyword, bg=NONE, fg=#569CD6
+typescriptInterfaceName, bg=NONE, fg=#4EC9B0
+typescriptLabel, bg=NONE, fg=#9CDCFE
+typescriptLogicSymbols, bg=NONE, fg=#9CDCFE
+typescriptLoopParen, bg=NONE, fg=#9CDCFE
+typescriptMember, bg=NONE, fg=#DCDCAA
+typescriptMethodAccessor, bg=NONE, fg=#569CD6
+typescriptModule, bg=NONE, fg=#9CDCFE
+typescriptObjectLiteral, bg=NONE, fg=#9CDCFE
+typescriptOperator, bg=NONE, fg=#569CD6
+typescriptParamImpl, bg=NONE, fg=#9CDCFE
+typescriptParenExp, bg=NONE, fg=#9CDCFE
+typescriptParens, bg=NONE, fg=#D4D4D4
+typescriptPredefinedType, bg=NONE, fg=#4EC9B0
+typescriptPromiseMethod, bg=NONE, fg=#DCDCAA
+typescriptReserved, bg=NONE, fg=#C586C0
+typescriptTemplateSB, bg=NONE, fg=#D7BA7D
+typescriptTemplateSubstitution, bg=NONE, fg=#9CDCFE
+typescriptTypeParameter, bg=NONE, fg=#4EC9B0
+typescriptTypeReference, bg=NONE, fg=#4EC9B0
+typescriptVariable, bg=NONE, fg=#569CD6
+typescriptVariableDeclaration, bg=NONE, fg=#9CDCFE
+xmlEndTag, bg=NONE, fg=#569CD6
+xmlTag, bg=NONE, fg=#569CD6
+xmlTagName, bg=NONE, fg=#569CD6
+yamlConstant, bg=NONE, fg=#569CD6
+yamlKey, bg=NONE, fg=#569CD6
