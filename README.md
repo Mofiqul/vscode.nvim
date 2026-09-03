@@ -218,3 +218,22 @@ require("bufferline").setup({
 ## Something is broken but I know how to fix it!
 
 Pull requests are welcome! Feel free to send one with an explanation!
+
+If your change touches colors, please run the tests (they need only `nvim` on
+`PATH`):
+
+```sh
+tests/run.sh
+```
+
+If you changed colors on purpose, regenerate the affected snapshot and include
+it in your PR:
+
+```sh
+nvim --headless --clean --cmd "set rtp+=$PWD" -l tests/snapshot.lua dark >tests/snapshots/dark.txt
+nvim --headless --clean --cmd "set rtp+=$PWD" -l tests/snapshot.lua light >tests/snapshots/light.txt
+```
+
+The snapshots in `tests/snapshots/` list every highlight group the theme defines
+for the dark and light backgrounds, so an intentional color change shows up as a
+small text diff in your PR — and an accidental one is caught before merge.

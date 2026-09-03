@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+
+jobs:
+  colorscheme:
+    name: colorscheme snapshots
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Neovim
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y neovim
+
+      - run: nvim --version | head -1
+
+      - name: Run colorscheme tests
+        run: ./tests/run.sh

@@ -1,3 +1,14 @@
+-- local function set_highlight(name, darkVal, lightVal, isDark) {
+--     local val
+--
+--     if isDark then
+--         val = darkVal
+--     else
+--         val = lightVal
+--
+--     vim.api.nvim_set_hl(0, name, val)
+-- }
+
 local hl = vim.api.nvim_set_hl
 local theme = {}
 
@@ -583,6 +594,12 @@ theme.set_highlights = function(opts)
     hl(0, 'CocHighlightText', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'CocHighlightRead', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
     hl(0, 'CocHighlightWrite', { fg = 'NONE', bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
+    hl(0, 'CocFloating', { fg = 'NONE', bg = c.vscPopupBack })
+    hl(0, 'CocMenuSel', {
+        fg = isDark and c.vscPopupFront or '#FFFFFF',
+        bg = isDark and c.vscPopupHighlightBlue or '#285EBA',
+    })
+    hl(0, 'CocSearch', { fg = isDark and c.vscMediumBlue or '#2A64B9', bg = 'NONE' })
 
     -- Nvim compe
     hl(0, 'CmpItemKindVariable', { fg = c.vscLightBlue, bg = 'NONE' })
@@ -700,7 +717,7 @@ theme.set_highlights = function(opts)
     hl(0, 'DashboardDesc', { fg = c.vscYellowOrange, bg = 'NONE' })
     hl(0, 'DashboardIcon', { fg = c.vscYellowOrange, bg = 'NONE' })
     hl(0, 'DashboardShortCut', { fg = c.vscPink, bg = 'NONE' })
-    hl(0, 'DashboardKey', { fg = c.vscWhite, bg = 'NONE' })
+    hl(0, 'DashboardKey', { fg = c.vscFront, bg = 'NONE' })
     hl(0, 'DashboardFooter', { fg = c.vscBlue, bg = 'NONE', italic = true })
 
     -- Illuminate
@@ -905,11 +922,6 @@ theme.set_highlights = function(opts)
 
         -- Debugging
         hl(0, 'debugPC', { bg = '#FFFFBA' })
-
-        -- COC.nvim
-        hl(0, 'CocFloating', { fg = 'NONE', bg = c.vscPopupBack })
-        hl(0, 'CocMenuSel', { fg = '#FFFFFF', bg = '#285EBA' })
-        hl(0, 'CocSearch', { fg = '#2A64B9', bg = 'NONE' })
 
         -- symbols-outline
         -- white fg and lualine blue bg
