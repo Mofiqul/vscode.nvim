@@ -5,6 +5,7 @@ colors.get_colors = function()
     if vim.o.background == 'dark' then
         mycolors = {
             vscNone = 'NONE',
+            vscWhite = '#FFFFFF',
             vscFront = '#D4D4D4',
             vscBack = '#1F1F1F',
 
